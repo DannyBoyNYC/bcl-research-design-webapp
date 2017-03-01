@@ -1,0 +1,13 @@
+table {
+	width: 100%;
+	margin: 0;
+	font-size: 0.875rem;
+	border-top: 2px solid $specialblue;
+	border-collapse: collapse;
+	border-bottom: 1px solid $gray10;
+	th {
+		text-align: left;
+		color: $specialblue;
+		border-bottom: 1px solid $gray10;
+	}
+}

@@ -1,0 +1,36 @@
+.byline {
+	font-size: 0.875rem;
+	margin-top: 0;
+	line-height: 1.2;
+	@media (min-width: $break-two){
+		// height: 3rem;
+	}
+	span[data-icon]{
+		color: $gray-040;
+	}
+	span[itemprop="author"]{
+		margin-right: 0.5rem;
+	}
+}
+
+
+.byline-popover {
+	z-index: 100;
+	background: #fff;
+	width: calc(100% - 3rem);
+	display: none;
+	position: absolute;
+	border-radius: 0.25em;
+	box-shadow: 1px 1px 2px 1px rgba(102,102,102,0.35);
+	.popover-credentials {
+		display: block-inline; 
+		padding-left: 1rem;
+	}
+	@media (min-width: $break-three){
+		width: auto;
+	}
+}
+
+.show {
+	display: block;
+}

@@ -1,0 +1,30 @@
+.sbs {
+		border-left: 3px solid #007eb6;
+		padding-left: 1rem;
+		@media (min-width: $break-three){
+			padding-left: 0;
+		}
+
+	.sidebyside {
+		box-sizing: border-box;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		&.first {
+			padding-right: 0.5rem;
+		}
+		h3 {
+			font-size: 0.875rem;
+			color: $text;
+			font-weight: 600;
+			line-height: 1.2;
+			margin-bottom: 0.25rem;
+			span {
+				color: $blk-050;
+			}
+		}
+		@media (min-width: $break-three){
+			width: 50%;
+			float:left; 
+		}
+	}
+}

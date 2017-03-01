@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i';
+
+@font-face {
+	font-family: "barclayssymbol";
+	src: url("fonts/BarclaysSymbol-Regular.eot?") format("eot"),
+	url("fonts/BarclaysSymbol-Regular.woff2") format("woff2"),
+	url("fonts/BarclaysSymbol-Regular.woff") format("woff"),
+	url("fonts/BarclaysSymbol-Regular.ttf") format("truetype");
+}
+
+
+// https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/
+// @font-face {
+// 	font-family: "barclayssymbol";
+// 	src: url("https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/css/fonts/BarclaysSymbol-Regular.eot?") format("eot"),,
+// 	url("https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/css/fonts/BarclaysSymbol-Regular.woff2") format("woff2"),
+// 	url("https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/css/fonts/BarclaysSymbol-Regular.woff") format("woff"),
+// 	url("https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/css/fonts/BarclaysSymbol-Regular.ttf") format("truetype");
+// }
+
+$fonts: 'Source Sans Pro', Helvetica, Clean, sans-serif;
+
+
+// 67.5rem    1080px
+// 1.125rem   18px
+// 1rem       16px
+// 0.875rem   14px
+// 
+// .75rem     12px
+
+$link: #007eb6;
+$cyan: #00aeef;
+$cyan10: #e2f4fd;
+$blue100: #003366;
+$blue50: #5997b1;
+$webdarkcyan: #006991;
+$specialblue: #007eb6;
+$text: #444;
+$caption: #808285;
+$borders: #dcdcdc;
+$borders-callout: #820064;
+$lightgray: #F2F2F1;
+$gray10: #ebeced;
+$gray25: #d0d2d3;
+$gray50: #abacad;
+$gray75: #808285;
+$gray100: #585858;
+$fushia100: #820064;
+$green100: #339548;
+$red100: #cc3333;
+
+
+$blk-100: rgba(0,0,0,1); 
+$blk-095: rgba(0,0,0,0.95);
+$blk-090: rgba(0,0,0,0.90);
+$blk-085: rgba(0,0,0,0.85);
+$blk-080: rgba(0,0,0,0.80);
+$blk-075: rgba(0,0,0,0.75);
+$blk-070: rgba(0,0,0,0.70);
+$blk-065: rgba(0,0,0,0.65);
+$blk-060: rgba(0,0,0,0.60);
+$blk-055: rgba(0,0,0,0.55);
+$blk-050: rgba(0,0,0,0.50);
+$blk-040: rgba(0,0,0,0.40);
+$blk-010: rgba(0,0,0,0.10);
+
+$gray-100: rgba(51,51,51,1); 
+$gray-095: rgba(51,51,51,0.95);
+$gray-090: rgba(51,51,51,0.90);
+$gray-085: rgba(51,51,51,0.85);
+$gray-080: rgba(51,51,51,0.80);
+$gray-075: rgba(51,51,51,0.75);
+$gray-070: rgba(51,51,51,0.70);
+$gray-065: rgba(51,51,51,0.65);
+$gray-060: rgba(51,51,51,0.60);
+$gray-055: rgba(51,51,51,0.55);
+$gray-050: rgba(51,51,51,0.50);
+$gray-040: rgba(51,51,51,0.40);
+$gray-010: rgba(51,51,51,0.10);
+
+
+$workingbreak: 67.5em;
+
+$break-five: 81.25em;
+// 1300px
+$break-four: 71.25em;
+// 1140
+$break-three: 61.25em;
+// 980
+$break-two: 46.25em;
+// 760
+$break-one: 22.5em;
+// 360
+
+$radius: .25rem;

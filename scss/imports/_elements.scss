@@ -1,0 +1,97 @@
+html {
+	font-size: 100%;
+	font-family: $fonts;
+	font-weight: 400;
+	-webkit-tap-highlight-color: #00aeef;
+	overflow-y: scroll;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+	color: $blk-080;
+}
+
+/* need to break this out */
+* {
+	padding:0;
+	margin:0;
+}
+
+header {
+	// position: relative;
+	padding-top: 3rem;
+	@media (min-width: $break-three) {
+		padding-top: 0;
+	}
+
+}
+span[data-icon]:before {
+	font-family: barclayssymbol;
+	content: attr(data-icon);
+	speak: none;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1rem;
+}
+
+span[data-icon].md:before {
+	font-size: 1.25rem;
+}
+
+span[data-icon].lg:before {
+	font-size: 1.5rem;
+}
+
+a {
+	color: $link;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+p {
+	margin: 0.875rem 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+
+ul {
+	padding:0;
+
+}
+
+li {
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	color: $link;
+	font-weight: 400;
+}
+
+p + h3 {
+	margin-top: 1.5rem;
+}
+
+h3 + p {
+	margin-top: 0.25rem;
+}

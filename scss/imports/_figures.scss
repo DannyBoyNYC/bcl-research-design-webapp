@@ -1,0 +1,17 @@
+.caption {
+	font-size: 0.875rem;
+	margin: 0;
+	color: $blk-050;
+}
+
+
+.figure-header {
+	font-size: 0.875rem;
+	color: $text;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 0.25rem;
+	span {
+		color: $blk-050;
+	}
+}
