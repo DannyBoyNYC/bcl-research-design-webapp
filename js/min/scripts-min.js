@@ -10,6 +10,9 @@ var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
 // open close toc
 menuShow.addEventListener('click', function () {
+	var tocCoords = toc.getBoundingClientRect();
+	var topOfToc = tocCoords.height;
+	toctoc.style.top = topOfToc + 'px';
 	toctoc.classList.toggle('toc__open');
 });
 
@@ -87,5 +90,3 @@ function popUpAction(e) {
 
 	e.preventDefault();
 }
-
-//# sourceMappingURL=scripts-min.js.map

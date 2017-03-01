@@ -3,8 +3,8 @@
 	display: block;
 }
 .toc ul {
-		padding: 0 0 1rem 1rem;
-	}
+	padding: 0 0 1rem 1rem;
+}
 .toc {
 	background-color: $link;
 	opacity: 0.95;
@@ -56,7 +56,7 @@
 		width: 100%; 
 		position: absolute;
 		left: 0;
-		top: 3rem;
+		// top: 3rem;
 		transition: all 0.5s cubic-bezier(0.64, -0.01, 0.15, 0.99);
 		&.toc__open {
 			max-height: 1000px;
@@ -66,7 +66,7 @@
 			transition: all 0.5s cubic-bezier(0.64, -0.01, 0.15, 0.99);
 		}
 		@media (min-width: $break-three){
-			top: 10.5rem;
+			// top: 10.5rem;
 			left: 0;
 		}
 		li {
@@ -87,15 +87,8 @@
 		background-color: $gray-070;
 		position: absolute;
 		width: 17.5rem;
-
-		// here!!!
-		// margin-top: 5rem;
-		// height: calc(100% - 5rem);
-		// bottom:0;
-		height: 80%;
-		top: 20%;
-		// end!!!
-		
+		height: 75%;
+		top: 25%;
 		left: auto;
 		right:-17.5rem;
 		.toc-container {
@@ -103,9 +96,8 @@
 			flex-direction: row
 		}
 		.toc__date {
-		margin-left:0;
-		// align-self: flex-end;
-	}
+			margin-left:0;
+		}
 		img {
 			width: 3rem; 
 			margin: 0.5rem;
@@ -136,26 +128,26 @@
 		left: 0;
 		bottom: auto;
 		right: auto;
-	.toc-container {
+		.toc-container {
 			min-width: $workingbreak;
 			margin: 0 auto;
 		}
-	div {
-		flex-direction: row;
-		align-items: center;
-	}
-	.menu-bug {
-		padding-left:1rem;
-	}
-	img {
-		width: 2rem; 
-		margin: 0.5rem;
-	}
-	.toc__elements {
-		/*border-left: none; */
-	}
-	.toc__date {
-		margin-left:1rem;
+		div {
+			flex-direction: row;
+			align-items: center;
+		}
+		.menu-bug {
+			padding-left:1rem;
+		}
+		img {
+			width: 2rem; 
+			margin: 0.5rem;
+		}
+		.toc__elements {
+			/*border-left: none; */
+		}
+		.toc__date {
+			margin-left:1rem;
 		// align-self: flex-end;
 	}
 	.toc__business-unit {
@@ -168,8 +160,8 @@
 	.toc__toc {
 		top: 3rem;
 		@media (min-width: $break-two){
-		padding-right: 1rem;
-		width: auto;
+			padding-right: 1rem;
+			width: auto;
 		}
 	}
 }
