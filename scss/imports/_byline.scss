@@ -15,11 +15,11 @@
 
 
 .byline-popover {
-	z-index: 100;
-	background: #fff;
-	width: calc(100% - 3rem);
-	display: none;
+	z-index: 1;
 	position: absolute;
+	background: #fff;
+	width: calc(100% - 2rem);
+	display: none;
 	border-radius: 0.25em;
 	box-shadow: 1px 1px 2px 1px rgba(102,102,102,0.35);
 	.popover-credentials {

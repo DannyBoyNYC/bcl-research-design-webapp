@@ -60,8 +60,7 @@ function animateFade() {
 	iconPopover.classList.toggle('active');
 }
 
-// byline
-
+// byline popovers
 var authorLinks = document.querySelectorAll('.byline a');
 authorLinks.forEach(function (author) {
 	return author.addEventListener('click', popUpAction);
@@ -69,10 +68,12 @@ authorLinks.forEach(function (author) {
 
 var popOver = document.createElement('div');
 popOver.classList.add('byline-popover');
+// here - need to add this to the specific trigger
 document.body.append(popOver);
 
 function popUpAction(e) {
 	var linkCoords = this.getBoundingClientRect();
+	// this doesn't exist yet
 	var closePopover = popOver.querySelector('.close-popover');
 	var coords = {
 		bottom: linkCoords.bottom + window.scrollY,
@@ -82,7 +83,16 @@ function popUpAction(e) {
 	popOver.style.top = coords.bottom + 4 + 'px';
 	popOver.style.left = coords.left + 'px';
 
-	var popOverFrag = '\n\t<a class="close-popover" href="#00">\u2716\uFE0E</a>\n\t<div class="popover__content">\n\t<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>\n\t</ul>\n\t</div>\n\n<div class="popover__content">\n\t<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>\n\t</ul>\n\t</div>\n\t';
+	//mql = media query list
+	var mql = window.matchMedia('(min-width: 460px)');
+
+	if (mql.matches) {
+		popOver.style.left = coords.left + 'px';
+	} else {
+		popOver.style.left = '1rem';
+	}
+
+	var popOverFrag = '\n\t<a class="close-popover" href="#00">\u2716\uFE0E</a>\n\t<div class="popover__content">\n\t<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>\n\t</ul>\n\t</div>\n\t';
 
 	popOver.innerHTML = popOverFrag;
 	popOver.classList.toggle('show');

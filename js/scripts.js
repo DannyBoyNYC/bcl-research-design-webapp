@@ -57,18 +57,18 @@ function animateFade(){
 	iconPopover.classList.toggle('active');
 }
 
-
-// byline
-
+// byline popovers
 const authorLinks = document.querySelectorAll('.byline a');
 authorLinks.forEach( author => author.addEventListener('click', popUpAction));
 
 const popOver = document.createElement('div');
 popOver.classList.add('byline-popover');
+// here - need to add this to the specific trigger
 document.body.append(popOver)
 
 function popUpAction(e){
 	const linkCoords = this.getBoundingClientRect();
+	// this doesn't exist yet
 	const closePopover = popOver.querySelector('.close-popover');
 	const coords = {
 		bottom: linkCoords.bottom + window.scrollY,
@@ -78,18 +78,18 @@ function popUpAction(e){
 	popOver.style.top = `${coords.bottom + 4}px`; 
 	popOver.style.left = `${coords.left}px`;
 
+	//mql = media query list
+	var mql = window.matchMedia('(min-width: 460px)');
+
+	if (mql.matches) {
+		popOver.style.left = `${coords.left}px`;
+	} else {
+		popOver.style.left = `1rem`;
+	}
+
 	const popOverFrag = `
 	<a class="close-popover" href="#00">✖︎</a>
 	<div class="popover__content">
-	<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
-	<ul>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>
-	</ul>
-	</div>
-
-<div class="popover__content">
 	<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
 	<ul>
 	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
