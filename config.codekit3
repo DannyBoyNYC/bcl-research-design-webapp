@@ -19,6 +19,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/barclays-regular.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/barclays-regular.css.map",
+		"oF": 0
+		},
 	"\/css\/fonts\/BarclaysSymbol-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -74,6 +80,12 @@
 		"oAP": "\/img\/icebergs.jpg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
 		},
 	"\/index.jsp": {
 		"ft": 8192,
@@ -300,6 +312,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/imports\/_toc.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/imports\/_toc.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

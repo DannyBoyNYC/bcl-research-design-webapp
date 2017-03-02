@@ -6,7 +6,6 @@ var menuShow = document.querySelector('.menu-bug');
 var contentHeader = document.querySelector('.content__header');
 var iconList = document.querySelector('.icon-list');
 var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
-// const iconListIcons = Array.from(iconList.querySelectorAll('a'))
 
 // open close toc
 menuShow.addEventListener('click', function () {
@@ -44,7 +43,7 @@ function animate() {
 }
 fnlink.addEventListener('click', show);
 
-// icon-bar
+// icon-bar in left column
 iconListIcons.forEach(function (icon) {
 	return icon.addEventListener('click', iconAction);
 });
@@ -63,7 +62,7 @@ function animateFade() {
 
 // byline
 
-var authorLinks = [].slice.call(document.querySelectorAll('.byline a'));
+var authorLinks = document.querySelectorAll('.byline a');
 authorLinks.forEach(function (author) {
 	return author.addEventListener('click', popUpAction);
 });
@@ -83,9 +82,9 @@ function popUpAction(e) {
 	popOver.style.top = coords.bottom + 4 + 'px';
 	popOver.style.left = coords.left + 'px';
 
-	var htmlFragment = '\n\t<a class="close-popover" href="#00">\u2716\uFE0E</a>\n\t<div class="popover__content">\n\t<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>\n\t</ul>\n\t</div>';
+	var popOverFrag = '\n\t<a class="close-popover" href="#00">\u2716\uFE0E</a>\n\t<div class="popover__content">\n\t<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>\n\t</ul>\n\t</div>\n\n<div class="popover__content">\n\t<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>\n\t</ul>\n\t</div>\n\t';
 
-	popOver.innerHTML = htmlFragment;
+	popOver.innerHTML = popOverFrag;
 	popOver.classList.toggle('show');
 
 	e.preventDefault();

@@ -1,16 +1,19 @@
-.sbs {
-		border-left: 3px solid #007eb6;
-		padding-left: 1rem;
-		@media (min-width: $break-three){
-			padding-left: 0;
-		}
+.side-by-side-container {
+	border-left: 3px solid #007eb6;
+	padding-left: 1rem;
+	margin-left: 0;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	@media (min-width: $break-three){
+		padding-left: 0;
+		display: flex;
+		border: none;
+	}
 
 	.sidebyside {
 		box-sizing: border-box;
-		margin-top: 1rem;
-		margin-bottom: 1rem;
 		&.first {
-			padding-right: 0.5rem;
+			padding-right: 1.5rem;
 		}
 		h3 {
 			font-size: 0.875rem;
@@ -22,9 +25,11 @@
 				color: $blk-050;
 			}
 		}
+		.caption {
+			margin-bottom: 1rem;
+		}
 		@media (min-width: $break-three){
-			width: 50%;
-			float:left; 
+
 		}
 	}
 }
