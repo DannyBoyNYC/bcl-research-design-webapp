@@ -5,6 +5,20 @@ const contentHeader = document.querySelector('.content__header');
 const iconList = document.querySelector('.icon-list');
 var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
+
+//mql = media query list
+const breakOne = '22.5em'; // 360px
+const breakTwo = '46.25em'; // 760px
+const breakThree = '61.25em'; // 980px
+const breakFour = '71.25em'; // 1140px
+const breakFive = '81.25em'; // 1300px
+
+const mqlBreakOne = window.matchMedia(`(min-width: ${breakOne}px)`);
+const mqlBreakTwo = window.matchMedia(`(min-width: ${breakTwo}px)`);
+const mqlBreakThree = window.matchMedia(`(min-width: ${breakThree}px)`);
+const mqlBreakFour = window.matchMedia(`(min-width: ${breakFour}px)`);
+const mqlBreakFive = window.matchMedia(`(min-width: ${breakFive}px)`);
+
 // open close toc
 menuShow.addEventListener('click', function () {
 	const tocCoords = toc.getBoundingClientRect();
@@ -68,15 +82,12 @@ document.body.append(popOver)
 
 function popUpAction(e){
 	const linkCoords = this.getBoundingClientRect();
-	// this doesn't exist yet
-	const closePopover = popOver.querySelector('.close-popover');
 	const coords = {
 		bottom: linkCoords.bottom + window.scrollY,
 		left: linkCoords.left + window.scrollX
 	}
 	popOver.style.position = 'absolute'
 	popOver.style.top = `${coords.bottom + 4}px`; 
-	popOver.style.left = `${coords.left}px`;
 
 	//mql = media query list
 	var mql = window.matchMedia('(min-width: 460px)');
@@ -101,7 +112,10 @@ function popUpAction(e){
 
 	popOver.innerHTML = popOverFrag;
 	popOver.classList.toggle('show');
-
+	const closePopover = popOver.querySelector('.close-popover');
+	closePopover.addEventListener('click', function(){
+		popOver.classList.remove('show');
+	})
 	e.preventDefault();
 }
 

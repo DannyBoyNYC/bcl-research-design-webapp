@@ -600,14 +600,14 @@ aside.pull {
   z-index: 1;
   position: absolute;
   background: #fff;
-  width: calc(100% - 2rem);
+  width: 90vw;
   display: none;
   border-radius: 0.25em;
   box-shadow: 1px 1px 2px 1px rgba(102, 102, 102, 0.35); }
   .byline-popover .popover-credentials {
     display: block-inline;
     padding-left: 1rem; }
-  @media (min-width: 61.25em) {
+  @media (min-width: 46.25em) {
     .byline-popover {
       width: auto; } }
 

@@ -8,7 +8,6 @@
 	url("fonts/BarclaysSymbol-Regular.ttf") format("truetype");
 }
 
-
 // https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/
 // @font-face {
 // 	font-family: "barclayssymbol";
@@ -17,6 +16,21 @@
 // 	url("https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/css/fonts/BarclaysSymbol-Regular.woff") format("woff"),
 // 	url("https://live.barcap.com/publiccp/RSR/nyfipubs/bsymbol/specimen/css/fonts/BarclaysSymbol-Regular.ttf") format("truetype");
 // }
+
+$workingbreak: 67.5em;
+
+$break-five: 81.25em;
+// 1300px
+$break-four: 71.25em;
+// 1140
+$break-three: 61.25em;
+// 980
+$break-two: 46.25em;
+// 760
+$break-one: 22.5em;
+// 360
+
+$radius: .25rem;
 
 $fonts: 'Source Sans Pro', Helvetica, Clean, sans-serif;
 
@@ -78,18 +92,3 @@ $gray-050: rgba(51,51,51,0.50);
 $gray-040: rgba(51,51,51,0.40);
 $gray-010: rgba(51,51,51,0.10);
 
-
-$workingbreak: 67.5em;
-
-$break-five: 81.25em;
-// 1300px
-$break-four: 71.25em;
-// 1140
-$break-three: 61.25em;
-// 980
-$break-two: 46.25em;
-// 760
-$break-one: 22.5em;
-// 360
-
-$radius: .25rem;

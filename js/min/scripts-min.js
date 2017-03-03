@@ -7,6 +7,19 @@ var contentHeader = document.querySelector('.content__header');
 var iconList = document.querySelector('.icon-list');
 var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
+//mql = media query list
+var breakOne = '22.5em'; // 360px
+var breakTwo = '46.25em'; // 760px
+var breakThree = '61.25em'; // 980px
+var breakFour = '71.25em'; // 1140px
+var breakFive = '81.25em'; // 1300px
+
+var mqlBreakOne = window.matchMedia('(min-width: ' + breakOne + 'px)');
+var mqlBreakTwo = window.matchMedia('(min-width: ' + breakTwo + 'px)');
+var mqlBreakThree = window.matchMedia('(min-width: ' + breakThree + 'px)');
+var mqlBreakFour = window.matchMedia('(min-width: ' + breakFour + 'px)');
+var mqlBreakFive = window.matchMedia('(min-width: ' + breakFive + 'px)');
+
 // open close toc
 menuShow.addEventListener('click', function () {
 	var tocCoords = toc.getBoundingClientRect();
@@ -73,15 +86,12 @@ document.body.append(popOver);
 
 function popUpAction(e) {
 	var linkCoords = this.getBoundingClientRect();
-	// this doesn't exist yet
-	var closePopover = popOver.querySelector('.close-popover');
 	var coords = {
 		bottom: linkCoords.bottom + window.scrollY,
 		left: linkCoords.left + window.scrollX
 	};
 	popOver.style.position = 'absolute';
 	popOver.style.top = coords.bottom + 4 + 'px';
-	popOver.style.left = coords.left + 'px';
 
 	//mql = media query list
 	var mql = window.matchMedia('(min-width: 460px)');
@@ -96,6 +106,9 @@ function popUpAction(e) {
 
 	popOver.innerHTML = popOverFrag;
 	popOver.classList.toggle('show');
-
+	var closePopover = popOver.querySelector('.close-popover');
+	closePopover.addEventListener('click', function () {
+		popOver.classList.remove('show');
+	});
 	e.preventDefault();
 }
