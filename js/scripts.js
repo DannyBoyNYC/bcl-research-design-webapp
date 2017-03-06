@@ -77,7 +77,6 @@ authorLinks.forEach( author => author.addEventListener('click', popUpAction));
 
 const popOver = document.createElement('div');
 popOver.classList.add('byline-popover');
-// here - need to add this to the specific trigger
 document.body.append(popOver)
 
 function popUpAction(e){
@@ -90,7 +89,8 @@ function popUpAction(e){
 	popOver.style.top = `${coords.bottom + 4}px`; 
 
 	//mql = media query list
-	var mql = window.matchMedia('(min-width: 460px)');
+	let mql = window.matchMedia('(min-width: 760px)');
+	// console.log(breakTwo)
 
 	if (mql.matches) {
 		popOver.style.left = `${coords.left}px`;

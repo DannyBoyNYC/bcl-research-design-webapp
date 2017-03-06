@@ -609,7 +609,7 @@ aside.pull {
     padding-left: 1rem; }
   @media (min-width: 46.25em) {
     .byline-popover {
-      width: auto; } }
+      width: 50vw; } }
 
 .show {
   display: block; }
