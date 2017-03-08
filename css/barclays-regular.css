@@ -153,6 +153,7 @@ h3 + p {
       margin-top: 0.75rem; }
   @media (min-width: 61.25em) {
     .toc {
+      background-color: rgba(0, 0, 0, 0.6);
       position: absolute;
       width: 17.5rem;
       height: 75%;
@@ -610,6 +611,12 @@ aside.pull {
   @media (min-width: 46.25em) {
     .byline-popover {
       width: 50vw; } }
+  @media (min-width: 61.25em) {
+    .byline-popover {
+      width: 40vw; } }
+  @media (min-width: 71.25em) {
+    .byline-popover {
+      width: 30vw; } }
 
 .show {
   display: block; }

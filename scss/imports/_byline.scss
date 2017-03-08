@@ -1,36 +1,41 @@
 .byline {
-	font-size: 0.875rem;
-	margin-top: 0;
-	line-height: 1.2;
-	@media (min-width: $break-two){
-		// height: 3rem;
-	}
-	span[data-icon]{
-		color: $gray-040;
-	}
-	span[itemprop="author"]{
-		margin-right: 0.5rem;
-	}
+    font-size: 0.875rem;
+    margin-top: 0;
+    line-height: 1.2;
+    @media (min-width: $break-two) {
+        // height: 3rem;
+    }
+    span[data-icon] {
+        color: $gray-040;
+    }
+    span[itemprop="author"] {
+        margin-right: 0.5rem;
+    }
 }
 
-
 .byline-popover {
-	z-index: 1;
-	position: absolute;
-	background: #fff;
-	width: 90vw;
-	display: none;
-	border-radius: 0.25em;
-	box-shadow: 1px 1px 2px 1px rgba(102,102,102,0.35);
-	.popover-credentials {
-		display: block-inline; 
-		padding-left: 1rem;
-	}
-	@media (min-width: $break-two){
-		width: 50vw;
-	}
+    z-index: 1;
+    position: absolute;
+    background: #fff;
+    width: 90vw;
+    display: none;
+    border-radius: 0.25em;
+    box-shadow: 1px 1px 2px 1px rgba(102, 102, 102, 0.35);
+    .popover-credentials {
+        display: block-inline;
+        padding-left: 1rem;
+    }
+    @media (min-width: $break-two) {
+        width: 50vw;
+    }
+    @media (min-width: $break-three) {
+        width: 40vw;
+    }
+    @media (min-width: $break-four) {
+        width: 30vw;
+    }
 }
 
 .show {
-	display: block;
+    display: block;
 }

@@ -83,6 +83,7 @@
 	}
 	// wide screen
 	@media (min-width: $break-three){
+		background-color: $blk-060;
 		position: absolute;
 		width: 17.5rem;
 		height: 75%;
