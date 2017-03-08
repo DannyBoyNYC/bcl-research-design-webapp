@@ -95,6 +95,12 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/index-test.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index-test.html",
+		"oF": 0
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -274,6 +280,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_popovers.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/imports\/_previous-next-links.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/imports\/_previous-next-links.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

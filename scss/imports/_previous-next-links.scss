@@ -1,0 +1,13 @@
+//links to next and previous chapter found at the bottom of each page
+.chapter-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    line-height: 1.1;
+    // a:last-child:after {
+    //     content: "hi";
+    // }
+    a:first-child {
+        padding-right: 1rem;
+    }
+}
