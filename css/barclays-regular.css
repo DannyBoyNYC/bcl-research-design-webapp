@@ -190,7 +190,7 @@ h4 + p {
     position: fixed;
     width: 100%;
     margin-top: 0;
-    height: 3rem;
+    height: 0;
     top: 0;
     left: 0;
     bottom: auto;
@@ -221,6 +221,11 @@ h4 + p {
         padding-left: 4rem;
         width: 67.5em;
         margin: 0 auto; } }
+
+@media (min-width: 61.25em) {
+  .toc.fix-top-open {
+    height: 3rem;
+    transition: all 0.25s; } }
 
 blockquote {
   width: 100%;

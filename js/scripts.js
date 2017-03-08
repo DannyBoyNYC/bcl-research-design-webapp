@@ -31,12 +31,16 @@ menuShow.addEventListener('click', function () {
 window.addEventListener('scroll', staticize);
 
 function staticize(){
-	if (window.scrollY > 320) {
+	if (window.scrollY > 330) {
 		toc.classList.add('fix-top')
+		setTimeout(function(){
+			toc.classList.add('fix-top-open')
+		}, 500)
 		iconList.classList.add('posfixed')
 	} else {
 		contentHeader.style.backgroundPosition = '50% ' + (pageYOffset * -1.5) + 'px';
 		toc.classList.remove('fix-top')
+		toc.classList.remove('fix-top-open')
 		iconList.classList.remove('posfixed')
 	}
 }

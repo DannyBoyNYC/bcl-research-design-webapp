@@ -120,7 +120,7 @@
 		position: fixed;
 		width: 100%;
 		margin-top: 0;
-		height: 3rem;
+		height: 0;
 		top: 0;
 		left: 0;
 		bottom: auto;
@@ -163,5 +163,11 @@
 				}
 			}
 		}
+	}
+}
+.toc.fix-top-open {
+	@media (min-width: $break-three){
+		height: 3rem;
+		transition: all 0.25s;
 	}
 }
