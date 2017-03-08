@@ -1,0 +1,11 @@
+.quick-take {
+	padding-left: 1.5rem;
+	padding-top: 0.25rem;
+	padding-bottom: 0.25rem;
+	padding-right: 0.875rem;
+	border-left: 4px solid $link;
+	background: $lightgray;
+	:last-child {
+		margin-bottom: 0;
+	}
+}

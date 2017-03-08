@@ -84,6 +84,14 @@ p + h3 {
 h3 + p {
   margin-top: 0.25rem; }
 
+h4 {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 700; }
+
+h4 + p {
+  margin-top: 0.25rem; }
+
 .toc.toc__open {
   display: block; }
 
@@ -340,7 +348,7 @@ blockquote {
       margin-left: -4rem;
       width: 4rem;
       display: flex; }
-      .content__article-body .content__meta-container.posfixed {
+      .content__article-body .content__meta-container .posfixed {
         position: fixed;
         top: 4rem; }
       .content__article-body .content__meta-container ul {
@@ -656,5 +664,15 @@ aside.pull {
   line-height: 1.1; }
   .chapter-links a:first-child {
     padding-right: 1rem; }
+
+.quick-take {
+  padding-left: 1.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-right: 0.875rem;
+  border-left: 4px solid #007eb6;
+  background: #F2F2F1; }
+  .quick-take :last-child {
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=barclays-regular.css.map */
