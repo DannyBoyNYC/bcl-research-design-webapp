@@ -28,6 +28,19 @@ menuShow.addEventListener('click', function () {
 	toctoc.classList.toggle('toc__open');
 });
 
+//breakout staticize in order to isolate the fix-top events UNFINISHED
+
+function fixTop() {
+	var tocBottom = toc.getBoundingClientRect();
+	console.log(tocBottom);
+	if (window.scrollY > 330) {
+		toc.classList.add('fix-top');
+		setTimeout(function () {
+			toc.classList.add('fix-top-open');
+		}, 500);
+	}
+}
+
 // show menubar at top of page, make the icon list static, parallax effect on image
 window.addEventListener('scroll', staticize);
 
