@@ -9,6 +9,7 @@
 	padding-top: 0;
 	&.multiple {
 	border-bottom: 1px solid $blk-010;
+	box-shadow: 0 4px 14px -2px $blk-010;
 }
 	div {
 		text-transform: uppercase;
