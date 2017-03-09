@@ -1,17 +1,18 @@
-
-
+// author popovers that appear when author name is clicked in the byline
 .close-popover {
 	padding: 0 0.5rem;
 	float: right;
 }
 
-
 .popover__content {
 	padding: 0.875rem;
 	padding-top: 0;
+	&.multiple {
+	border-bottom: 1px solid $blk-010;
+}
 	div {
 		text-transform: uppercase;
-		font-size: 0.7rem;
+		font-size: 0.75rem;
 		font-weight: 700;
 		width: 100%;
 		color: $blk-075;
@@ -35,3 +36,4 @@
 		}
 	}
 }
+

@@ -64,13 +64,13 @@ img {
 }
 
 q {
-  quotes: "“" "”" "‘" "’";
+	quotes: "“" "”" "‘" "’";
 }
 q:before {
-    content: open-quote;
+	content: open-quote;
 }
 q:after {
-    content: close-quote;
+	content: close-quote;
 }
 
 ul {
@@ -86,6 +86,7 @@ h3 {
 	font-size: 1.25rem;
 	color: $link;
 	font-weight: 400;
+	line-height: 1.1;
 }
 
 p + h3 {
@@ -100,6 +101,7 @@ h4 {
 	font-size: 1.1rem;
 	color: $text;
 	font-weight: 700;
+	line-height: 1.1;
 }
 h4 + p {
 	margin-top: 0.25rem;

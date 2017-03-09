@@ -28,36 +28,33 @@ menuShow.addEventListener('click', function () {
 	toctoc.classList.toggle('toc__open');
 });
 
-//breakout staticize in order to isolate the fix-top events UNFINISHED
+//window.scroll functions
+//show menubar at top of page, make the icon list static
 
+window.addEventListener('scroll', fixTop);
+var tocCoords = toc.getBoundingClientRect();
+var coords = { bottom: tocCoords.bottom + window.scrollY };
+// console.log('The bottom of TOC is ' + coords.bottom + 'px from the top')
 function fixTop() {
-	var tocBottom = toc.getBoundingClientRect();
-	console.log(tocBottom);
-	if (window.scrollY > 330) {
+	if (window.scrollY > coords.bottom) {
 		toc.classList.add('fix-top');
 		setTimeout(function () {
 			toc.classList.add('fix-top-open');
-		}, 500);
-	}
-}
-
-// show menubar at top of page, make the icon list static, parallax effect on image
-window.addEventListener('scroll', staticize);
-
-function staticize() {
-	if (window.scrollY > 330) {
-		toc.classList.add('fix-top');
-		setTimeout(function () {
-			toc.classList.add('fix-top-open');
-		}, 500);
+		}, 0);
 		iconList.classList.add('posfixed');
-	} else {
-		contentHeader.style.backgroundPosition = '50% ' + pageYOffset * -1.5 + 'px';
+	} else if (window.scrollY < coords.bottom) {
 		toc.classList.remove('fix-top');
 		toc.classList.remove('fix-top-open');
 		iconList.classList.remove('posfixed');
 	}
 }
+
+//, parallax effect on image
+window.addEventListener('scroll', staticize);
+function staticize() {
+	contentHeader.style.backgroundPosition = '50% ' + pageYOffset * -1.5 + 'px';
+}
+//END window.scroll functions
 
 // footnotes
 var fnlink = document.querySelector('.footnote-link');
@@ -101,6 +98,7 @@ popOver.classList.add('byline-popover');
 document.body.append(popOver);
 
 function popUpAction(e) {
+	var templateSelector = this.getAttribute('href');
 	var linkCoords = this.getBoundingClientRect();
 	var coords = {
 		bottom: linkCoords.bottom + window.scrollY,
@@ -121,7 +119,13 @@ function popUpAction(e) {
 
 	var popOverFrag = '\n\t<a class="close-popover" href="#00">\u2716\uFE0E</a>\n\t<div class="popover__content">\n\t<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>\n\t</ul>\n\t</div>\n\t';
 
-	popOver.innerHTML = popOverFrag;
+	var popOverFragMultiples = '\n\t<a class="close-popover" href="#00">\u2716\uFE0E</a>\n\t<div class="popover__content multiple">\n\t<div>Multiple Analysts<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>\n\t</ul>\n\t</div>\n\n\t<div class="popover__content multiple">\n\t<div>Shobhit Gupta<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>\n\t</ul>\n\t</div>\n\n\t<div class="popover__content multiple">\n\t<div>Another Analyst, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>\n\t<ul>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst\'s Page</a></li>\n\t<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">another.analyst@barclays.com</a></li>\n\t</ul>\n\t</div>\n\t';
+
+	if (templateSelector === '#multiples') {
+		popOver.innerHTML = popOverFragMultiples;
+	} else {
+		popOver.innerHTML = popOverFrag;
+	}
 	popOver.classList.toggle('show');
 	var closePopover = popOver.querySelector('.close-popover');
 	closePopover.addEventListener('click', function () {
@@ -129,3 +133,5 @@ function popUpAction(e) {
 	});
 	e.preventDefault();
 }
+
+//# sourceMappingURL=scripts-min.js.map

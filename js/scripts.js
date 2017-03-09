@@ -27,36 +27,33 @@ menuShow.addEventListener('click', function () {
 	toctoc.classList.toggle('toc__open');
 });
 
-//breakout staticize in order to isolate the fix-top events UNFINISHED
+//window.scroll functions
+//show menubar at top of page, make the icon list static
 
-function fixTop(){
-	const tocBottom = toc.getBoundingClientRect();
-	console.log(tocBottom)
-	if (window.scrollY > 330) {
-		toc.classList.add('fix-top')
-		setTimeout(function(){
-			toc.classList.add('fix-top-open')
-		}, 500)
+window.addEventListener('scroll', fixTop);
+const tocCoords = toc.getBoundingClientRect();
+const coords = { bottom: tocCoords.bottom + window.scrollY }
+	// console.log('The bottom of TOC is ' + coords.bottom + 'px from the top')
+	function fixTop(){
+		if (window.scrollY > coords.bottom) {
+			toc.classList.add('fix-top')
+			setTimeout(function(){
+				toc.classList.add('fix-top-open')
+			}, 0)
+			iconList.classList.add('posfixed')
+		} else if(window.scrollY < coords.bottom) {
+			toc.classList.remove('fix-top')
+			toc.classList.remove('fix-top-open')
+			iconList.classList.remove('posfixed')
+		}
 	}
-}
 
-// show menubar at top of page, make the icon list static, parallax effect on image
+//, parallax effect on image
 window.addEventListener('scroll', staticize);
-
 function staticize(){
-	if (window.scrollY > 330) {
-		toc.classList.add('fix-top')
-		setTimeout(function(){
-			toc.classList.add('fix-top-open')
-		}, 500)
-		iconList.classList.add('posfixed')
-	} else {
-		contentHeader.style.backgroundPosition = '50% ' + (pageYOffset * -1.5) + 'px';
-		toc.classList.remove('fix-top')
-		toc.classList.remove('fix-top-open')
-		iconList.classList.remove('posfixed')
-	}
+	contentHeader.style.backgroundPosition = '50% ' + (pageYOffset * -1.5) + 'px';
 }
+//END window.scroll functions
 
 // footnotes
 const fnlink = document.querySelector('.footnote-link');
@@ -97,6 +94,7 @@ popOver.classList.add('byline-popover');
 document.body.append(popOver)
 
 function popUpAction(e){
+	const templateSelector = this.getAttribute('href');
 	const linkCoords = this.getBoundingClientRect();
 	const coords = {
 		bottom: linkCoords.bottom + window.scrollY,
@@ -127,7 +125,43 @@ function popUpAction(e){
 	</div>
 	`;
 
-	popOver.innerHTML = popOverFrag;
+	const popOverFragMultiples = `
+	<a class="close-popover" href="#00">✖︎</a>
+	<div class="popover__content multiple">
+	<div>Multiple Analysts<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
+	<ul>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>
+	</ul>
+	</div>
+
+	<div class="popover__content multiple">
+	<div>Shobhit Gupta<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
+	<ul>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>
+	</ul>
+	</div>
+
+	<div class="popover__content multiple">
+	<div>Another Analyst, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
+	<ul>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
+	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">another.analyst@barclays.com</a></li>
+	</ul>
+	</div>
+	`;
+
+
+
+	if (templateSelector === '#multiples'){
+		popOver.innerHTML = popOverFragMultiples;
+	} else {
+		popOver.innerHTML = popOverFrag;
+	}
 	popOver.classList.toggle('show');
 	const closePopover = popOver.querySelector('.close-popover');
 	closePopover.addEventListener('click', function(){
