@@ -94,6 +94,9 @@
 			display: flex; 
 			flex-direction: row
 		}
+		.menu-bug {
+			width: 3rem;
+		}
 		.toc__date {
 			margin-left:0;
 		}
@@ -110,6 +113,7 @@
 		}
 		.toc__pubtitle {
 			font-size: 1.2rem;
+			line-height: 1.1;
 			font-weight: 400;
 		}
 	}
