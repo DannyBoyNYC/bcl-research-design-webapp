@@ -174,7 +174,11 @@ h4 + p {
         display: flex;
         flex-direction: row; }
       .toc .menu-bug {
+<<<<<<< HEAD
         width: 4.5rem; }
+=======
+        width: 3rem; }
+>>>>>>> 37be70c951ae4941f09ba7c55953d2d4f153457b
       .toc .toc__date {
         margin-left: 0; }
       .toc img {
