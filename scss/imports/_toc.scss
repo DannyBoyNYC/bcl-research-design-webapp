@@ -81,7 +81,7 @@
 			margin-top: 0.75rem;
 		}
 	}
-	// wide screen
+	// .toc wide screen
 	@media (min-width: $break-three){
 		background-color: $blk-060;
 		position: absolute;
@@ -93,6 +93,9 @@
 		.toc-container {
 			display: flex; 
 			flex-direction: row
+		}
+		.menu-bug {
+			width: 4.5rem;
 		}
 		.toc__date {
 			margin-left:0;
@@ -110,6 +113,7 @@
 		}
 		.toc__pubtitle {
 			font-size: 1.2rem;
+			line-height: 1.1;
 			font-weight: 400;
 		}
 	}

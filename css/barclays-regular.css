@@ -173,6 +173,8 @@ h4 + p {
       .toc .toc-container {
         display: flex;
         flex-direction: row; }
+      .toc .menu-bug {
+        width: 4.5rem; }
       .toc .toc__date {
         margin-left: 0; }
       .toc img {
@@ -185,6 +187,7 @@ h4 + p {
         display: inline-block; }
       .toc .toc__pubtitle {
         font-size: 1.2rem;
+        line-height: 1.1;
         font-weight: 400; } }
 
 @media (min-width: 61.25em) {
