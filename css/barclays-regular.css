@@ -126,7 +126,7 @@ h4 + p {
     font-size: 0.875rem; }
   .toc .toc__elements {
     border-left: 2px solid #fff;
-    padding-left: 0.75rem;
+    padding-left: 0.5rem;
     display: flex; }
   .toc .toc__business-unit {
     display: none; }
@@ -174,15 +174,19 @@ h4 + p {
         display: flex;
         flex-direction: row; }
       .toc .menu-bug {
-        width: 3rem; }
+        width: 20%;
+        padding: 0.5rem;
+        margin: 0; }
       .toc .toc__date {
         margin-left: 0; }
       .toc img {
-        width: 3rem;
-        margin: 0.5rem; }
+        width: 4rem;
+        margin: 0;
+        padding: 0; }
       .toc div {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        width: 80%; }
       .toc .toc__business-unit {
         display: inline-block; }
       .toc .toc__pubtitle {
@@ -207,12 +211,13 @@ h4 + p {
       flex-direction: row;
       align-items: center; }
     .toc.fix-top .menu-bug {
-      padding-left: 1rem; }
+      padding-left: 1rem;
+      width: auto; }
     .toc.fix-top img {
       width: 2rem;
       margin: 0.5rem; }
     .toc.fix-top .toc__date {
-      margin-left: 1rem; }
+      margin-left: auto; }
     .toc.fix-top .toc__business-unit {
       display: none; }
     .toc.fix-top .toc__pubtitle {
