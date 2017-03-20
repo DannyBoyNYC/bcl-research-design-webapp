@@ -47,6 +47,10 @@
 	}
 	.toc__date {
 		margin-left:1rem;
+		// margin-left: auto;
+		.day {
+			display: none;
+		}
 	}
 	.toc__toc {
 		max-height: 0;
@@ -101,6 +105,9 @@
 		}
 		.toc__date {
 			margin-left:0;
+					.day {
+			display: inline;
+		}
 		}
 		img {
 			width: 4rem; 

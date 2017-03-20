@@ -1,4 +1,7 @@
 .content__article-body .content__meta-container {
+	// @media print {
+	// 	display: none !important;
+	// }
 	position: relative;
 	margin-bottom: 0.75rem;
 	display: flex;

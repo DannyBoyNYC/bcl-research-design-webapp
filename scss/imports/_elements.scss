@@ -62,9 +62,13 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
+// quotes
 q {
 	quotes: "“" "”" "‘" "’";
+}
+q, 
+blockquote {
+    quotes: "\201C" "\201D" "\2018" "\2019";
 }
 q:before {
 	content: open-quote;
@@ -75,9 +79,7 @@ q:after {
 
 ul {
 	padding:0;
-
 }
-
 li {
 	margin-bottom: 1rem;
 }

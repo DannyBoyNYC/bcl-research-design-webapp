@@ -7,7 +7,7 @@
 		"uuidString": "536494ED-AAFD-4A5B-87FE-99B89A01A232"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25704",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -69,7 +69,8 @@
 		"oA": 0,
 		"oAP": "\/css\/img\/1.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/css\/img\/2.jpg": {
 		"ft": 16384,
@@ -77,7 +78,8 @@
 		"oA": 0,
 		"oAP": "\/css\/img\/2.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/css\/img\/icebergs.jpg": {
 		"ft": 16384,
@@ -85,7 +87,24 @@
 		"oA": 0,
 		"oAP": "\/css\/img\/icebergs.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
+		},
+	"\/css\/print.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/print-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/print.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/print.css.map",
+		"oF": 0
 		},
 	"\/img\/icebergs.jpg": {
 		"ft": 16384,
@@ -93,7 +112,8 @@
 		"oA": 0,
 		"oAP": "\/img\/icebergs.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/index.html": {
 		"ft": 8192,
@@ -379,6 +399,19 @@
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_variables.css",
 		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/print.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/css\/print.css",
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
@@ -1201,6 +1234,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -1680,6 +1717,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -2280,7 +2321,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -2373,7 +2415,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"enableLossy": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
