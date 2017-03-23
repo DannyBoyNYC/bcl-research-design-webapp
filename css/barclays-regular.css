@@ -704,8 +704,8 @@ aside.pull {
 
 .quick-take {
   padding-left: 1rem;
-  padding-top: 0.35rem;
-  padding-bottom: 0.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-right: 0.875rem;
   border-left: 4px solid #007eb6; }
   .quick-take :last-child {
