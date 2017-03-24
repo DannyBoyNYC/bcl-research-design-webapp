@@ -133,5 +133,3 @@ function popUpAction(e) {
 	});
 	e.preventDefault();
 }
-
-//# sourceMappingURL=scripts-min.js.map
