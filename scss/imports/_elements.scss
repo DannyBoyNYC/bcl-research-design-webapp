@@ -89,6 +89,7 @@ h3 {
 	color: $link;
 	font-weight: 400;
 	line-height: 1.1;
+	margin-top:1.5rem
 }
 
 p + h3 {
@@ -104,9 +105,39 @@ h4 {
 	color: $text;
 	font-weight: 700;
 	line-height: 1.1;
+	margin-top:1.5rem
 }
 h4 + p {
 	margin-top: 0.25rem;
 }
+
+// heading 3
+h5 {
+	font-size: 1rem;
+	color: $text;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-top:1.5rem
+}
+
+h5 + p {
+	margin-top: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
