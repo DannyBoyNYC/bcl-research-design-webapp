@@ -739,5 +739,7 @@ aside.pull {
   margin: 1rem 0; }
   .quick-take :last-child {
     margin-bottom: 0; }
+  .quick-take h4 {
+    margin-top: 0; }
 
 /*# sourceMappingURL=barclays-regular.css.map */
