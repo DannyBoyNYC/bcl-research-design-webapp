@@ -369,6 +369,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/imports\/_svg.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/imports\/_svg.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/imports\/_tables.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -420,6 +433,22 @@
 		"oF": 3,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/svg\/base64\/icn-1-gs.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/svg\/base64\/icn-1-gs.ai",
+		"oF": 0
+		},
+	"\/svg\/base64\/icn-1-gs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/base64\/icn-1-gs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/svg\/chart-1.svg": {
 		"ft": 2097152,

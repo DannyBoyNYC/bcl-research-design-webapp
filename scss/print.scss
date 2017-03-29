@@ -1,14 +1,38 @@
 // print
 * {
 	font-family: Arial, sans-serif !important;
+	background: transparent !important;
+	color: black !important;
 }
 .toc,
 .toc__toc,
 .popover,
+.byline-popover,
+.chapter-links,
+.announce,
 .content__meta-container {
 	display: none !important;
 }
 
 .content__header {
 	background-image: none;
- }
+}
+
+.content__headline {
+	font-weight: bold;
+	font-size: 28pt;
+}
+
+.content__standfirst {
+	font-size: 18pt;
+	font-style: italic;
+}
+
+
+
+a, a:visited { color: #444 !important; text-decoration: underline; }
+a[href]:after { content: " (" attr(href) ")"; }
+abbr[title]:after { content: " (" attr(title) ")"; }
+tr, img { page-break-inside: avoid; }
+p, h2, h3 { orphans: 3; widows: 3; }
+h2, h3{ page-break-after: avoid; }
