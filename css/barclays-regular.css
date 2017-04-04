@@ -71,8 +71,9 @@ q:before {
 q:after {
   content: close-quote; }
 
-ul {
-  padding: 0; }
+ul, ol {
+  padding: 0;
+  padding-left: 1rem; }
 
 li {
   margin-bottom: 1rem; }
@@ -143,7 +144,8 @@ h5 + p {
   .toc .toc__elements {
     border-left: 2px solid #fff;
     padding-left: 0.5rem;
-    display: flex; }
+    display: flex;
+    line-height: 1.2; }
   .toc .toc__business-unit {
     display: none; }
   .toc .toc__pubtitle {
@@ -208,11 +210,13 @@ h5 + p {
         flex-direction: column;
         width: 80%; }
       .toc .toc__business-unit {
-        display: inline-block; }
+        display: inline-block;
+        margin-bottom: 0.25rem; }
       .toc .toc__pubtitle {
         font-size: 1.2rem;
         line-height: 1.1;
-        font-weight: 400; } }
+        font-weight: 400;
+        margin-bottom: 0.25rem; } }
 
 @media (min-width: 61.25em) {
   .toc.fix-top {
@@ -385,7 +389,8 @@ blockquote {
       display: flex; }
       .content__article-body .content__meta-container .posfixed {
         position: fixed;
-        top: 4rem; }
+        top: 4rem;
+        background: rgba(255, 255, 255, 0.9); }
       .content__article-body .content__meta-container ul {
         flex-direction: column;
         padding-left: 0.4rem; }
@@ -445,9 +450,6 @@ blockquote {
     width: 15px;
     height: 15px;
     transform: rotate(45deg); } }
-
-.content__article-body .reading-list {
-  padding-left: 1rem; }
 
 .attachment {
   line-height: 1.2;
@@ -649,15 +651,16 @@ table {
 aside.pull {
   font-weight: 600;
   font-size: 0.875rem;
-  width: 30%;
-  float: left;
+  width: 100%;
   padding: .5rem 0 .5em 0;
   margin-right: 1rem;
   border-top: 1px solid #d0d2d3;
   border-bottom: 1px solid #d0d2d3; }
-  @media (min-width: 46.25em) {
+  @media (min-width: 61.25em) {
     aside.pull {
-      width: 20%; } }
+      width: 20%;
+      margin-left: -4rem;
+      float: left; } }
 
 .byline {
   font-size: 0.875rem;
@@ -742,5 +745,43 @@ aside.pull {
     margin-bottom: 0; }
   .quick-take h4 {
     margin-top: 0; }
+
+.icn-1,
+.icn-2,
+.icn-3,
+.icn-4,
+.icn-5 {
+  width: 36px; }
+
+.icn-1 .st0,
+.icn-3 .st0,
+.icn-4 .st0 {
+  fill: #A6A8AB;
+  transition: fill 1s linear; }
+
+.icn-1:hover .st0,
+.icn-3:hover .st0,
+.icn-4:hover .st0 {
+  fill: #007eb6; }
+
+.icn-3 .st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #A6A8AB; }
+
+.icn-4 .st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #A6A8AB; }
+
+svg .circle {
+  stroke: #007eb6;
+  /* calculate using: (2 * PI * R) */
+  stroke-dasharray: 227;
+  stroke-dashoffset: 227;
+  transition: stroke-dashoffset 0.5s linear; }
+
+svg .circle:hover {
+  stroke-dashoffset: 0; }
 
 /*# sourceMappingURL=barclays-regular.css.map */

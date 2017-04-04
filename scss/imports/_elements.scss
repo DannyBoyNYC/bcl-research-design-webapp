@@ -77,8 +77,9 @@ q:after {
 	content: close-quote;
 }
 
-ul {
+ul, ol {
 	padding:0;
+	padding-left: 1rem;
 }
 li {
 	margin-bottom: 1rem;

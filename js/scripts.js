@@ -78,6 +78,8 @@ const closePopover = document.querySelector('.close-popover');
 closePopover.addEventListener('click', iconAction);
 
 function iconAction(){
+	// this.toggleClass('circle-color');
+	console.log(this) // anchor
 	iconPopover.classList.toggle('display-block');
 	setTimeout(animateFade, 100);
 }

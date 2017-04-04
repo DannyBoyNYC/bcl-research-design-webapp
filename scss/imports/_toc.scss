@@ -38,6 +38,7 @@
 		border-left: 2px solid #fff; 
 		padding-left: 0.5rem;
 		display: flex;
+		line-height: 1.2;
 	}
 	.toc__business-unit {
 		display: none;
@@ -122,11 +123,13 @@
 		}
 		.toc__business-unit {
 			display: inline-block;
+			margin-bottom: 0.25rem;
 		}
 		.toc__pubtitle {
 			font-size: 1.2rem;
 			line-height: 1.1;
 			font-weight: 400;
+			margin-bottom: 0.25rem;
 		}
 	}
 }
