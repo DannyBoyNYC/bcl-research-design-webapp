@@ -63,7 +63,6 @@ article {
 
 .content__main-column {
 	background: #fff;
-	// max-width: 46rem;
 	margin: auto;
 	position: relative;
 	bottom:0;
@@ -77,6 +76,7 @@ article {
 		padding-right: 4rem;
 		margin-left: 0;
 		margin-right: 17.5rem; 
+		min-height: 8rem;
 	}
 }
 
@@ -141,7 +141,7 @@ article {
 .content__standfirst {
 	font-size: 1.5rem;
 	font-weight: 300;
-	line-height: 1.2;
+	line-height: 1.3;
 	p {
 		margin: 0;
 	}

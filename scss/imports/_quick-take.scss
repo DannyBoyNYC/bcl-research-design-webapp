@@ -5,11 +5,16 @@
     padding-right: 0.875rem;
     border-left: 4px solid $link;
     margin: 1rem 0;
-    // background: $lightgray;
      :last-child {
         margin-bottom: 0;
     }
+    h3 {
+        margin-top: 0;
+    }
     h4 {
+        margin-top: 0;
+    }
+    h5 {
         margin-top: 0;
     }
 }

@@ -97,7 +97,8 @@
 		right:-17.5rem;
 		.toc-container {
 			display: flex; 
-			flex-direction: row
+			flex-direction: row;
+			// overflow: scroll;
 		}
 		.menu-bug {
 			width: 20%;
@@ -106,9 +107,9 @@
 		}
 		.toc__date {
 			margin-left:0;
-					.day {
-			display: inline;
-		}
+			.day {
+				display: inline;
+			}
 		}
 		img {
 			width: 4rem; 
@@ -119,11 +120,16 @@
 		div {
 			display: flex;
 			flex-direction: column;
-			width: 80%;
+			width: 98%;
 		}
 		.toc__business-unit {
 			display: inline-block;
 			margin-bottom: 0.25rem;
+			// ellided text
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 191px;
 		}
 		.toc__pubtitle {
 			font-size: 1.2rem;

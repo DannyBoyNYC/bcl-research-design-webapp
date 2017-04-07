@@ -112,8 +112,8 @@ h4 + p {
 	margin-top: 0.25rem;
 }
 
-// heading 3
-h5 {
+// heading 3 and 4
+h5, h6 {
 	font-size: 1rem;
 	color: $text;
 	font-weight: 700;
@@ -122,6 +122,15 @@ h5 {
 }
 
 h5 + p {
+	margin-top: 0.25rem;
+}
+
+// heading 4
+h6 {
+	font-style: italic;
+}
+
+h6 + p {
 	margin-top: 0.25rem;
 }
 
