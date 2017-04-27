@@ -1,0 +1,14 @@
+<svg width="32px" height="32px" class="icn-toc" viewBox="0 0 32 32" version="1.1">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icn">
+            <ellipse id="Oval" stroke="#000000" stroke-width="1.93" cx="15.8300448" cy="12.4460362" rx="11.4811986" ry="11.4460362"></ellipse>
+            <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" x="11.4835411" y="7.81328266" width="12.2638488" height="1.85310142"></rect>
+            <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" x="11.4835411" y="11.5194855" width="12.2638488" height="1.85310142"></rect>
+            <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" x="11.4835411" y="15.2326549" width="12.2638488" height="1.85310142"></rect>
+            <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" x="7.82185638" y="7.81328266" width="2.03349287" height="1.85310142"></rect>
+            <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" x="7.82185638" y="11.5194855" width="2.03349287" height="1.85310142"></rect>
+            <rect id="Rectangle-path" fill="#000000" fill-rule="nonzero" x="7.82185638" y="15.2326549" width="2.03349287" height="1.85310142"></rect>
+            <polygon id="Triangle" fill="#000000" points="15.809081 31.0583496 13.7126966 28.1004677 17.9054654 28.1004677"></polygon>
+        </g>
+    </g>
+</svg>
