@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235 -->
+<html class="x-border-box x-strict"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Barclays Live</title>
+		<link rel="stylesheet" type="text/css" href="./ext-all.css">
+		<link rel="stylesheet" type="text/css" href="./relatedResearch.css">
+		<link rel="stylesheet" type="text/css" href="./carousel.css">
+		<script type="text/javascript" src="./ext-all.js"></script>
+		<script type="text/javascript" src="./dvGen.js"></script>
+		<script type="text/javascript" src="./relatedResearch.js"></script>
+		<script language="javascript" src="./barcaplive.js"></script><script language="Javascript" src="./chrome.js"></script>
+        
+		
+		<script type="text/javascript">
+			
+	var linkArray = [];
+	var flag = false;
+	var counter = 0;
+	var permanentlyDisableEmail = false;
+	var verifyIframeLoad = false;
+	var shareLinkRegExp = new RegExp("(dv\\.search|dv\\.xslProcessor|multipartViewer\\.jsp|documentCommentSummary\\.jsp).*(docID|pubID|docviewID)\\=(\\d+)", "im");
+	var tapComponent = null;
+	var scriptLoaded = false;
+
+function isInsecure() {
+	return parent.isInsecure;
+}
+function isAnonymous() {
+	return parent.isAnonymous;
+}
+function isFromLinkBack() {
+	return parent.isFromLinkBack;
+}
+function isGenericLinkBackId() {
+	return parent.isGenericLinkBackId;
+}
+function isEligibleForShare(loc){
+	if(isInsecure() || (isAnonymous() && !isFromLinkBack()) || isGenericLinkBackId()) {
+		return false;
+	}
+	var tt = /(http|https):\/\/my(qa|stage)?.barcapint.com/im.test(loc);
+	var tt1 = /https:\/\/live(qa|stage)?.barcap.com/im.test(loc);
+	var tt2 = /https:\/\/research(-qa|-uat)?.barclayscorporate.com/im.test(loc);
+	permanentlyDisableEmail = false;
+	if(!tt && !tt1 && !tt2){ 
+		permanentlyDisableEmail = true;
+		return false;
+	}
+	return true;    	
+}
+
+
+function setHistoryButton()
+{
+	var loc = "";
+		try{
+			loc = top.popupContent.location.href;
+		}catch(e){
+			//accessing external site
+			loc ="";
+	}
+	if(loc.length > 0 && !isInsecure() && !isAnonymous() && !isGenericLinkBackId()){ //if coming from live and url has /PRC/, it is encoded link, do not show the share nugget
+		var css = ["/RSR_S/css/watch.css"];
+		for(var i = 0,len = css.length; i < len; i++) {
+			var link = document.createElement('link');
+	        link.setAttribute('rel', 'stylesheet');
+	        link.setAttribute('type', 'text/css');
+	        link.setAttribute('href', css[i]);
+	        document.getElementsByTagName('body')[0].appendChild(link);
+		}
+		var scripts = [ "/RSR_S/jslib/CarouselUtil.js",
+		                "/RSR_S/jslib/ManageClientPanel.js",
+	                     "/RSR_S/jslib/watch.js",
+	                     "/RSR_S/jslib/dvExtUtil.js"];
+	    var totalNoOfScripts = scripts.length;
+		if(!scriptLoaded) {
+			var scriptLoadCounter = 0;
+			for(var i = 0,len = scripts.length; i < len; i++) {
+	            var script = document.createElement('script');
+	            script.setAttribute('type', 'text/javascript');
+	            script.setAttribute('src', scripts[i]);
+	            script.onreadystatechange = function () {
+	                if (this.readyState == 'loaded' || this.readyState == 'complete') {
+	                	scriptLoadCounter += 1;
+	                    if(scriptLoadCounter == totalNoOfScripts) {
+	                    	handleShare();
+	                    }
+	                }
+	            };
+	            script.onload = function () {
+	            	scriptLoadCounter += 1;
+	            	if(scriptLoadCounter == totalNoOfScripts) {
+	                	handleShare();
+	                }
+	            };
+	            document.getElementsByTagName('body')[0].appendChild(script);
+			} 
+		} else {
+			handleShare();
+		}
+	} else {
+		handleShare();
+	}
+	
+}
+
+function handleShare() {
+		//check the loc here . if it is external site it gives access denied
+		var loc = "";
+		try{
+			loc = top.popupContent.location.href;
+		}catch(e){
+			//accessing external site
+			permanentlyDisableEmail = true;
+			linkArray.push("some_external_site"+(counter++));
+		}
+		
+		hideShareLink();
+		if(isEligibleForShare(loc)){
+			updateEmailLink();
+		}
+		
+		var linkTop = "";
+		if(linkArray.length > 0){
+			linkTop = linkArray[linkArray.length -1];
+		}
+		
+		if(
+			(loc.indexOf("&BEGINNING=YES") >= 0) ||
+			(loc.indexOf("?BEGINNING=YES") >= 0) ||
+			(linkTop.indexOf("&BEGINNING=YES") >=0) ||
+			(linkTop.indexOf("?BEGINNING=YES") >=0) 
+		)
+		{
+			if(document.getElementById("new_back_button"))
+			{
+				var elemBack = document.getElementById("new_back_button");
+				elemBack.style.display = "none";
+			}
+	
+			if(document.getElementById("new_close_button"))
+			{
+				var elemClose = document.getElementById("new_close_button");
+				elemClose.style.display = "block";
+			}
+		}
+		else
+		{
+
+			if(document.getElementById("new_back_button"))
+			{
+				var elemBack = document.getElementById("new_back_button");
+				elemBack.style.display = "block";
+			}
+			if(document.getElementById("new_close_button"))
+			{
+				var elemClose = document.getElementById("new_close_button");
+				elemClose.style.display = "none";
+			}
+		}
+
+}
+
+function showErrorMsg(){
+	var emailLinkMsg = document.getElementById("emailLinkMsg");
+	emailLinkMsg.innerHTML = "Sorry, an error has occurred.";
+}
+
+
+function updateEmailLink(){
+	
+	try{
+		var loc= top.popupContent.location.href;
+	}catch(e){
+	
+	}
+	
+	if(
+		(loc.indexOf("&BEGINNING=YES") >= 0) ||
+		(loc.indexOf("?BEGINNING=YES") >= 0)
+	){
+		linkArray.length = 0;
+	}
+	
+	
+	
+	
+	var locTemp = loc;
+		
+	if(!linkArray.length || loc != linkArray[linkArray.length -1]){
+		if(
+			((loc.indexOf("&BEGINNING=YES") >= 0) || loc.indexOf("?BEGINNING=YES") >= 0)
+			&& loc != top.popupContent.location.href
+		){
+			locTemp = top.popupContent.location.href;
+		}
+		linkArray.push(locTemp);
+	}
+	
+	if(permanentlyDisableEmail === true){
+		return;
+	}
+	
+	showHideShareLink(loc);
+}
+
+function getNavigatorPlugin (name) {
+    for(key in navigator.plugins) {
+      var plugin = navigator.plugins[key];
+      if(plugin.name == name) return plugin;
+    }
+};
+
+function hasPrint() {
+    var showPrint = false;
+    try {
+        var isIE = /*@cc_on!@*/false || !!document.documentMode;
+        var isEdge = !isIE && !!window.StyleMedia;
+        var isChrome = !!window.chrome && !!window.chrome.webstore;
+        if(isIE) {
+            showPrint = true;
+        } else if(isChrome) {
+            var popupContentWindow = top.frames["popupContent"];
+            var myIFrameContent = popupContentWindow.document.body.innerHTML;
+            if(myIFrameContent.indexOf('type="application/pdf"') > -1){
+                var plugin =  getNavigatorPlugin('Adobe Acrobat');
+                if(!plugin){
+                    showPrint = true;
+                }
+            } else {
+                showPrint = true;
+            }
+        }
+    } catch(e){}
+
+    return showPrint;
+}
+
+function isEligibleForRelResearch(publication,myGroups) {
+	if(myGroups.contains("RSR_RELATED_RESEARCH") 
+			&& publication.groupId != "4") {
+		var publicationDate = publication.pubDate;
+		var dt = new Date();
+		dt.setMonth(dt.getMonth() - 6);
+		dt.setHours(0);
+		dt.setMinutes(0);
+		dt.setSeconds(0);
+		dt.setMilliseconds(0);
+		
+		var pubDate = Ext.Date.parse(publicationDate,"m/d/y");
+		pubDate.setHours(0);
+		pubDate.setMinutes(0);
+		pubDate.setSeconds(0);
+		pubDate.setMilliseconds(0);
+		
+		return pubDate >= dt;
+	} else {
+		return false;
+	}
+}
+
+function showHideShareLink(loc){
+	
+	var matches = shareLinkRegExp.exec(loc);
+	if(matches && matches.length == 4){
+		var url = "/" + parent.contextPath + "/servlets/dv.xslProcessor?xslURL=/RSL/xsl/publicationReaderJSON.xsl&viewerTitle=0&contentType=json&characterSet=UTF-8&showSRCID=1&xmlURL=%2FRSL%2Fservlets%2Fdv.search%3FdateRange%3D25%2Byears%26deptType%3DHIDDEN%26resultDetail%3DLONG%26characterSet%3DUTF-8%26";
+		var requestType = matches[1];
+		var idType = matches[2];
+		var idValue = matches[3];
+		if("docID" == idType){
+			url += "docIDSearch%3D"+idValue;
+		}else{
+			url += "pubIDSearch%3D"+idValue;
+		}
+		
+		if("docID" == idType){
+			url += "&xslDocIDSearch="+idValue;
+		}else{
+			url += "&xslPubIDSearch="+idValue;
+		}
+		hideShareLink();
+					
+		Ext.Ajax.request({
+			url: url,
+			method: 'get',
+			params: {dt1:(new Date()).getTime()}, 
+			success: function(response) {
+					
+					var pubs = Ext.decode(Ext.String.trim(response.responseText));
+					var showPrint = false;
+					if(requestType != "multipartViewer.jsp"){
+						showPrint = hasPrint();
+					}
+ 					//debugger;
+ 					if(pubs.publications && pubs.publications.length > 0){
+ 						var pub = pubs.publications[0];
+ 						
+ 						if( pub.client == "1" && pub.groupId != "5"  && ( pub.hidden == 0 || (pub.hidden == "1" && pub.deptId == "228"))){
+
+ 							var publications = pubs.publications;
+	 						if(publications.length > 1){
+	 							for(var i=0; i < publications.length; i++){
+	 								if(!publications[i].srcId){
+	 									pub = publications[i];
+	 									break;
+	 								}
+	 							}
+	 						}
+	 						
+	 						var pubId = pub.deptId == '228' ? (pub.srcId || pub.pubId) : pub.pubId; 
+	 						var pubTypeName = (pub.pubTypeName && pub.pubTypeName.toUpperCase()) || "";
+	 						if(pubTypeName.indexOf("PENDING APPROVAL") > -1 || pubTypeName.indexOf("PENDING RELEASE") > -1 
+	 							|| pubTypeName.indexOf("DROPPED COVERAGE") > -1
+	 							|| (pub.groupId == "4" 
+	 									&& pub.deptId != "216" 
+	 									&& pub.deptId != "257" 
+	 									&& pub.deptId != "269"  
+	 									&& pub.deptId != "275") //Hide utility for indices if its other tha specified depts
+ 							){
+	 							hideShareLink();
+	 							return;
+	 						}
+
+
+ 								Ext.Ajax.request({
+									url: "/" + parent.contextPath +  '/jsp/invokeNugget.jsp?nuggetID=GET_GROUP_MEMBERSHIP_JS',
+									method: 'get',
+									success: function(response) {
+										eval(response.responseText);
+										showButtons(myGroups);
+		 								if(isEligibleForRelResearch(pub,myGroups) && requestType != "multipartViewer.jsp") {
+		 									var location = top.popupContent.location.href;
+		 									var isMy = /(http|https):\/\/my(qa|stage)?.barcapint.com/im.test(location);
+		 									var showTestAlgo = false;
+		 									if(isMy && myGroups.contains("RSR_RELATED_RESEARCH_ALGORITHM")) {
+		 										showTestAlgo = true;
+		 									}
+		 									showRelatedResearch(pubId,showTestAlgo);
+		 								}
+		 								if(!isAnonymous()) {
+				 							var isEmployee = ("TRUE" == pubs.isEmployee) ? true : false;
+				 							var isMResearchAllow = myGroups.contains("RSR_MRESEARCH");
+				 							var host = parent.window.location.host;
+				 							if(isEmployee && (host.indexOf(".barclayscorporate.com") >= 0 || parent.userGroup === "CSFCRM")) {
+				 								isEmployee = false;
+				 								isMResearchAllow = false;
+				 							}
+											showShareLink({pubId:pubId,
+												  docId:pub.docId,
+												  userLogin:pubs.userLogin,
+												  isEmployee:isEmployee,
+												  isIndexClient:myGroups.contains("RSR_INDEX_ONLY"),
+												  isWealthEmployee:myGroups.contains("WEALTH_EMPLOYEE_ONLY"),
+												  isHNWClient:myGroups.contains("RSR_WEALTH_HNW_EXCLUDE"),
+												  isBarcorpRetail:myGroups.contains("RSR_BARCORP_RETAIL_EXCLUDE"),
+												  isMResearchAllow:isMResearchAllow,
+												  isMResearchDeny:myGroups.contains("RSR_MRESEARCH_DENY"),
+												  pubTitle:pub.title,
+												  showPrint:showPrint
+											});
+		 								}
+										return;
+									},
+									failure: function() {
+									}
+								});
+ 						}
+					}
+					
+					
+				},
+				failure: function() {
+					
+					hideShareLink();
+	
+				}
+			}
+		);
+	}else{
+		hideShareLink();
+	
+	}
+}
+
+function showRelatedResearch(pubId,showTestAlgo) {
+	top.document.getElementById("popupLogo").height = "125";
+	var el = document.getElementById("relatedResearchcontainer");
+	el.innerHTML = "";
+	Ext.create('com.barclays.RelatedResearch.view.PublicationList',{
+		pubId:pubId,
+		showTestAlgo:showTestAlgo,
+		contextPath:parent.contextPath,
+		renderTo:el
+	});
+}
+function hideRelatedResearch() {
+	top.document.getElementById("popupLogo").height = "45";
+	var relatedResearchEL =document.getElementById("relatedResearchcontainer");
+	if(relatedResearchEL) {
+		relatedResearchEL.innerHTML = "";
+	}
+}
+function handleBackClick(){
+	hideRelatedResearch();
+	window.top.history.go(-1);
+	
+}
+
+function hideShareLink(){
+	if(tapComponent){
+		try{
+			tapComponent.hide();
+		}catch(ee){
+		}
+	}
+	try{
+		var toolActionPanelContainer = Ext.dom.Query.selectNode(".toolActionPanelContainer").innerHTML = "";
+		var flyoutItemPanel  = Ext.dom.Query.selectNode(".flyoutItemPanel",Ext.get(top.document.body).dom);
+		if(toolActionPanelContainer) {
+			toolActionPanelContainer.innerHTML = "";
+		}
+		if(flyoutItemPanel) {
+			top.document.body.removeChild(flyoutItemPanel);
+		}
+		tapComponent = null;
+		hideRelatedResearch();
+	}catch(ee){}
+}
+
+function showShareLink(obj){
+	if(tapComponent == null) {
+		var isQuickLinksEnabled = false;
+		if(obj.isMResearchAllow && !obj.isMResearchDeny) {
+			Ext.Ajax.request({
+				url:'/BC/S/shareItem/getAllFromQuickLists',
+				scope: this,
+				success: function(response,opts){
+					var quickLinks = Ext.decode(Ext.String.trim(response.responseText));
+					if(quickLinks.length > 0) {
+						for(var i = 0; i < quickLinks.length; i++) {
+							if(obj.pubId == quickLinks[i].id) {
+								isQuickLinksEnabled = true;
+								break;
+							}
+						}
+					}
+					obj.isQuickLinksEnabled = isQuickLinksEnabled;
+					renderPublicationUtility(obj);
+				},
+				failure: function(response,opts){
+	
+				}
+			});
+		} else {
+			obj.isQuickLinksEnabled = false;
+			renderPublicationUtility(obj);
+		}
+	}
+}
+
+function renderPublicationUtility(obj) {
+	var containerEl = Ext.get(Ext.dom.Query.selectNode(".toolActionPanelContainer"));
+	var itemEl = Ext.get(Ext.DomQuery.selectNode(".shareNewToolActionPanel",containerEl.dom));
+	if(!itemEl) {
+		tapComponent = Ext.create('com.barclays.DV.view.sharenew.ShareNewToolActionPanel',{
+			 pubId:obj.pubId,
+			 pubTitle:obj.pubTitle,
+			 isMResearchAllow:obj.isMResearchAllow,
+			 isMResearchDeny:obj.isMResearchDeny,
+			 isEmployee:obj.isEmployee,
+			 isIndexClient:obj.isIndexClient,
+			 isWealthEmployee:obj.isWealthEmployee,
+			 isHNWClient:obj.isHNWClient,
+			 isBarcorpRetail:obj.isBarcorpRetail,
+			 userLogin:obj.bclId,
+			 isQuickLinksEnabled:obj.isQuickLinksEnabled,
+			 showPrint:obj.showPrint,
+			 targetWindow: window.top
+	   });
+		tapComponent.render(containerEl);
+	}
+}
+
+function selectAll(obj){
+	obj.select();
+	try{
+		Copied = obj.createTextRange();
+		Copied.execCommand("RemoveFormat");
+		Copied.execCommand("Copy");
+	}catch(e){
+	}
+}
+
+
+
+function handleRefreshOnload(){
+	showHeaderLogo();
+	/*if user refreshes the top frame handle to show email link and back/close button */
+	if(!linkArray || linkArray.length == 0){
+		setHistoryButton();
+	}
+}
+
+function closeWindow(){
+	if(Ext.isWebKit){
+		window.top.closeWindow();
+	}else{
+		top.close();
+	}
+}		
+
+function showHeaderLogo() {
+	var headerLogo = document.getElementById("header-logo");
+	var host = parent.window.location.host;
+	if(host.indexOf(".barclayscorporate.com") >= 0 || parent.userGroup === "CSFCRM") {
+		headerLogo.src = "/publiccp/RSR/nyfipubs/barcap-email/logo-231x55.gif";
+		headerLogo.className  = "dvBCLLogo";
+	}
+	headerLogo.style.display = "block";
+}
+
+function showButtons(myGroups) {
+	var backCloseContainerEL = document.getElementById("back-close-button-container");
+	var launchBLContainerEL = document.getElementById("launch-bl-button-container");
+	
+	if((isInsecure() || isAnonymous()) && !parent.inPopup && !myGroups.contains("RSR_SUBSCRIPTIONS_ONLY")) {
+		launchBLContainerEL.style.display = "block";
+	} else {
+		backCloseContainerEL.style.display = "block";
+	}
+}
+
+function goToBCL() {
+	var bclUrl = "/BC/Redirect/Publications?uri=%2FBC%2Fbarcaplive%3FmenuCode%3DMENU_FI_WELCOME%26encodedLinkRedirect=Y";
+	var bcLiteVersion = false;
+	var targetObj = this;
+	try{
+		while (targetObj.name != 'bhBody' && targetObj != top) {targetObj = targetObj.parent;}
+		if (targetObj == this) {bcLiteVersion = true;}				
+	}catch (err){}
+	targetObj.document.location.href=bclUrl;
+
+}
+
+		</script>
+		<style type="text/css">
+			.popupHeaderWrap #new_close_button {
+				background-color: #00aeef;
+				padding-left:20px;
+				padding-right:20px;
+				padding-top:5px;
+				padding-bottom:5px;
+				border: #cecece 1px solid;
+				cursor: pointer;
+				color: #ffffff;
+				text-decoration:none;
+				font: 13px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+				behavior:url(/PRC_S/jsframeworks/pie/PIE.htc); 
+				border-radius: 4px;
+				position:relative;
+			}
+			.popupHeaderWrap #new_back_button {
+				background-color: #00aeef;
+				padding-left:20px;
+				padding-right:20px;
+				padding-top:5px;
+				padding-bottom:5px;
+				border: #cecece 1px solid;
+				cursor: pointer;
+				color: #ffffff;
+				text-decoration:none;
+				font: 13px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+				behavior:url(/PRC_S/jsframeworks/pie/PIE.htc); 
+				border-radius: 4px;
+				position:relative;
+			}
+			.popupHeaderWrap .new_buttons {
+				margin-right:20px;
+				padding-top: 5px;
+				overflow:hidden;
+				float:right;
+			}
+			.dvBCLLiveHeaderLogo {
+				margin-left:28px;
+				margin-top:8px;
+				float:left;
+			}
+			.dvBCLLogo {
+				margin-left:0px;
+				margin-top:-18px;
+				float:left;
+			}
+			.launchblbtn {
+				width: auto;
+				background: #00aaef;
+				border: none;
+				float: right;
+				padding: 6px 20px;
+				color: #fff;
+				border-radius: 4px;
+				font-size: 12px;
+				font-family: Verdana, sans-serif;
+				font-weight: bold;
+				margin-top: 12px;
+				margin-bottom: 6px;
+				margin-right:20px;
+				cursor:pointer;
+			}
+		</style>
+	</head>
+	<body onload="top.focus();handleRefreshOnload();" marginwidth="0" marginheight="0" class="x-body x-webkit x-chrome x-mac x-reset" id="ext-gen1018">
+		<div>
+			<img id="header-logo" src="./BL_logo_final.png" class="dvBCLLiveHeaderLogo" style="display: block;">
+			<div class="popupHeaderWrap">
+				<div id="back-close-button-container" class="new_buttons" style="display: block;">
+					<div style="margin-left:10px"><a id="new_back_button" onclick="javascript:handleBackClick();return false;" class="btn back_button" style="display: none;" href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#">Back</a></div>
+					<div style="margin-left:10px"><a id="new_close_button" onclick="closeWindow();" class="btn close_button" style="display: block;" href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#">Close</a></div>
+				</div>	
+				<div id="launch-bl-button-container" onclick="goToBCL()" class="launchblbtn" style="display:none;">Launch Barclays Live</div>
+
+				<div class="toolActionPanelContainer" id="ext-gen1089"><div id="shareNewToolActionPanel-1054" class="x-component shareNewToolActionPanel x-component-default"><div class="clickable watch-list popup"><ul><li type="quickLinks" id="quicklinks_2310863" class="quickLinks quickLinksIcon clickable "><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#"></a></li><li type="flyout" class="action actionIcon clickable" id="ext-gen1166"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#"></a></li></ul><div style="clear:both"></div></div></div></div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div id="relatedResearchcontainer"><div id="publicationList-1057" class="x-container related-research x-container-default"><div class="main-container" id="ext-gen1155"><div class="related-research-container" style="z-index:9999;margin:0 20px;"><div class="header"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="related-research-icon related-research-icon-expand clickable"><span>Related Research</span></a></div><div class="header-algo feedback clickable">Test Algorithm</div><div class="content-holder" style="overflow:hidden" id="ext-gen1165"><div class="content" style="width: 98%; overflow:hidden;" id="ext-gen1156"><div id="relatedResearchCarousel-1062" class="x-container x-container-default"><div id="relatedResearchCarousel-1062-clearEl" class="x-clear" role="presentation"></div></div><div class="ux-carousel-container" id="ext-gen1159" style="width: 100%;"><div class="ux-carousel-slides-wrap" id="ext-gen1160" style="height: 78px; width: 1832px; left: 0px;"><div class="ux-carousel-slide" id="ext-gen1161" style="width: 916px;"><ul class="pub-row" style="height: 78px;"><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2308999" uri="/PRC/servlets/dv.search?docID=103797456&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Commodity Credit Weekly</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="Earnings Upbeat, Oil Downbeat" pubid="2308999" class="pub-title pub-title-2308999 clickable" uri="/PRC/servlets/dv.search?docID=103797456&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Earnings Upbeat, Oil Downbeat</a></div><div><div class="pubDate">01 May 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2304587" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2304587&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103789577&amp;characterSet=UTF-8">High Grade Instant...</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="Energy and Pipelines: Williams Partners LP (WPZ): Announces Sale of Geismar; Still Value in the Long End" pubid="2304587" class="pub-title pub-title-2304587 clickable" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2304587&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103789577&amp;characterSet=UTF-8">Energy and Pipelines: Williams Partners...</a></div><div><div class="pubDate">17 Apr 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2308862" uri="/PRC/servlets/dv.search?docID=103797190&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Energy, Pipelines, and...</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="April 2017 Performance" pubid="2308862" class="pub-title pub-title-2308862 clickable" uri="/PRC/servlets/dv.search?docID=103797190&amp;resultPrefix=PRC&amp;characterSet=UTF-8">April 2017 Performance</a></div><div><div class="pubDate">01 May 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2310288" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2310288&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103800069&amp;characterSet=UTF-8">High Grade Instant...</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="Energy and Pipelines: Canadian Natural Resources Limited (CNQCN): 1Q17 Results - Free Cash Flow; Issuance Coming" pubid="2310288" class="pub-title pub-title-2310288 clickable" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2310288&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103800069&amp;characterSet=UTF-8">Energy and Pipelines: Canadian Natural...</a></div><div><div class="pubDate">04 May 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2302279" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2302279&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103785896&amp;characterSet=UTF-8">High Grade Instant...</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="HG Research: Commodity Credits: QPS Highlight - ESP Scores in Commodity Credit Sectors" pubid="2302279" class="pub-title pub-title-2302279 clickable" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2302279&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103785896&amp;characterSet=UTF-8">HG Research: Commodity Credits: QPS...</a></div><div><div class="pubDate">04 Apr 2017</div><div style="clear:both;"></div></div></div></li></ul></div><div class="ux-carousel-slide" id="ext-gen1162" style="width: 916px;"><ul class="pub-row" style="height: 78px;"><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2304366" uri="/PRC/servlets/dv.search?docID=103789212&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Commodity Credit Weekly</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="Shaking It Off" pubid="2304366" class="pub-title pub-title-2304366 clickable" uri="/PRC/servlets/dv.search?docID=103789212&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Shaking It Off</a></div><div><div class="pubDate">13 Apr 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2306285" uri="/PRC/servlets/dv.search?docID=103792334&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Commodity Credit Weekly</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="It&#39;s Not Just Politics" pubid="2306285" class="pub-title pub-title-2306285 clickable" uri="/PRC/servlets/dv.search?docID=103792334&amp;resultPrefix=PRC&amp;characterSet=UTF-8">It's Not Just Politics</a></div><div><div class="pubDate">21 Apr 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2303218" uri="/PRC/servlets/dv.search?docID=103787405&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Commodity Credit Weekly</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="Cyclones, Sovereigns, and Syria" pubid="2303218" class="pub-title pub-title-2303218 clickable" uri="/PRC/servlets/dv.search?docID=103787405&amp;resultPrefix=PRC&amp;characterSet=UTF-8">Cyclones, Sovereigns, and Syria</a></div><div><div class="pubDate">07 Apr 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2310794" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2310794&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103800949&amp;characterSet=UTF-8">High Grade Instant...</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="Energy and Pipelines: Husky Energy Inc (HSECN): 1Q17 Results - Reports Breakevens Sub-$40/bbl with C$2bn in Cash; Spreads Still Offer Value" pubid="2310794" class="pub-title pub-title-2310794 clickable" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2310794&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103800949&amp;characterSet=UTF-8">Energy and Pipelines: Husky Energy Inc...</a></div><div><div class="pubDate">05 May 2017</div><div style="clear:both;"></div></div></div></li><li class="pub-info"><div class="publications"><div class="l1Title"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" class="l1-title clickable" pubid="2309452" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2309452&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103798383&amp;characterSet=UTF-8">High Grade Instant...</a></div><div class="pubTitle"><a href="http://my.barcapint.com/PRC_S/html/bcllogo.html?dc=1494257005235#" title="Energy and Pipelines: Anadarko Petroleum Corporation (APC): 1Q17 Results - Difficult to Parse, but Fine for Credit" pubid="2309452" class="pub-title pub-title-2309452 clickable" uri="/PRC/jsp/documentCommentSummary.jsp?pubID=2309452&amp;stringType=COMMENT&amp;customizeForView=YES&amp;docID=103798383&amp;characterSet=UTF-8">Energy and Pipelines: Anadarko Petroleum...</a></div><div><div class="pubDate">02 May 2017</div><div style="clear:both;"></div></div></div></li></ul></div></div></div><div class="ux-carousel-nav nav-start ux-carousel-nav-left" id="ext-gen1163" style="display: block; visibility: hidden;"><div class="ux-carousel-nav-holder"><div class="ux-carousel-nav-prev clickable"></div><div class="ux-carousel-nav-next clickable"></div></div></div><div class="ux-carousel-nav nav-start" id="ext-gen1164" style="display: block; visibility: hidden;"><div class="ux-carousel-nav-holder"><div class="ux-carousel-nav-next clickable"></div><div class="ux-carousel-nav-prev clickable"></div></div></div></div></div></div></div><div id="publicationList-1057-clearEl" class="x-clear" role="presentation"></div></div></div>
+	
+
+<link rel="stylesheet" type="text/css" href="./watch.css"><script type="text/javascript" src="./CarouselUtil.js"></script><script type="text/javascript" src="./ManageClientPanel.js"></script><script type="text/javascript" src="./watch.js"></script><script type="text/javascript" src="./dvExtUtil.js"></script><link rel="stylesheet" type="text/css" href="./watch.css"><script type="text/javascript" src="./CarouselUtil.js"></script><script type="text/javascript" src="./ManageClientPanel.js"></script><script type="text/javascript" src="./watch.js"></script><script type="text/javascript" src="./dvExtUtil.js"></script><link rel="stylesheet" type="text/css" href="./watch.css"><script type="text/javascript" src="./CarouselUtil.js"></script><script type="text/javascript" src="./ManageClientPanel.js"></script><script type="text/javascript" src="./watch.js"></script><script type="text/javascript" src="./dvExtUtil.js"></script><link rel="stylesheet" type="text/css" href="./watch.css"><script type="text/javascript" src="./CarouselUtil.js"></script><script type="text/javascript" src="./ManageClientPanel.js"></script><script type="text/javascript" src="./watch.js"></script><script type="text/javascript" src="./dvExtUtil.js"></script></body></html>

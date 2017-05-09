@@ -1,0 +1,2358 @@
+@font-face {
+font-family: 'Expert-Sans-Bold';
+  src: url(/BC_S/bl_rebrand/css/fonts/expertsans-bold-webfont.eot);
+  src: url(/BC_S/bl_rebrand/css/fonts/expertsans-bold-webfont.eot?#iefix) format('embedded-opentype'), url(/BC_S/bl_rebrand/css/fonts/expertsans-bold-webfont.woff) format('woff'), url(/BC_S/bl_rebrand/css/fonts/expertsans-bold-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Expert-Sans-Regular';
+  src: url(/BC_S/bl_rebrand/css/fonts/expertsans-regular-webfont.eot);
+  src: url(/BC_S/bl_rebrand/css/fonts/expertsans-regular-webfont.eot?#iefix) format('embedded-opentype'), url(/BC_S/bl_rebrand/css/fonts/expertsans-regular-webfont.woff) format('woff'), url(/BC_S/bl_rebrand/css/fonts/expertsans-regular-webfont.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Expert-Sans-Light';
+  src: url(/BC_S/bl_rebrand/css/fonts/expertsans-light-webfont.eot);
+  src: url(/BC_S/bl_rebrand/css/fonts/expertsans-light-webfont.eot?#iefix) format('embedded-opentype'), url(/BC_S/bl_rebrand/css/fonts/expertsans-light-webfont.woff) format('woff'), url(/BC_S/bl_rebrand/css/fonts/expertsans-light-webfont.ttf) format('truetype');
+}
+a {
+	text-decoration:none;
+}
+.flyoutItemPanel {
+	z-index:99999;
+}
+.flyoutItemPanel  li span {
+	padding:0;
+}
+.popupHeaderWrap{
+	height: 45px;
+	padding-top: 4px;
+	min-width: 560px;
+	float:right;
+}
+.popupHeaderWrap .toolActionPanelContainer {
+	padding-top: 4px;
+	overflow:hidden;
+	float:right
+}
+.popupHeaderWrap .quicklinks-container {
+	float:right;
+	border:0;
+	border-right:#efefef 1px solid;
+	padding-top:4px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	margin:0;
+	margin-top:4px;
+}
+.popupHeaderWrap .watch-list ul {
+	margin:0;
+	padding:0;
+}
+.inPage .watch,
+.inPage .subscribe,
+.inPage .action{
+	border:0;
+	padding:0;
+	padding-left:4px !important;
+	padding-right:4px !important;
+	padding-top:2px !important;
+}
+.inPage .quickLinks{
+	border:0;
+	padding:0;
+	padding-left:4px !important;
+	padding-right:4px !important;
+	padding-top:6px !important;
+}
+.popup .watch,
+.popup .subscribe,
+.popup .action{
+	border-right:#efefef 1px solid;
+	padding:0;
+	padding-left:4px !important;
+	padding-right:4px !important;
+	float:left;
+}
+
+.popup .quickLinks{
+	border-right:#efefef 1px solid;
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+	padding-left:4px !important;
+	padding-right:8px !important;
+	float:left;
+}
+
+.inPage .watchIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/watch24px_gray.png") no-repeat;
+	width:24px;
+	height:24px;
+	display:block;
+	outline: none;
+
+}
+.inPage .watchIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/watch24px_cyan.png") no-repeat;
+	width:24px;
+	height:24px;
+	display:block;
+	outline: none;
+
+}
+.flyOut .watchIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/watch_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .watchIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/watch_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.popup .watchIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/watch_cyan.png") no-repeat;
+	width:36px;
+	height:36px;
+	display:block;
+	outline: none;
+
+}
+.popup .watchIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/watch_cyan.png") no-repeat;
+	width:36px;
+	height:36px;
+	display:block;
+	outline: none;
+
+}
+.inPage .subscribeIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribe24px_cyan.png") no-repeat;
+	width:24px;
+	height:24px;
+	display:block;
+	outline: none;
+}
+.inPage .subscribeIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribe24px_cyan.png") no-repeat;
+	width:24px;
+	height:24px;
+	display:block;
+	outline: none;
+}
+.flyoutItemPanel  .content {
+	padding:0px;
+	padding-top:10px;
+}
+.analystSubscribeIcon .subscribe {
+	float:left;
+	border:0;
+	padding:0;
+}
+
+.inPage .subscribeText {
+	font: 11px/1.5 verdana, sans-serif;
+	color: #017eb6;
+	cursor: pointer;
+	padding-left:10px;
+}
+.popup .subscribeIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribe_cyan.png") no-repeat;
+	width:36px;
+	height:36px;
+	display:block;
+	outline: none;
+
+}
+.popup .subscribeIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribe_cyan.png") no-repeat;
+	width:36px;
+	height:36px;
+	display:block;
+	outline: none;
+
+}
+
+.inPage .quickLinksIcon a {
+	background:url('/BC_S/css/mresearch/workbook/img/plus_grey.png') no-repeat;
+	width:16px;
+	height:16px;
+	display:block;
+	outline: none;
+}
+.inPage .quickLinksActiveIcon a {
+	background:url('/BC_S/css/mresearch/workbook/img/plus_cyan.png') no-repeat;
+	width:16px;
+	height:16px;
+	display:block;
+	outline: none;
+}
+.popup .quickLinksIcon a {
+	background:url("/BC_S/css/mresearch/workbook/img/plus_grey.png") no-repeat;
+	width:16px;
+	height:16px;
+	display:block;
+	outline: none;
+
+}
+.popup .quickLinksActiveIcon a {
+	background:url("/BC_S/css/mresearch/workbook/img/plus_cyan.png") no-repeat;
+	width:16px;
+	height:16px;
+	display:block;
+	outline: none;
+
+}
+.inPage .actionIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/action24px_cyan.png") no-repeat;
+	width:24px;
+	height:24px;
+	display:block;
+	outline: none;
+}
+
+.popup .actionIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/action_cyan.png") no-repeat;
+	width:36px;
+	height:36px;
+	display:block;
+	outline: none;
+
+}
+
+.flyoutSubscribeByPanel .subscribeMeIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribeMe_cyan.png") no-repeat 50%;
+	width:70px;
+	height:36px;
+	display:block;
+	text-decoration:none;
+	color:#5f5f5f;
+	outline: none;
+}
+.flyoutSubscribeByPanel .subscribeMeIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribeMe_white.png") no-repeat 50%;
+	width:70px;
+	height:36px;
+	display:block;
+	outline: none;
+}
+.flyoutSubscribeByPanel .subscribeMeIcon span {
+	position:relative;
+	top:35px;
+	display:block;
+	text-align:center;
+	color:#5f5f5f;
+	font-family:verdana,sans-serif;
+	height:100%;
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	padding:0;
+	border:0;
+	margin:0;
+}
+.flyOut .viewDocumenteIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/document_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .viewDocumenteIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/document_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .subscribeMeIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribe_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .subscribeMeIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribe_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyoutSubscribeByPanel .subscribeClientIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribeClient_cyan.png") no-repeat 50%;
+	width:70px;
+	height:36px;
+	display:block;
+	text-decoration:none;
+	color:#5f5f5f;
+	outline: none;
+}
+.flyoutSubscribeByPanel .subscribeClientIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribeClient_white.png") no-repeat 50%;
+	width:70px;
+	height:36px;
+	display:block;
+	outline: none;
+}
+.flyoutSubscribeByPanel .subscribeClientIcon span {
+	position:relative;
+	top:35px;
+	display:block;
+	text-align:center;
+	color:#5f5f5f;
+	font-family:verdana,sans-serif;
+	height:100%;
+	font-size:11px;
+	font-family:verdana,sans-serif;
+	padding:0;
+	border:0;
+	margin:0;
+}
+.flyOut .subscribeClientIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribeClient_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;	
+}
+.flyOut .subscribeClientIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/subscribeClient_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .emailMeIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/emailMe_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .emailMeIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/emailMe_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+}
+
+.flyOut .emailToolIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/emailTool_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .emailToolIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/emailTool_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .shareToolIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/share_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .shareToolIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/share_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.flyOut .addToOutlookIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/addToOutlook_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .addToOutlookIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/addToOutlook_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.flyOut .encodedLinkIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/link_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .encodedLinkIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/link_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.flyOut .pubMaintLinkIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/dotAdmin_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .pubMaintLinkIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/dotAdmin_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.flyOut .addToWorkBook a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/addWorkbook_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .addToWorkBook a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/addWorkbook_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.flyOut .libraryIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_library_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.flyOut .libraryIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_library_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.flyOut .printIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/print_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.flyOut .printIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/print_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.alertPanel .btn { 	
+	border:0;
+	position: relative; 
+	color: #017eb6;
+	width: auto;
+	height: auto;
+	padding: 5px 20px;
+	margin:0 auto;
+	margin-bottom:10px;
+	border-radius: 4px;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border: 1px solid #cecece;
+	width:60px;
+}
+.alertPanel .ok-btn {
+	background:#00AEEF;
+	cursor:pointer;
+}
+.alertPanel .ok-btn a {
+	color: #ffffff;
+	cursor: pointer;
+	font: 12px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+	text-decoration:none;
+}
+.alertPanel {
+	z-index:999999 !important;
+}
+.alertPanel,
+.confirmationPanel {
+	position: relative;
+	display:inline-block;
+	background-color:#fff;
+	color: #5f5f5f;
+	height: auto;
+	border: 1px solid #e4e4e4;
+	border-left: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	border-radius: 5px;
+	box-shadow: 1px 1px 8px #cecece;
+	padding:0px;
+}
+.alertPanel .content {
+	margin:20px;
+	margin-bottom:10px;
+	font: 12px/1.5 verdana, sans-serif;
+	color: #5f5f5f;
+}
+.alert-mask-msg {
+	display:none;
+}
+.confirmationPanel .content{
+	margin:20px;
+	font: 13px/1.6 "Expert-Sans-Regular", verdana, sans-serif;
+	color: #5f5f5f;
+}
+.alertPanel .popupCloseIcon,
+.confirmationPanel .popupCloseIcon {
+	display: block;
+	float: right;
+	margin: 4px;
+	padding: 0px;	
+	background-image: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_gray.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 12px;
+	height: 12px;
+}
+.alertPanel .popupCloseIcon:hover,
+.confirmationPanel .popupCloseIcon:hover {
+	text-decoration:none;
+	background-image:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_cyan.png");
+}
+
+.flyoutSubscribeByPanel .content-items li {
+	padding:0;
+	padding-bottom:30px;
+	border-bottom:#efefef 1px solid;
+}
+.flyoutSubscribeByPanel .content-items{
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border:#e4e4e4 1px solid;
+	background-color:#ffffff;
+	box-shadow:1px 1px 8px #cecece;
+	padding:0;
+	padding-top:10px;
+	line-height:100%;
+}
+.flyoutShareNewToolActionPanel .content-items li:hover,
+.flyoutSubscribeByPanel .content-items li:hover {
+	background-color:#00aeef;
+}
+.flyoutShareNewToolActionPanel .internal {
+	font:12px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#fff;
+	padding:3px !important;
+	padding-top:3px !important;
+	padding-bottom:3px !important;
+	padding-left:45px !important;
+	padding-right:3px !important;
+	background-color:#cecece;
+}
+.flyoutShareNewToolActionPanel .internal:hover {
+	background-color:#cecece !important;
+}
+.flyoutShareNewToolActionPanel .content-items li:hover span,
+.flyoutSubscribeByPanel .content-items li:hover span {
+	color:#ffffff !important;
+}
+
+
+.flyoutShareNewToolActionPanel .content-items ul {
+	margin:0;
+}
+.flyoutShareNewToolActionPanel .content-items {
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border:#e4e4e4 1px solid;
+	background-color:#ffffff;
+	box-shadow:1px 1px 8px #cecece;
+	width:168px;
+	padding:0;
+	padding-top:10px;
+}
+.flyoutShareNewToolActionPanel .content-items li:first-child {
+	border:0;
+}
+.flyoutShareNewToolActionPanel .content-items li {
+	padding:0 4px;
+	border-top:#efefef 1px solid;
+}
+.flyoutShareNewToolActionPanel .content-items li a {
+	text-decoration:none;
+}
+.flyoutShareNewToolActionPanel .content-items li span {
+	margin-left:40px;
+	font:13px/1.6 "Expert-Sans-Regular", verdana, sans-serif;
+	font-size:13px;
+	color:#5f5f5f;
+	border:0;
+	line-height:36px;
+}
+
+.flyoutWatchItemPanel .content-items,
+.flyoutSubscriptionItemPanel .content-items{
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border:#e4e4e4 1px solid;
+	background-color:#ffffff;
+	box-shadow:1px 1px 8px #cecece;
+	width:350px;
+}
+.flyoutShareNewToolActionPanel  .content .leftBubbleTop {
+	display:block;
+	position:absolute;
+	top:2px;
+	z-index:9999;
+	margin-left:24px;
+}
+.flyoutShareNewToolActionPanel  .content .rightBubbleTop {
+	display:block;
+	position:absolute;
+	top:2px;
+	z-index:9999;
+	margin-left:124px;
+}
+.flyoutWorkBookItemPanel ul,
+.flyoutWatchItemPanel ul,
+.flyoutSubscribeClientPanel ul,
+.flyoutSubscriptionItemPanel ul {
+	margin:0;
+}
+.flyoutWorkBookItemPanel .content .leftBubbleTop,
+.flyoutWatchItemPanel .content .leftBubbleTop,
+.flyoutSubscribeClientPanel .content .leftBubbleTop,
+.flyoutSubscriptionItemPanel .content .leftBubbleTop {
+	display:block;
+	position:absolute;
+	top:2px;
+	z-index:9999;
+	margin-left:14px;
+}
+
+.flyoutWatchItemPanel .content .rightBubbleTop,
+.flyoutSubscribeClientPanel .content .rightBubbleTop,
+.flyoutSubscriptionItemPanel .content .rightBubbleTop {
+	display:block;
+	position:absolute;
+	top:2px;
+	z-index:9999;
+	margin-left:266px;
+}
+.flyoutSubscribeClientPanel .content-items{
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border:#e4e4e4 1px solid;
+	background-color:#ffffff;
+	box-shadow:1px 1px 8px #cecece;
+	width:775px;
+}
+.flyoutWatchItemPanel .watch-items {
+	overflow:auto;
+	max-height:340px;
+}
+.flyoutSubscriptionItemPanel .subscribe-items {
+	overflow:auto;
+	max-height:340px;
+}
+.flyoutWorkBookItemPanel .alternateWorkbookTpl,
+.flyoutWatchItemPanel .alternateSubscription,
+.flyoutSubscriptionItemPanel .alternateSubscription {
+	color:#5f5f5f;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+	padding:15px 10px;
+	line-height:18px;
+	margin:0;
+}
+.flyoutWorkBookItemPanel .alternateWorkbookTpl a,
+.flyoutWatchItemPanel .alternateSubscription a,
+.flyoutSubscriptionItemPanel .alternateSubscription a {
+	color: #017EB6;
+	text-decoration: none;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+}
+.flyoutWorkBookItemPanel .loading,
+.flyoutWatchItemPanel .loading,
+.flyoutSubscriptionItemPanel .loading {
+	color:#5f5f5f;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+	padding:15px 10px;
+	line-height:18px;
+	margin:0;
+	background:none;
+}
+
+.flyoutWatchItemPanel .subscribe-panel {
+	border:0;
+	border-top:#efefef 1px solid;
+	background-color:#f6f7f7;
+	padding-top:13px;
+	padding-bottom:13px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.flyoutWatchItemPanel .subscribe-panel span {
+	color:#5f5f5f;
+	font-family:"Expert-Sans-Regular", verdana, sans-serif;
+	font-size:13px;
+	line-height:1.6;
+}
+.flyoutWatchItemPanel .subscribe-panel .subscribe-checkbox {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png") 0px -260px;
+	width:19px;
+	height:19px;
+}
+
+.flyoutWatchItemPanel .subscribe-panel .subscribe-checkbox-checked {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png") -114px -260px;
+	width:19px;
+	height:19px;
+}
+
+.flyoutWatchItemPanel .watch-item-info .tile-img {
+	display:inline-block;
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/pagePub.png") no-repeat;
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+	margin:0;
+	padding:0;
+	margin-right:10px;
+	border:0;
+}
+.flyoutWatchItemPanel .watch-item-info .tile-item {
+	padding-bottom:9px;
+	padding-top:9px;
+	padding-left:15px;
+	padding-right:15px;
+	background-color:#f7f7f7;
+	border-top:#efefef 1px solid;
+	border-bottom:#efefef 1px solid;
+	vertical-align:middle;
+	cursor:pointer;
+	color:#5f5f5f;
+	font-family:"Expert-Sans-Regular", verdana, sans-serif;
+	font-size:13px;
+	line-height:1.6;
+}
+.flyoutWatchItemPanel .watch-item-info .tile-item div {
+	font:12px/1.5 verdana, sans-serif;
+	color:#5f5f5f;
+}
+.flyoutWatchItemPanel .watch-item-info .tile-item-even {
+	background-color:#f7f7f7;
+}
+.flyoutWatchItemPanel .watch-item-info .tile-item-odd {
+	background-color:#ffffff;
+}
+.flyoutWatchItemPanel .create-tile-input {
+	float:left;
+	width:180px;
+}
+.flyoutWatchItemPanel .create-tile-input .x-form-item-body  {
+	background-color:#f7f7f7;
+}
+
+.flyoutWatchItemPanel .create-tile-btn {
+	//width:82px;
+	background-color:#00AEEF;
+	border:0;
+	position: relative; 
+	color: #017eb6;
+	width: auto;
+	height: auto;
+	padding: 6px 20px;
+	border-radius: 4px;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+	font-weight: bold;
+	border: 1px solid #cecece;
+	font: 13px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+	margin-left:5px;
+	margin-top:-5px;
+	float:right;
+}
+.flyoutWatchItemPanel .create-tile-btn a {
+	color: #ffffff;
+	cursor: pointer;
+	font: 13px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+	text-decoration:none;
+}
+.flyoutWatchItemPanel .create-tile-btn-disabled {
+	color: #FFF;
+	background-color:#DEDEDE !important; 
+	border:1px solid #DDD;
+}
+.flyoutWatchItemPanel .watch-item-info .new-folder-name-text {
+	margin-top:0;
+}
+.flyoutWatchItemPanel .watch-item-info .new-folder-name-text tr:hover {
+	background:none;
+}
+.flyoutWatchItemPanel .watch-header{
+	margin:0;
+	background-color:#f6f7f7;
+	padding-top:25px;
+	padding-bottom:15px;
+	padding-left:20px;
+	padding-right:20px;
+	color:#406b85;
+	border:0;
+	border-bottom:#e4e4e4 1px solid;
+}
+.flyoutWatchItemPanel .watch-header h3{
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	border:0;
+	margin:0;
+	margin-bottom:20px;
+	padding:0;
+	text-align:center;
+}
+.flyoutWatchItemPanel .watch-header p {
+	margin:0;
+	padding:0;
+	text-align:center;
+	font:12px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+}
+.flyoutWatchItemPanel .email-tip {
+	margin-top:10px;
+	font:12px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+}
+.flyoutWorkBookItemPanel .workbook-info h3,
+.flyoutWatchItemPanel .watch-item-info h3,
+.flyoutSubscribeClientPanel .subscribe-client-info h3,
+.flyoutSubscriptionItemPanel .subscribe-info h3 {
+	margin:0;
+	background-color:#f6f7f7;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	border:0;
+	border-bottom:#e4e4e4 1px solid;
+	text-align:center;
+}
+.flyoutWorkBookItemPanel .workbook-header {
+	margin:0;
+	background-color:#f6f7f7;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	border:0;
+	border-bottom:#e4e4e4 1px solid;
+	text-align:center;
+}
+.flyoutWorkBookItemPanel .workbook-header h3{
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	border:0;
+	margin:0;
+	margin-left:79px;
+	margin-top:5px;
+	padding:0;
+	text-align:center;
+}
+
+.flyoutWatchItemPanel .watch-info li:first-child,
+.flyoutSubscriptionItemPanel .subscribe-info li:first-child {
+	border-top:0;
+	margin-top:0;
+}
+.flyoutWatchItemPanel .watch-info li,
+.flyoutSubscriptionItemPanel .subscribe-info li {
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:0;
+	margin-bottom:0;
+	padding:0;
+	padding-bottom:20px;
+	padding-top:20px;
+	border-top:#e4e4e4 1px solid;
+}
+.flyoutWatchItemPanel .watch-info .itemTitle,
+.flyoutSubscriptionItemPanel .subscribe-info .itemTitle {
+	font:13px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:0; 
+	padding-right:0;
+	margin:0;
+}
+.flyoutWatchItemPanel .watch-info .watch-item,
+.flyoutWatchItemPanel .watch-info .watch-item-info,
+.flyoutSubscriptionItemPanel .subscribe-info .subscribe-item-active,
+.flyoutSubscriptionItemPanel .subscribe-info .subscribe-item {
+	font:13px/1.2 "Expert-Sans-Regular", verdana, sans-serif;
+	color:#007eb6;
+	padding-top:0;
+	padding-bottom:8px;
+	padding-left:0;
+	padding-right:0;
+	margin:0;
+	cursor:pointer;
+	display:inline-block;
+	*display:inline;
+	zoom:1;
+}
+.flyoutWatchItemPanel .watch-info .watch-item:hover,
+.flyoutWatchItemPanel .watch-info .watch-item-info:hover,
+.flyoutSubscriptionItemPanel .subscribe-info .subscribe-item-active:hover,
+.flyoutSubscriptionItemPanel .subscribe-info .subscribe-item:hover {
+	text-decoration:none;
+}
+
+.flyoutSubscriptionItemPanel .subscribe-info .subscribe-item-active {
+	font:13px/1.2 "Expert-Sans-Regular", verdana, sans-serif;
+	color:#5f5f5f;
+}
+/*
+.confirmationPanel {
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border-bottom:#ccc 1px solid;
+	border-top:#e4e4e4 1px solid;
+	border-left:#e4e4e4 1px solid;
+	border-right:#ccc 1px solid;
+	background-color:#ffffff;
+	width:400px;
+	margin:20px;
+	padding:20px;
+}*/
+.new-tile-edit .new-tile-lbl,
+.tile-list .new-tile-editor,
+.new-tile .new-tile-editor {
+	display:none;
+}
+
+.flyoutSubscribeClientPanel .manageClient {
+	padding:15px 20px;
+	//height:480px;
+	overflow:auto;
+}
+.flyoutSubscribeClientPanel .manageClientPanel ul .default-tab:hover {
+	border-bottom:1px solid #999;
+	margin-bottom:0px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel ul .default-tab{
+	display:inline-block;
+	margin-right:25px;
+	font:15px/1.5 verdana, sans-serif;
+	color:#999;
+	text-decoration:none;
+	cursor:pointer;
+	margin-bottom:1px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel ul .active-tab:hover {
+	border-bottom:1px solid #009eda;
+	margin-bottom:0px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel ul .active-tab{
+	font:16px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#017eb6;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .all-list-checkbox,
+.flyoutSubscribeClientPanel .manageClientPanel .list-checkbox {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png") 0px -260px;
+	width:19px;
+	height:19px;
+	float:right;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .all-list-checkbox-checked,
+.flyoutSubscribeClientPanel .manageClientPanel .list-checkbox-checked {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png") -76px -260px;
+	width:19px;
+	height:19px;
+	float:right;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .list-focus {
+	background: url(/RSR_S/nyfipubs/barcap/images/iconsUtility/filterArrowhead.png) no-repeat 100% 50%;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .active-list {
+	background-image: url(/RSR_S/nyfipubs/barcap/images/iconsUtility/filterArrowhead.png) !important;
+	background-repeat:no-repeat;
+	background-position: right 50%;
+	background-color:#bfcdd6 !important;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel li {
+	display:inline-block;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .listComp .next-btn-container {
+	margin-top:30px;
+	margin-bottom:5px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .next-btn-container {
+	float:right;	
+	position:relative;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .next-btn {
+	color:#FFFFFF;
+	text-decoration:none !important;
+	font-weight: bold;
+	font: 13px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+	text-decoration:none;
+	border:0;
+	position: relative; 	
+	width: auto;
+	height: auto;
+	padding: 6px 20px 6px 20px;	
+	border: 1px solid #cecece;
+	border-radius: 4px;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+}
+.flyoutSubscribeClientPanel .manageClientPanel .next-btn-disabled {
+	background-color:#DEDEDE;
+	border:#ddd 1px solid;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .next-btn-enabled {
+	background:#00AEEF;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .next-btn-enabled:hover,
+.flyoutSubscribeClientPanel .manageClientPanel .searchButton:hover {
+	background:#09A2DB;
+}
+.flyoutClientInfoPanel .select-btn-container {
+	float:right;
+	margin-right:20px;
+	margin-top:20px;
+	width:83px;
+	padding-bottom:5px;
+	padding-top:5px;
+	position:relative;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .search-btn-container {
+	width:85px;
+	position:relative;
+	margin-bottom:10px;
+}
+.flyoutClientInfoPanel .selectButton,
+.flyoutSubscribeClientPanel .manageClientPanel .searchButton {
+	background:#00aeef;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight: bold;
+	font: 13px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+	border:0;
+	position: relative; 	
+	width: auto;
+	height: auto;
+	display:block;
+	padding: 4px 20px 4px 20px;	
+	border: 1px solid #cecece;
+	border-radius: 4px;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+}
+.flyoutClientInfoPanel .selectButton-inactive {
+	background-color:#DEDEDE;
+	border:#ddd 1px solid;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .divider_or {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/divider_or.png");
+	height:90px;
+	width:16px;
+	margin-right:25px;
+	margin-left:25px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid {
+	border:0;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-view {
+	max-height:208px;
+	overflow-x:hidden !important;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-table {
+        margin-top:0px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-header-row th{
+        padding:0px !important;
+        line-height:0px;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-column-header,
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-nlg .x-column-header {
+	height:50px !important;
+	padding:7px !important;
+	background-color:transparent !important;
+	background-image: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/bg_gradientGrayBot.png") !important;
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/bg_gradientGrayBot.png") repeat-x 50% bottom;
+	border-right:#e4e4e4 1px solid !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .email {
+	border-right:0 !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-column-header-first {
+	border:0 !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-column-header-over {
+	background:none !important; 
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-column-header-over .x-column-header-trigger {
+	display:none;
+}
+.flyoutSubscribeClientPanel .searchResultsLbl {
+	color:#5f5f5f !important;
+	font:12px/1.5 verdana, sans-serif !important;
+	margin-top:0px !important;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-header-ct {
+	background:none !important;
+	border:0 !important;
+	background-color:#ffffff;
+	padding:0;
+	padding-top:7px !important;
+	padding-bottom:0px !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-header-ct .x-box-inner {
+	background-color:transparent !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-body {
+	border:#e4e4e4 1px solid;
+	border-top-color:#e4e4e4 !important;
+	padding-top:0px !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid  .x-column-header-text {
+	color:#7f9cad;	
+	font-size:11px;
+	font-family:"Expert-Sans-Bold", verdana, sans-serif;
+	font-weight:bold;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-cell {
+	padding-left:0;
+	padding-right:0;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-row-over .x-grid-cell {
+	background-color:#d5d5d6 !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-row-checker {
+	background: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png') 0px -260px;
+	width:18px;
+	height:18px;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-row-selected .x-grid-row-checker {
+	background: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png') -76px -260px;
+	width:18px;
+	height:18px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid  .x-grid-row .x-grid-cell {
+	border-bottom:1px solid #efefef;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid  .x-grid-row .x-grid-cell-special {
+	background:none;
+	border:0;
+	border-top:1px solid #efefef;
+	border-bottom:1px solid #efefef;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-row-selected .x-grid-cell {
+	background-color:#ffffff !important;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-row-alt .x-grid-cell {
+	background-color:#f7f7f7;	
+	border-color:#efefef;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-cell-row-checker .x-grid-cell-inner {
+	padding-left:4px;
+}
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-cell-inner {
+    overflow: hidden;
+    padding-top:10px;
+    padding-bottom:10px;
+	padding-left:13px;
+    white-space: nowrap;
+    font:13px/1.6 "Expert-Sans-Regular", verdana, sans-serif;
+    color:#828384;
+ }
+ 
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultInfo {
+	margin:0px;
+	margin-top:10px;
+	padding:0;
+	padding-top:15px;
+	padding-bottom:15px;
+	border-top:#ddd 1px solid;
+}
+.flyoutSubscribeClientPanel .subscribeClient {
+	position:relative;
+}
+.flyoutSubscribeClientPanel .subscribeClient .flyoutSubscriptionItemPanel {
+	top:10px !important;
+}
+.flyoutSubscribeClientPanel .subscribeClient .flyoutSubscriptionItemPanel .subscribe-info  > h3,
+.flyoutSubscribeClientPanel .subscribeClient .flyoutSubscriptionItemPanel .content > IMG {
+	display:none;
+}
+.flyoutSubscribeClientPanel .subscribeClient .flyoutSubscriptionItemPanel .content-items {
+	border:0;
+	width:770px;
+	border-radius:0;
+	box-shadow:none;
+}
+.flyoutSubscribeClientPanel .selectedClientPanel display-name,
+.flyoutSubscribeClientPanel .watchSelectedClientPanel display-name{
+	font:12px/1.5 verdana, sans-serif;
+	color:#017eb6;
+}
+.flyoutSubscribeClientPanel .watchSelectedClientPanel {
+	background-color:#f6f7f7;
+	margin:20px;
+	margin-bottom:10px;
+	border-bottom: 1px solid #EFEFEF;
+	border-top: 1px solid #EFEFEF;
+	overflow:auto;
+}
+.flyoutSubscribeClientPanel .watchSelectedClientPanel .selected-items-box {
+	position: relative;
+}
+
+.flyoutSubscribeClientPanel .watchSelectedClientPanel .selected-item {
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc); 
+    position: relative;
+	display: inline-block;
+	background-color: #fff;
+	color: #017eb6;
+	width: auto;
+	height: auto;
+	border: 1px solid #ccc;
+	border-left: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	border-radius: 5px;
+	box-shadow:1px 1px 8px #cecece;
+	padding: 5px;
+	font:12px/1.5 verdana, sans-serif;
+	margin:10px;
+	margin-bottom:0;
+	cursor:pointer;
+}
+.flyoutSubscribeClientPanel .watchSelectedClientPanel .selected-items-layout {
+    position: relative;
+	width: 100%;    
+	vertical-align: middle;
+	max-height:100px;
+	min-height:54px;
+}
+.flyoutSubscribeClientPanel .watchSelectedClientPanel .close-icon {
+	background: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_gray.png') no-repeat center 50%;
+	float:right;
+	text-decoration:none;
+	height:12px;
+	width:12px;
+	padding:4px;
+	margin:5px;
+	margin-top:4px;
+	cursor:pointer;
+}
+.flyoutSubscribeClientPanel .watchSelectedClientPanel .close-icon:hover {
+    text-decoration:none;
+    background-image:url('/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_cyan.png');
+	cursor:pointer;
+}
+.flyoutSubscribeClientPanel .selectedClientPanel {
+	background-color:#f6f7f7;
+	margin-bottom:10px;
+	border-bottom: 1px solid #EFEFEF;
+	border-top: 1px solid #EFEFEF;
+}
+
+.flyoutSubscribeClientPanel .selectedClientPanel .selected-items-layout {
+    position: relative;
+    width: 100%;    
+    max-height: 100px;
+	min-height:54px;
+    marging-top: 20px;
+    vertical-align: middle;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+.flyoutSubscribeClientPanel .selectedClientPanel .selected-items-box {
+	position: relative;
+}
+
+.flyoutSubscribeClientPanel .selectedClientPanel .selected-item {
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc); 
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    color: #017eb6;
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    border-left: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    border-radius: 5px;
+	box-shadow:1px 1px 8px #cecece;
+    padding: 5px;
+	font:12px/1.5 verdana, sans-serif;
+	margin:10px;
+	margin-bottom:0;
+	background-color:#ffffff;
+	display:inline-block;
+	cursor:pointer;
+}
+.flyoutSubscribeClientPanel .selectedClientPanel .close-icon {
+    display: block;
+    float: right;
+    margin: 5px;
+	marign-top:4px;
+    padding: 4px;
+    background-image: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_gray.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12px;
+    height: 12px;
+	cursor:pointer;
+}
+.flyoutSubscribeClientPanel .selectedClientPanel .close-icon:hover {
+    text-decoration:none;
+    background-image:url('/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_cyan.png');
+	cursor:pointer;
+}
+
+.flyoutSubscribeClientPanel .clientInfoPanel {
+	padding:20px;
+	background-color:#f6f7f7;
+	color:#036;
+	border:#efefef 1px solid;
+	font:19px/1.2 "Expert-Sans-Regular", verdana, sans-serif;
+	margin-bottom:40px;
+}
+
+.flyoutSubscribeClientPanel .clientInfoPanel .client-info {
+	float:left;
+}
+.flyoutSubscribeClientPanel .clientInfoPanel .back-to-search {
+	float:right;
+}
+
+.flyoutSubscribeClientPanel .clientInfoPanel .back-to-search a {
+	font-size:9px;
+	color:#017eb6;
+}
+.flyoutSubscribeClientPanel .listComp {
+	font:13px/1.6 "Expert-Sans-Regular", verdana, sans-serif;
+	color:#5f5f5f;
+}
+.flyoutSubscribeClientPanel .listComp .list-item-container {
+	height:400px;
+	overflow:auto;
+}
+.flyoutSubscribeClientPanel .listComp  .list-container {
+	background-color:#fff;
+	height:402px;
+	font:13px/1.6 "Expert-Sans-Regular", verdana, sans-serif;
+	border-top:#efefef 1px solid;
+	border-bottom:#efefef 1px solid;
+}
+.flyoutSubscribeClientPanel .listComp  .list-name-ul {
+	background-color:#fff;
+	float:left;
+	width:200px;
+	overflow-x:hidden;
+	height:400px;
+
+}
+.flyoutSubscribeClientPanel .listComp  .list-name-li {
+	color:#5f5f5f;
+	border-bottom:#ffffff 2px solid;
+	background-color:#f6f7f7;
+	width:200px;
+	padding-top:12px;
+	padding-bottom:12px;
+	padding-left:7px;
+	padding-right:10px;
+	display:block;
+	cursor:pointer;
+	background-image: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/filter_white.png');
+	background-repeat:no-repeat;
+	background-position: right 50%;
+}
+.flyoutSubscribeClientPanel .listComp .dummy-li {
+	height:100%;
+	width:181px;
+	background-color:#f6f7f7;
+}
+.flyoutSubscribeClientPanel .listComp  .list-details {
+	float:left;
+	background-color:#ffffff;
+	width:100%;
+}
+.flyoutSubscribeClientPanel .listComp  .list-item-all {
+	border-bottom:#efefef 1px solid;
+	padding-top:12px;
+	padding-bottom:12px;
+	padding-left:7px;
+	padding-right:10px;
+	display:block;
+	cursor:pointer
+}
+.flyoutSubscribeClientPanel .listComp  .list-item {
+	border-bottom:#efefef 1px solid;
+	padding-top:12px;
+	padding-bottom:12px;
+	padding-left:7px;
+	padding-right:10px;
+	display:block;
+}
+.flyoutSubscribeClientPanel .listComp .selectAll {
+	color:#007eb6;
+	float:left;
+	width:450px;
+}
+.flyoutSubscribeClientPanel .listComp  .list-item .list-record {
+	color:#5f5f5f;
+	float:left;
+	width:450px;
+}
+
+.flyoutSubscribeClientPanel .listComp  .list-item .companyMail {
+	display:inline;
+	color:#007eb6;
+	padding:0;	
+	margin:0;
+	border:0;
+	font: 13px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+}
+
+.flyoutSubscribeClientPanel .listComp  .list-item .companyName { 
+	display:inline;
+	color:#5f5f5f;
+	padding:0;	
+	margin:0;
+	border:0;
+	text-transform:capitalize;
+}
+
+.flyoutSubscribeClientPanel .listComp  .addFooter {
+	height:66px;
+	display:block;
+}
+.flyoutSubscribeClientPanel .listComp  .addFooter-right {
+	height:66px;
+	background-color: #fff;
+	margin-left:355px;
+	padding-top:2px;
+}
+.iframeshimFlyoutWorkbook {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:480px;
+	height: 460px;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+.iframeshimFlyoutClientInfo {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:850px;
+	height: 146px;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+.iframeshimSubscribeItem,
+.iframeshimFlyoutWatch {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 350px;
+	height: 460px;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+.iframeshimFlyoutSubscribePanel {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 72px;
+	height: 100px;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+.iframeshimFlyoutSubscribeClientPanel {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 795px;
+	height: 800px;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+.iFrameConfirmationPanel {
+	left: 0px !important;
+	top: 0px !important;
+	position: 'absolute';
+}
+.iframeshimConfPanel {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 500px;
+	height: 100px;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+.iframeshimFlyoutActionPanel {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 72px;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+.message-container,
+.message-container p,
+.message-container div,
+.message-container span {
+	font:12px/1.5 verdana, sans-serif;
+	color:#5f5f5f;
+}
+
+
+.flyoutSubscribeClientPanel .manageClientPanel .searchResultGrid .x-grid-row-selected .x-grid-cell, .x-grid-row-selected .x-grid-rowwrap-div {
+	border-style: solid;
+	border-color: #efefef
+}
+
+.linkText {
+    height:27px;
+    width:355px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #017eb6;
+    cursor: pointer;
+    padding: 0 8px;
+    width:458px;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .filterTxtContainer {
+    float:none !important;
+    margin:0px 0px 10px 0px;
+    font: normal 12px tahoma,arial,verdana,sans-serif;
+}
+
+.flyoutSubscribeClientPanel .manageClientPanel .filterTxtContainer td {
+    padding:0px;
+}
+.confirmationPanel .watchListLink {
+	color:#017eb6;
+	text-decoration:none;
+}
+
+.flyoutWorkBookItemPanel .content-items{
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border-bottom:#ccc 1px solid;
+	border-top:#e4e4e4 1px solid;
+	border-left:#e4e4e4 1px solid;
+	border-right:#ccc 1px solid;
+	background-color:#ffffff;
+	box-shadow:1px 1px 8px #cecece;
+	width:480px;
+}
+.flyoutWorkBookItemPanel .content .rightBubbleTop {
+	display:block;
+	position:absolute;
+	top:2px;
+	z-index:9999;
+	margin-left:356px;
+}
+.flyoutWorkBookItemPanel .workbook-details {
+	padding:0px 20px 15px 20px;
+}
+
+.flyoutWorkBookItemPanel .workbook-info .header-details {
+	margin:0px 0px 20px 0px;
+	padding:0;
+	padding-top:10px;
+	overflow:hidden;
+	position:relative;
+}
+.flyoutWorkBookItemPanel .pub-folder-details {
+	position:relative;
+}
+.flyoutWorkBookItemPanel .workbook-info .btn { 	
+	border:0;
+	position: relative; 
+	color: #017eb6;
+	width: auto;
+	height: auto;
+	padding: 0px 20px;
+	border-radius: 4px;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border: 1px solid #cecece;
+}
+.flyoutWorkBookItemPanel .workbook-info .cancel-btn {
+	float: left;
+	background-image:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/bulletin_bg.gif");
+}
+.flyoutWorkBookItemPanel .workbook-info .save-btn {
+	float: right;
+	background:#00AEEF;
+}
+.flyoutWorkBookItemPanel .workbook-info .subscribe-btn-disabled {
+	color: #FFF;
+	background-color:#DEDEDE; 
+	border:1px solid #DDD;
+}
+.flyoutWorkBookItemPanel .workbook-info .cancel-btn a {
+	color: #00aeef;
+	cursor: pointer;
+	display:block;
+	padding: 5px 0px;
+	font: 12px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+	text-decoration:none;
+}
+.flyoutWorkBookItemPanel .workbook-info .save-btn a {
+	color: #ffffff;
+	cursor: pointer;
+	display:block;
+	padding: 5px 0px;
+	font: 12px/1.6 "Expert-Sans-Bold", verdana, sans-serif;
+	text-decoration:none;
+}
+.flyoutWorkBookItemPanel .workbook-info .publication-title {
+	margin-left: 10px;
+	margin-right: 10px;	
+	margin-bottom: 20px;	
+	padding-top:10px;
+	vertical-align:middle;
+	overflow:wrap;
+	font: 15px/1.3 "Expert-Sans-Bold", verdana, sans-serif;
+	text-transform:capitalize;
+	color:#00AEEF;
+}
+.flyoutWorkBookItemPanel .workbook-info .thumbnail-image{
+	display:inline-block;
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/scrapbook.png") repeat-y 0 0;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+	position: relative; 	
+	width:auto;
+	border-radius: 5px;	
+	background-color:#ffffff;
+	box-shadow:4px 0px 8px #e3e3e3;
+	padding-left:20px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+.flyoutWorkBookItemPanel .workbook-info .thumbnail-image IMG {
+	height:159px;
+}
+
+.flyoutWorkBookItemPanel .workbook-info .workbook-folders-details {
+	display:inline;
+	vertical-align:top;		
+	float:right;	
+	width:270px;
+	font:12px/1.5 verdana, sans-serif;
+	color:#5f5f5f;
+}
+.flyoutWorkBookItemPanel .workbook-info .folder-comments {
+	padding:0px !important;		
+	float:right;
+	margin-bottom:10px;
+}
+.flyoutWorkBookItemPanel .workbook-info .folder-comments table {
+	margin-bottom:0px;	
+}
+.flyoutWorkBookItemPanel .workbook-info .comments-text{
+	width:263px;	
+	height:78px;	
+	border:1px solid #e4e4e4;
+}
+.flyoutWorkBookItemPanel .workbook-info .comments-text textarea{
+	height:96px;
+	font:12px/1.5 verdana, sans-serif;
+	color:#5f5f5f;
+}
+.flyoutWorkBookItemPanel .workbook-info .new-folder {
+	padding:0px !important;		
+	float:right;
+	margin-bottom:10px;		
+}
+.flyoutWorkBookItemPanel .workbook-info .new-folder-name-text{
+	width:263px;
+	height:30px;
+	border:1px solid #e4e4e4;	
+}
+.flyoutWorkBookItemPanel .workbook-info .new-folder-name-text input{
+	font:12px/1.5 verdana, sans-serif;
+	color:#5f5f5f;
+}
+.flyoutWorkBookItemPanel .workbook-info .workbook-folders-details table,
+.flyoutWorkBookItemPanel .workbook-info .workbook-folders-details tr,
+.flyoutWorkBookItemPanel .workbook-info .workbook-folders-details td {
+	margin:0;
+	padding:0;
+}
+.flyoutWorkBookItemPanel .workbook-info .workbook-folders-cmbo {
+	float:right;
+}
+.workbook-bound-list .workbook-folders-items {
+	font:12px/1.5 verdana, sans-serif;
+	color:#406b85;
+	text-decoration:none;
+}
+
+.workbook-bound-list .x-boundlist-item {
+	border:0;
+	border-top:#efefef 1px solid !important;
+}
+
+.workbook-folder-item-even {
+	background-color:#ffffff;
+	padding:5px 5px 5px 10px;
+}
+.workbook-folder-item-even:hover,
+.workbook-folder-item-odd:hover {
+	background-color:#b3b3b3;	
+}
+.workbook-folder-item-odd {
+	background-color:#f7f7f7;
+	padding:5px 5px 5px 10px;
+}
+.flyoutWorkBookItemPanel .workbookCmb td{
+	padding: 0px !important;
+}
+
+.flyoutWorkBookItemPanel .workbook-info .workbookCmb {
+	margin-left:-1px;
+}
+.flyoutWorkBookItemPanel .workbook-info .workbookCmbContainer{
+	border:1px solid #e4e4e4;
+	border-radius:5px;
+	//box-shadow:1px 1px 1px #cecece !important;
+	color:#5f5f5f;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);	
+	height:30px;	
+	position:relative;
+	margin-bottom:10px;
+	width:263px;
+}
+.flyoutWorkBookItemPanel .workbook-info .workbookCmb .x-form-text {
+	cursor:pointer;
+	padding-left:10px;	
+	//height:25px;
+	border:0px !important;
+	background: none;	
+	color:#0aaeef;
+	font:13px/1.3em Verdana, "Expert-Sans-Regular", verdana, sans-serif;
+	font-weight:normal;
+}
+.flyoutWorkBookItemPanel .workbook-info .workbookCmb .x-form-trigger {
+    height:25px;
+	background:url('/RSR_S/nyfipubs/barcap/css/pics/analyst_fx_sprite.png') no-repeat -80px 3px;	
+	border-bottom:0px;	
+}
+.flyoutWorkBookItemPanel .workbook-info .workbookCmb .x-trigger-cell{
+	width:25px !important;
+}
+.flyoutWorkBookItemPanel .workbook-info .folder-comments .x-form-text,
+.flyoutWorkBookItemPanel .workbook-info .new-folder .x-form-text {
+	background: none transparent scroll repeat 0% 0%;
+	border: none !important;
+}
+
+.flyoutWorkBookItemPanel .workbook-info .x-form-trigger-wrap {
+	margin-bottom:0px;
+}
+.flyoutWorkBookItemPanel .workbook-info .x-form-trigger-wrap td{
+		vertical-align:middle !important;
+}
+
+.workbook-bound-list {
+	border:1px solid #e4e4e4 !important;
+	border-top:none !important;
+	border-radius:5px !important;
+}
+.workbook-bound-list {
+	height:auto !important;	
+	max-height:148px !important;
+	width:263px !important;
+}
+.workbook-bound-list .x-boundlist-list-ct {
+	max-height:148px !important;
+	height:148px !important;
+}
+.message-container a{
+	color: #017eb6; 
+	cursor: pointer; 
+	text-decoration: none;
+}
+.workbookCmb tr {
+	padding:0px !important;
+	 background-color: none !important;
+}
+.workbook-bound-list .workbook-folders-last-item {
+	border-bottom:none !important;
+}
+
+.workbookCmb table tr:hover,
+.workbook-info .folder-comments table tr:hover,
+.workbook-info .new-folder table tr:hover{
+  background: none !important;
+  color: none !important;
+}
+.utilities-bar ul,
+.share-tool-action-panel ul {
+	margin:0;
+}
+.utilities-bar ul li,
+.share-tool-action-panel ul li {
+	float:left;
+}
+.x-mask{
+	background: #fff!important;
+	opacity: .85!important;
+	filter: alpha(opacity:85)!important;
+}
+.flyoutClientInfoPanel .content-items{
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border-bottom:#ccc 1px solid;
+	border-top:#e4e4e4 1px solid;
+	border-left:#e4e4e4 1px solid;
+	border-right:#ccc 1px solid;
+	background-color:#ffffff;
+	box-shadow:1px 1px 8px #cecece;
+	width:850px;
+	padding-left:0;
+	padding-right:0;
+	padding-top:10px;
+	padding-bottom:20px;
+}
+.flyoutClientInfoPanel .content { 
+	padding:10px;
+}
+.flyoutClientInfoPanel .radio {
+	background: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png') 0px -279px;
+	width:19px;
+	height:19px;
+}
+.flyoutClientInfoPanel .radio-checked {
+	background: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/sprite.png') -72px -279px;
+	width:19px;
+	height:19px;
+}
+.flyoutClientInfoPanel .grid-content {
+	overflow:auto;
+	max-height:340px;
+}
+.flyoutClientInfoPanel .grid-content li {
+	font:13px/1.6 "Expert-Sans-Regular", verdana, sans-serif;
+	color:#828384;
+}
+.flyoutClientInfoPanel .grid-header{
+	height:50px;
+	background: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/bg_gradientGrayBot.png') repeat-x 50% bottom;
+	border:0;
+}
+.flyoutClientInfoPanel .header {
+	height:50px;
+}
+.flyoutClientInfoPanel .headerColumn {
+	padding-top:25px;
+	padding-left:7px;
+	font-family:"Expert-Sans-Bold", verdana, sans-serif;
+	color:#7f9cad;
+	font-size:11px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.flyoutClientInfoPanel li.list-item {
+	padding:10px 0px;
+	border-top:#efefef 1px solid;
+	border-bottom:#efefef 1px solid;
+	border-left:#efefef 1px solid;
+	border-right:#efefef 1px solid;
+}
+.flyoutClientInfoPanel li.list-item div{
+	padding-left:7px;
+}
+.flyoutClientInfoPanel li.item-even {
+	background-color:#f7f7f7;
+}
+.flyoutClientInfoPanel .popupCloseBtn {
+	display: block;
+	float: right;
+	margin: 4px;
+	padding: 0px;	
+	background-image: url('/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_gray.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 12px;
+	height: 12px;
+}
+.flyoutClientInfoPanel .popupCloseBtn {
+	margin-top:4px;
+	margin-left:4px;
+	margin-bottom:10px;
+	margin-right:14px;
+}
+
+.flyoutClientInfoPanel .popupCloseBtn:hover {
+	text-decoration:none;
+	background-image:url('/RSR_S/nyfipubs/barcap/images/iconsUtility/icon_close_cyan.png');
+}
+
+.x-body-masked,
+.dv-body-masked {
+	overflow:hidden;
+}
+
+.dv-mask,
+.x-mask{
+	background: #fff!important;*/
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=75);
+	filter: alpha(opacity:75);
+	opacity: .75;
+}
+
+.iframeshim {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -10000;
+	background: transparent;
+	background-color: transparent;
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0);
+	opacity: 0;
+}
+
+.confirmDiv,
+.confirmDiv .confirmbtn,
+.compose-panel .minimalComposeBtn,
+.compose-panel .minimalComposeButton {
+	height: auto !important;
+}
+
+.confirmDiv {
+	width:262px !important;
+}
+
+.confirmDiv p {
+	font:13px/1em Verdana, "Expert-Sans-Regular", sans-serif;
+	margin:0px 0px 17px
+}
+
+.flyoutPublicationToolInfoPanel {
+	overflow:visible !important;
+}
+.flyoutPublicationToolInfoPanel  .content {
+	padding:0px;
+	padding-top:10px;
+}
+.flyoutPublicationToolInfoPanel ul {
+	margin:0;
+}
+.flyoutPublicationToolInfoPanel .content .leftBubbleTop {
+	display:block;
+	position:absolute;
+	top:2px;
+	z-index:9999;
+	margin-left:14px;
+}
+.flyoutPublicationToolInfoPanel .pub-details {
+	max-height:350px;
+	overflow:auto;
+}
+.flyoutPublicationToolInfoPanel .pub-info h3{
+	margin:0;
+	background-color:#f6f7f7;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	border:0;
+	border-bottom:#e4e4e4 1px solid;
+	text-align:center;
+}
+.flyoutPublicationToolInfoPanel .pub-info-header {
+	margin:0;
+	background-color:#f6f7f7;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:20px;
+	padding-right:20px;
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	border:0;
+	border-bottom:#e4e4e4 1px solid;
+	text-align:center;
+}
+.flyoutPublicationToolInfoPanel .pub-info-header h3{
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	border:0;
+	margin:0;
+	margin-top:5px;
+	padding:0;
+	text-align:center;
+}
+.flyoutPublicationToolInfoPanel .content-items{
+	position: relative; 
+	behavior: url(/PRC_S/jsframeworks/pie/PIE.htc);
+	border-radius: 5px;
+	border-bottom:#ccc 1px solid;
+	border-top:#e4e4e4 1px solid;
+	border-left:#e4e4e4 1px solid;
+	border-right:#ccc 1px solid;
+	background-color:#ffffff;
+	box-shadow:1px 1px 8px #cecece;
+	width:540px;
+}
+.flyoutPublicationToolInfoPanel .pub-info .thumbnail-image{
+	display:inline-block;
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/scrapbook.png") repeat-y 0 0;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+	position: relative; 	
+	width:auto;
+	border-radius: 5px;	
+	background-color:#ffffff;
+	box-shadow:4px 0px 8px #e3e3e3;
+	padding-left:20px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:5px;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+}
+.flyoutPublicationToolInfoPanel .pub-info .large-thumbnail-image{
+	display:inline-block;
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/scrapbook.png") repeat-y 0 0;
+	behavior:url(/PRC_S/jsframeworks/pie/PIE.htc);
+	position: relative; 	
+	width:auto;
+	border-radius: 5px;	
+	background-color:#ffffff;
+	box-shadow:4px 0px 8px #e3e3e3;
+	padding-left:20px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:5px;
+	margin-top:10px;
+	float:left;
+	position:absolute;
+	left:10px;
+	display:none;
+}
+
+.flyoutPublicationToolInfoPanel .pub-info .thumbnail-image IMG {
+	height:159px;
+}
+.flyoutPublicationToolInfoPanel .pub-info .pub-item {
+	display:inline-block;
+	vertical-align:top;		
+	font:12px/1.5 verdana, sans-serif;
+	color:#5f5f5f;
+	margin-top:10px;
+	margin-left:30px;
+}
+.flyoutPublicationToolInfoPanel .pub-info .pub-item li {
+	padding-top:5px;
+	padding-bottom:5px;
+	clear:both;
+	overflow:hidden;
+}
+.flyoutPublicationToolInfoPanel .itemTitle{
+	font:17px "Expert-Sans-Bold", verdana, sans-serif;
+	color:#406b85;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:0;
+	padding-right:0;
+	margin:0;
+	text-transform:uppercase;
+	border-bottom:#e4e4e4 1px solid;
+}
+
+.flyoutPublicationToolInfoPanel .pub-item ul {
+	border:0;
+	margin-bottom:5px;
+	border-bottom:0;
+	
+}
+.flyoutPublicationToolInfoPanel .pub-item .pub-label {
+	width:135px;
+	font-weight:bold;
+	float:left;
+	word-wrap:break-word;
+}
+.flyoutPublicationToolInfoPanel .pub-item .pub-data {
+	width:150px;
+	float:right;
+	margin-left:10px;
+	word-wrap:break-word;
+}
+.flyoutPublicationToolInfoPanel .tagsUL {
+	margin-top:10px;
+}
+
+/** Model Utility style starts **/
+
+.model-utility-flyout ul,
+.model-utility-flyout li,
+.model-utility ul,
+.model-utility li {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.model-utility-flyout a,
+.model-utility-flyout a:hover,
+.model-utility a,
+.model-utility a:hover {
+	text-decoration:none;
+}
+.model-utility .quickLinks {
+	border: 0;
+	padding-bottom: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 4px;
+	float:left;
+}
+.model-utility .action {
+	border: 0;
+	padding-bottom: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 2px;
+	margin-top:-2px;
+	float:left;
+}
+.model-utility .quickLinksIcon a {
+	background: url('/BC_S/css/mresearch/workbook/img/plus_grey.png') no-repeat;
+	width: 16px;
+	height: 16px;
+	display: block;
+	outline: none;
+}
+
+.model-utility .quickLinksActiveIcon a {
+	background:url('/BC_S/css/mresearch/workbook/img/plus_cyan.png') no-repeat;
+	width:16px;
+	height:16px;
+	display:block;
+	outline: none;
+}
+
+.model-utility .actionIcon a {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/action24px_cyan.png") no-repeat;
+	width: 24px;
+	height: 24px;
+	display: block;
+	outline: none;
+}    
+
+.model-utility .actionIcon a {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/action24px_cyan.png") no-repeat;
+	width: 24px;
+	height: 24px;
+	display: block;
+	outline: none;
+}
+
+.model-utility-flyout .shareToolIcon a {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/share_cyan.png") no-repeat 0 50%;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	display: block;
+	outline: none;
+}
+
+.model-utility-flyout .shareToolIcon a:hover {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/share_white.png") no-repeat 0 50%;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	display: block;
+	outline: none;
+}
+.model-utility-flyout .encodedLinkIcon a {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/link_cyan.png") no-repeat 0 50%;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	display: block;
+	outline: none;
+}
+.model-utility-flyout .encodedLinkIcon a:hover {
+	background: url("/RSR_S/nyfipubs/barcap/images/iconsUtility/link_white.png") no-repeat 0 50%;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	display: block;
+	outline: none;
+}
+
+.model-utility-flyout .emailToolIcon a {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/emailTool_cyan.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+.model-utility-flyout .emailToolIcon a:hover {
+	background:url("/RSR_S/nyfipubs/barcap/images/iconsUtility/emailTool_white.png") no-repeat 0 50%;
+	width:100%;
+	height:36px;
+	line-height:36px;
+	display:block;
+	outline: none;
+}
+
+.model-utility-flyout{
+	width: 168px;
+	position: absolute!important;
+	overflow: hidden;
+	zoom: 1;		
+	padding: 0px;
+	padding-top: 10px;
+}
+.model-utility-flyout .content-items {
+	position: relative;
+	border-radius: 5px;
+	border: #e4e4e4 1px solid;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 8px #cecece;
+	padding: 0;
+	padding-top: 10px;
+}
+
+.model-utility-flyout .content-items li:first-child {
+	border: 0;
+}
+.model-utility-flyout .content-items li {
+	padding: 0 4px;
+	border-top: #efefef 1px solid;
+}
+.model-utility-flyout .content-items li:hover {
+	background-color: #00aeef;
+}
+.model-utility-flyout .content-items li:hover span {
+	color: #ffffff !important;
+}
+.model-utility-flyout .content-items li span {
+	margin-left: 40px;
+	font: 13px/1.6 "Expert-Sans-Regular", verdana, sans-serif;
+	font-size: 13px;
+	color: #5f5f5f;
+	border: 0;
+	line-height: 36px;
+}
+.model-utility-flyout .leftBubbleTop {
+	display: block;
+	position: absolute;
+	top: 2px;
+	z-index: 9999;
+	margin-left: 11px;
+}	
+.model-utility-flyout  li span {
+	padding:0;
+}
+
+#RSP_MRESEARCH_COMPANY_KEY_METRICS .model-utility ul {
+	display:inline-block;
+}
+#RSP_MRESEARCH_COMPANY_KEY_METRICS .model-utility .action {
+	display:inline-block;
+	width:auto;
+}
+#RSP_MRESEARCH_COMPANY_KEY_METRICS .model-utility .quickLinks  {
+	display:inline-block;
+	width:auto;
+}
+/** Model Utility style ends **/

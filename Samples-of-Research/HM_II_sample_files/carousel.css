@@ -1,0 +1,93 @@
+.ux-carousel-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.ux-carousel-slides-wrap {
+    top: 0;
+    left: 0;
+}
+
+.ux-carousel-slide {
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+
+.ux-carousel-nav {
+
+    
+}
+
+.ux-carousel-caption {
+    font-size: 20px;
+    float: left;
+    padding: 2px 5px;
+    margin: 0;
+    text-transform: none;
+    color: black;
+    overflow: hidden;
+    height: 29px;
+    width: 100px;
+}
+
+.ux-carousel-nav-prev,
+.ux-carousel-nav-next,
+.ux-carousel-nav-play {
+    height: auto;
+    display: block;
+    float: left;
+    margin: 2px 0;
+    background-position: 0 24px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+.test123 {
+	    height: 24px;
+    display: block;
+    float: left;
+    margin: 2px 0;
+    padding-left:2px;
+
+}
+.ux-carousel-nav .ux-carousel-nav-prev {
+    
+
+}
+
+.ux-carousel-nav .ux-carousel-nav-next {
+
+
+}
+
+.ux-carousel-nav .ux-carousel-default {
+
+}    
+.ux-carousel-nav .ux-carousel-active {
+
+} 
+
+.ux-carousel-nav-play {
+    width: 24px;
+}
+
+.ux-carousel-nav-play:hover {
+    background-position: 0 0; 
+}
+.ux-carousel-nav-play.ux-carousel-playing {
+    background-position: 24px 24px;
+}
+.ux-carousel-nav-play.ux-carousel-playing:hover {
+    background-position: 24px 0;
+}
+
+
+
+.ux-carousel-nav-prev.ux-carousel-nav-disabled,
+.ux-carousel-nav-next.ux-carousel-nav-disabled {
+    background-position: 0 0;
+}

@@ -306,6 +306,288 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/Samples-of-Research\/foodNew.docx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/foodNew.docx",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample.htm": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample.htm",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/barcaplive.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/barcaplive-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/bcllogo.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/bcllogo.html",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/bclwait.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/bclwait.html",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/BL_logo_final.png": {
+		"ft": 32768,
+		"iS": 5067,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/BL_logo_final.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/carousel.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/carousel-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/CarouselUtil.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/CarouselUtil-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/chrome.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/chrome-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dv(1).search": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dv(1).search",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dv(2).search": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dv(2).search",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dv(3).search": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dv(3).search",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dv(4).search": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dv(4).search",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dv.search": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dv.search",
+		"oF": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dvExtUtil.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dvExtUtil-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dvGen(1).js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dvGen(1)-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/dvGen.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dvGen-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/ext-all.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/ext-all-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/ext-all.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/ext-all-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/jquery-1.7.1.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/jquery-1.7.1.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/jquery-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/llMail.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/llMail-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/logo-231x55.gif": {
+		"ft": 4194304,
+		"iS": 2310,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/logo-231x55.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/ManageClientPanel.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/ManageClientPanel-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/quicklist.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/quicklist-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/relatedResearch.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/relatedResearch-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/relatedResearch.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/relatedResearch-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/share.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/share-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/share.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/share-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/share_styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/share_styles-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/spacer.gif": {
+		"ft": 4194304,
+		"iS": 43,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/spacer.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/watch.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/watch-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/Samples-of-Research\/HM_II_sample_files\/watch.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/watch-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/Samples-of-Research\/US Credit Alpha 19 August 2016.docx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Samples-of-Research\/US Credit Alpha 19 August 2016.docx",
+		"oF": 0
+		},
 	"\/scss\/barclays-regular.scss": {
 		"aP": 0,
 		"bl": 0,
