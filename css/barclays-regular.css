@@ -222,13 +222,12 @@ h6 + p {
         width: 98%; }
       .toc .toc__business-unit {
         display: inline-block;
-        margin-bottom: 0.25rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 191px; }
       .toc .toc__pubtitle {
-        font-size: 1.2rem;
+        font-size: 1.75rem;
         line-height: 1.1;
         font-weight: 400;
         margin-bottom: 0.25rem; } }
@@ -562,7 +561,7 @@ article {
   @media (min-width: 61.25em) {
     .content__main-column {
       padding-top: 1rem;
-      padding-right: 4rem;
+      padding-right: 3rem;
       margin-left: 0;
       margin-right: 17.5rem;
       min-height: 8rem; } }
@@ -578,9 +577,11 @@ article {
 @media (min-width: 61.25em) {
   .content__header {
     padding-top: 5rem;
-    background-image: url("img/airplane-wing-istock-184917549_treated.jpg");
+    background: url("img/1131x-2.jpg") 50% 0 no-repeat;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0%; } }
 
 .content__secondary-column {
   display: none;
@@ -606,6 +607,7 @@ article {
   font-weight: 300; }
 
 .content__headline {
+  color: #222;
   font-size: 2.5rem;
   font-weight: 300;
   padding-bottom: 0.5rem;
@@ -616,9 +618,9 @@ article {
       font-size: 2.75rem; } }
 
 .content__standfirst {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 300;
-  line-height: 1.3; }
+  line-height: 1.25; }
   .content__standfirst p {
     margin: 0; }
 
@@ -695,13 +697,7 @@ aside.pull {
   @media (min-width: 61.25em) {
     .byline a[rel="author"] {
       display: flex;
-      align-items: center; }
-    .byline .analyst-photo {
-      width: 2.125rem;
-      height: 2.125rem;
-      border-radius: 50%;
-      background: #bada55;
-      margin-right: 0.25rem; } }
+      align-items: center; } }
 
 .byline-popover {
   z-index: 1;

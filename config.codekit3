@@ -15,6 +15,14 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/.vscode\/settings.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/.vscode\/settings-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/1.pdf": {
 		"ft": 8192,
 		"oA": 2,
@@ -305,6 +313,39 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/Samples-of-Research\/1.png": {
+		"ft": 32768,
+		"iS": 372124,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/Samples-of-Research\/2.png": {
+		"ft": 32768,
+		"iS": 346695,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/2.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/Samples-of-Research\/3.png": {
+		"ft": 32768,
+		"iS": 366612,
+		"oA": 0,
+		"oAP": "\/Samples-of-Research\/3.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/Samples-of-Research\/foodNew.docx": {
 		"ft": 8192,
