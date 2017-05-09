@@ -578,8 +578,8 @@ article {
 @media (min-width: 61.25em) {
   .content__header {
     padding-top: 5rem;
-    background: url("img/1131x-2.jpg") 50% 0 no-repeat;
-    background-attachment: fixed;
+    background-image: url("img/airplane-wing-istock-184917549_treated.jpg");
+    background-repeat: no-repeat;
     background-size: cover; } }
 
 .content__secondary-column {
