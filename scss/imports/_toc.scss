@@ -54,7 +54,6 @@
 	}
 	.toc__date {
 		margin-left:1rem;
-		// margin-left: auto;
 		.day {
 			display: none;
 		}
@@ -107,8 +106,8 @@
 			// overflow: scroll;
 		}
 		.menu-bug {
-			width: 20%;
-			padding: 0.5rem;
+			width: 24%;
+			padding: 0.25rem;
 			margin: 0;
 		}
 		.toc__date {
@@ -130,12 +129,13 @@
 		}
 		.toc__business-unit {
 			display: inline-block;
-			// margin-bottom: 0.25rem;
-			// ellided text
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			max-width: 191px;
+		}
+		.toc__hashtags {
+			margin-bottom: 0.25rem;
 		}
 		.toc__pubtitle {
 			font-size: 1.75rem;
@@ -203,3 +203,9 @@
 		transition: all 0.25s;
 	}
 }
+
+
+
+
+
+

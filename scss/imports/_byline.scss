@@ -2,31 +2,41 @@
     font-size: 0.875rem;
     margin-top: 0;
     line-height: 1.2;
-    @media (min-width: $break-three) {
-        display: flex;
-        align-items: center;
+
+    > ul {
+        padding: 0;
     }
-    span[data-icon] {
-        color: $gray-040;
-    }
-    span[itemprop="author"] {
-        margin-right: 0.75rem;
-    }
+
     @media (min-width: $break-three){
 
-        a[rel="author"]{
-            display: flex;
-            align-items: center;
-        }
-        .analyst-photo {
-            // display: block;
-            // width: 2.125rem;
-            // height: 2.125rem;
-            // border-radius: 50%;
-            // background: #bada55;
-            // margin-right: 0.25rem;
-        }
+       .analyst {
+        padding: 0.5rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-grow: 1;
     }
+    .analyst-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .analyst-photo {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background: #bada55;
+        margin-right: 0.5rem;
+    }
+    .analyst-affiliation {
+        // display: block;
+    }
+    .analyst-deets {
+        display: flex;
+        flex-direction: column;
+    }
+}
 }
 
 .byline-popover {

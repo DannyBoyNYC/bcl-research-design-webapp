@@ -205,8 +205,8 @@ h6 + p {
         display: flex;
         flex-direction: row; }
       .toc .menu-bug {
-        width: 20%;
-        padding: 0.5rem;
+        width: 24%;
+        padding: 0.25rem;
         margin: 0; }
       .toc .toc__date {
         margin-left: 0; }
@@ -226,6 +226,8 @@ h6 + p {
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 191px; }
+      .toc .toc__hashtags {
+        margin-bottom: 0.25rem; }
       .toc .toc__pubtitle {
         font-size: 1.75rem;
         line-height: 1.1;
@@ -686,18 +688,29 @@ aside.pull {
   font-size: 0.875rem;
   margin-top: 0;
   line-height: 1.2; }
+  .byline > ul {
+    padding: 0; }
   @media (min-width: 61.25em) {
-    .byline {
+    .byline .analyst {
+      padding: 0.5rem 0;
       display: flex;
-      align-items: center; } }
-  .byline span[data-icon] {
-    color: rgba(51, 51, 51, 0.4); }
-  .byline span[itemprop="author"] {
-    margin-right: 0.75rem; }
-  @media (min-width: 61.25em) {
-    .byline a[rel="author"] {
+      flex-direction: row;
+      align-items: center;
+      flex-grow: 1; }
+    .byline .analyst-link {
       display: flex;
-      align-items: center; } }
+      flex-direction: row;
+      align-items: center; }
+    .byline .analyst-photo {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background: #bada55;
+      margin-right: 0.5rem; }
+    .byline .analyst-deets {
+      display: flex;
+      flex-direction: column; } }
 
 .byline-popover {
   z-index: 1;
