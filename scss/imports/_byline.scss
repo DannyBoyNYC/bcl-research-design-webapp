@@ -1,10 +1,12 @@
 .byline {
+
     font-size: 0.875rem;
     margin-top: 0;
     line-height: 1.2;
     @media (min-width: $break-three) {
         display: flex;
         align-items: center;
+        display: none;
     }
     span[data-icon] {
         color: $gray-040;
@@ -17,6 +19,7 @@
         a[rel="author"]{
             display: flex;
             align-items: center;
+
         }
         .analyst-photo {
             // display: block;

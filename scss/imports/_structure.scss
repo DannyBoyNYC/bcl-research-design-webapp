@@ -58,7 +58,7 @@ article {
 }
 
 .content__header .content__main-column {
-	padding-top: 1rem;
+	padding-top: 1.5rem;
 }
 
 .content__main-column {
@@ -84,15 +84,15 @@ article {
 	width: 100%;
 	// height: 100rem;
 	@media (min-width: $break-three){
-		margin-left: 4rem;
-		width: calc( 100% - 4rem);
+		margin-left: 10rem;
+		width: calc( 100% - 10rem);
 		position: relative;
 	}
 }
 .content__header {
 	@media (min-width: $break-three){
 		padding-top: 5rem;
-		background: url('img/1131x-2.jpg') 50% 0 no-repeat;
+		background: #007eb6;
 		// background: url('https://unsplash.it/1000/1500?random') 50% 0 no-repeat;
 		// background-image: url('img/airplane-wing-istock-184917549_treated.jpg');
 		background-repeat: no-repeat;
