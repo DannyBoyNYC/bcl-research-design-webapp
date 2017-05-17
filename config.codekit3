@@ -29,22 +29,6 @@
 		"oAP": "\/1.pdf",
 		"oF": 0
 		},
-	"\/css\/barclays-regular.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/barclays-regular-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/barclays-regular.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/barclays-regular.css.map",
-		"oF": 0
-		},
 	"\/css\/fonts\/BarclaysSymbol-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -260,12 +244,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
 		},
 	"\/index.jsp": {
 		"ft": 8192,
@@ -651,19 +629,6 @@
 		"oAP": "\/Samples-of-Research\/US Credit Alpha 19 August 2016.docx",
 		"oF": 0
 		},
-	"\/scss\/barclays-regular.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 0,
-		"oAP": "\/css\/barclays-regular.css",
-		"oF": 2,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/imports\/_article-body.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -686,19 +651,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_aside.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/imports\/_byline.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_byline.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -738,19 +690,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_footnotes.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/imports\/_icon-list.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_icon-list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -833,19 +772,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/imports\/_structure.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_structure.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/imports\/_svg.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -868,32 +794,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_tables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/imports\/_toc.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_toc.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/imports\/_variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
