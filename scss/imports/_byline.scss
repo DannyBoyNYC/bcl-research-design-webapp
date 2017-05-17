@@ -1,5 +1,4 @@
 .byline {
-
     font-size: 0.875rem;
     margin-top: 0;
     line-height: 1.2;
@@ -13,22 +12,6 @@
     }
     span[itemprop="author"] {
         margin-right: 0.75rem;
-    }
-    @media (min-width: $break-three){
-
-        a[rel="author"]{
-            display: flex;
-            align-items: center;
-
-        }
-        .analyst-photo {
-            // display: block;
-            // width: 2.125rem;
-            // height: 2.125rem;
-            // border-radius: 50%;
-            // background: #bada55;
-            // margin-right: 0.25rem;
-        }
     }
 }
 

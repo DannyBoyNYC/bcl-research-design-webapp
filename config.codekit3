@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "536494ED-AAFD-4A5B-87FE-99B89A01A232"
+		"uuidString": "980BA241-714B-4C3D-9003-A87EB455B3C1"
 		}
 	],
 "creatorBuild": "25813",
@@ -27,6 +27,22 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/1.pdf",
+		"oF": 0
+		},
+	"\/css\/barclays-regular.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/barclays-regular-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/css\/barclays-regular.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/barclays-regular.css.map",
 		"oF": 0
 		},
 	"\/css\/fonts\/BarclaysSymbol-Regular.eot": {
@@ -55,22 +71,22 @@
 		},
 	"\/css\/img\/1.jpg": {
 		"ft": 16384,
-		"iS": 6974764,
+		"iS": 6974052,
 		"oA": 0,
 		"oAP": "\/css\/img\/1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/css\/img\/1131x-2.jpg": {
 		"ft": 16384,
-		"iS": 270848,
+		"iS": 254780,
 		"oA": 0,
 		"oAP": "\/css\/img\/1131x-2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/css\/img\/2.jpg": {
@@ -181,19 +197,19 @@
 		},
 	"\/img\/analyst-1.gif": {
 		"ft": 4194304,
-		"iS": 4391,
+		"iS": 4383,
 		"oA": 0,
 		"oAP": "\/img\/analyst-1.gif",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/img\/analyst-2.gif": {
 		"ft": 4194304,
-		"iS": 6087,
+		"iS": 6079,
 		"oA": 0,
 		"oAP": "\/img\/analyst-2.gif",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/img\/apples_istock_7392101.jpg": {
 		"ft": 16384,
@@ -245,6 +261,12 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
+		},
 	"\/index.jsp": {
 		"ft": 8192,
 		"oA": 2,
@@ -255,7 +277,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/min\/scripts-min-min.js",
+		"oAP": "\/js\/min\/min\/scripts-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -268,18 +290,18 @@
 		},
 	"\/js\/scripts.js": {
 		"ft": 64,
-		"mi": 0,
+		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/scripts-min.js",
-		"oF": 3,
-		"sC": 0,
+		"oF": 0,
+		"sC": 1,
 		"tS": 1
 		},
 	"\/jslib\/publications.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/jslib\/publications-min.js",
+		"oAP": "\/jslib\/min\/publications-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -294,56 +316,56 @@
 		},
 	"\/Samples-of-Research\/1.png": {
 		"ft": 32768,
-		"iS": 372124,
+		"iS": 215230,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/1.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/Samples-of-Research\/2.png": {
 		"ft": 32768,
-		"iS": 346695,
+		"iS": 206160,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/2.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/Samples-of-Research\/3.png": {
 		"ft": 32768,
-		"iS": 366612,
+		"iS": 211336,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/3.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/Samples-of-Research\/4.png": {
 		"ft": 32768,
-		"iS": 396103,
+		"iS": 199148,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/4.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/Samples-of-Research\/5.png": {
 		"ft": 32768,
-		"iS": 387681,
+		"iS": 194168,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/5.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -363,7 +385,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/barcaplive-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/barcaplive-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -405,7 +427,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/CarouselUtil-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/CarouselUtil-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -414,7 +436,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/chrome-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/chrome-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -453,7 +475,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dvExtUtil-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/dvExtUtil-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -462,7 +484,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dvGen(1)-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/dvGen(1)-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -471,7 +493,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/dvGen-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/dvGen-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -490,7 +512,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/ext-all-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/ext-all-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -499,7 +521,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/jquery-1.7.1.min-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/jquery-1.7.1.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -508,7 +530,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/jquery-ui.min-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/jquery-ui.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -517,7 +539,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/llMail-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/llMail-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -534,7 +556,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/ManageClientPanel-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/ManageClientPanel-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -543,7 +565,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/quicklist-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/quicklist-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -562,7 +584,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/relatedResearch-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/relatedResearch-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -581,7 +603,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/share-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/share-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -618,7 +640,7 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/watch-min.js",
+		"oAP": "\/Samples-of-Research\/HM_II_sample_files\/min\/watch-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -629,6 +651,19 @@
 		"oAP": "\/Samples-of-Research\/US Credit Alpha 19 August 2016.docx",
 		"oF": 0
 		},
+	"\/scss\/barclays-regular.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/css\/barclays-regular.css",
+		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/imports\/_article-body.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -637,7 +672,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_article-body.css",
+		"oAP": "\/scss\/css\/_article-body.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -650,7 +685,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_aside.css",
+		"oAP": "\/scss\/css\/_aside.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/imports\/_byline.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_byline.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -663,7 +711,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_elements.css",
+		"oAP": "\/scss\/css\/_elements.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -676,7 +724,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_figures.css",
+		"oAP": "\/scss\/css\/_figures.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -689,7 +737,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_footnotes.css",
+		"oAP": "\/scss\/css\/_footnotes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/imports\/_icon-list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_icon-list.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -702,7 +763,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_mixins.css",
+		"oAP": "\/scss\/css\/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -715,7 +776,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_popovers.css",
+		"oAP": "\/scss\/css\/_popovers.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -728,7 +789,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_previous-next-links.css",
+		"oAP": "\/scss\/css\/_previous-next-links.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -741,7 +802,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_pullquote.css",
+		"oAP": "\/scss\/css\/_pullquote.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -754,7 +815,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_quick-take.css",
+		"oAP": "\/scss\/css\/_quick-take.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -767,7 +828,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_sidebyside.css",
+		"oAP": "\/scss\/css\/_sidebyside.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/imports\/_structure.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_structure.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -780,7 +854,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_svg.css",
+		"oAP": "\/scss\/css\/_svg.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -793,7 +867,33 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_tables.css",
+		"oAP": "\/scss\/css\/_tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/imports\/_toc.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_toc.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/imports\/_variables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/css\/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -804,10 +904,10 @@
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/print.css",
-		"oF": 3,
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -991,7 +1091,7 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 507052872,
+	"creationDate": 516735196,
 	"displayValue": "webapp",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-cryingJordan"
@@ -1775,8 +1875,8 @@
 			"optionString": ""
 			},
 		"no-extra-parens": {
-			"active": 1,
-			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false}"
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none'}"
 			},
 		"no-extra-semi": {
 			"active": 1,
@@ -1795,7 +1895,7 @@
 			"optionString": ""
 			},
 		"no-global-assign": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'exceptions': []}"
 			},
 		"no-implicit-coercion": {
@@ -2003,7 +2103,7 @@
 			"optionString": "{'props': false}"
 			},
 		"no-self-compare": {
-			"active": 1,
+			"active": 0,
 			"optionString": ""
 			},
 		"no-sequences": {
@@ -2031,7 +2131,7 @@
 			"optionString": ""
 			},
 		"no-template-curly-in-string": {
-			"active": 1,
+			"active": 0,
 			"optionString": ""
 			},
 		"no-ternary": {
@@ -2087,12 +2187,12 @@
 			"optionString": ""
 			},
 		"no-unsafe-negation": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"no-unused-expressions": {
 			"active": 0,
-			"optionString": "{'allowShortCircuit': false, 'allowTernary': false}"
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
 			},
 		"no-unused-labels": {
 			"active": 1,
@@ -2100,18 +2200,18 @@
 			},
 		"no-unused-vars": {
 			"active": 1,
-			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none'}"
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
 			},
 		"no-use-before-define": {
 			"active": 0,
-			"optionString": "{'functions': true, 'classes': true}"
+			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
 			},
 		"no-useless-call": {
 			"active": 0,
 			"optionString": ""
 			},
 		"no-useless-computed-key": {
-			"active": 1,
+			"active": 0,
 			"optionString": ""
 			},
 		"no-useless-concat": {
@@ -2247,7 +2347,7 @@
 			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
 			},
 		"require-yield": {
-			"active": 0,
+			"active": 1,
 			"optionString": ""
 			},
 		"rest-spread-spacing": {
@@ -2766,7 +2866,7 @@
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 1,
@@ -2797,7 +2897,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "less",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 1,
 		"disableJavascript": 0,
 		"ieCompatibility": 1,
@@ -2863,7 +2963,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
@@ -2891,7 +2991,7 @@
 		"autoOutputPathRelativePath": "..\/css",
 		"autoOutputPathReplace1": "stylus",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"importCSS": 0,
@@ -2915,7 +3015,7 @@
 		"autoOutputPathRelativePath": "\/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0,
+		"autoOutputPathStyle": 2,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
 		"jsxMode": 0,
