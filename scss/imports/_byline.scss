@@ -15,6 +15,46 @@
     }
 }
 
+.byline.by-line-big ul {
+    display: none;
+    @media (min-width: $break-three){
+        display: flex;
+        flex-direction: column;
+        
+        .analyst-photo {
+            display: block;
+            width: 2.125rem;
+            height: 2.125rem;
+            border-radius: 50%;
+            background: #bada55;
+            margin-right: 0.25rem;
+        }
+
+        .analyst {
+            padding: 0.5rem 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .analyst-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .analyst-affiliation {
+        // display: block;
+      }
+      .analyst-deets {
+        display: flex;
+        flex-direction: column;
+      }
+
+
+    }
+
+  }
+
 .byline-popover {
     z-index: 1;
     position: absolute;

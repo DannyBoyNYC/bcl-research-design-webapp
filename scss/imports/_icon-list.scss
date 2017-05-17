@@ -1,31 +1,9 @@
-.byline.by-line-big ul {
-	display: none;
-	@media (min-width: $break-three){
-		display: flex;
-		flex-direction: column;
-		a[rel="author"]{
-			display: flex;
-			align-items: center;
-
-		}
-		.analyst-photo {
-			display: block;
-			width: 2.125rem;
-			height: 2.125rem;
-			border-radius: 50%;
-			background: #bada55;
-			margin-right: 0.25rem;
-		}
-	}
-
-}
-
 .content__article-body .content__meta-container {
-	position: relative;
-	margin-bottom: 0.75rem;
-	display: flex;
-	align-items: center;
-	&.icon-list {
+  	position: relative;
+  	margin-bottom: 0.75rem;
+  	display: flex;
+  	align-items: center;
+  	&.icon-list {
 		// display: flex;
 		align-items: center;
 		@media (min-width: $break-three){
@@ -81,9 +59,9 @@
 
 		}
 		li {
-			width:2.25rem;
-			height: 2.25rem;
-			margin-bottom: 0.25rem;
+			// width:2.25rem;
+			// height: 2.25rem;
+			// margin-bottom: 0.25rem;
 		}
 		a {
 			display: flex;

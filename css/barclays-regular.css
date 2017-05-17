@@ -207,23 +207,6 @@ blockquote {
     .side-by-side-container .sidebyside .caption {
       margin-bottom: 1rem; }
 
-.byline.by-line-big ul {
-  display: none; }
-  @media (min-width: 61.25em) {
-    .byline.by-line-big ul {
-      display: flex;
-      flex-direction: column; }
-      .byline.by-line-big ul a[rel="author"] {
-        display: flex;
-        align-items: center; }
-      .byline.by-line-big ul .analyst-photo {
-        display: block;
-        width: 2.125rem;
-        height: 2.125rem;
-        border-radius: 50%;
-        background: #bada55;
-        margin-right: 0.25rem; } }
-
 .content__article-body .content__meta-container {
   position: relative;
   margin-bottom: 0.75rem;
@@ -268,10 +251,6 @@ blockquote {
         position: fixed;
         top: 4rem;
         background: rgba(255, 255, 255, 0.9); }
-      .content__article-body .content__meta-container li {
-        width: 2.25rem;
-        height: 2.25rem;
-        margin-bottom: 0.25rem; }
       .content__article-body .content__meta-container a {
         display: flex;
         margin-bottom: 0rem; }
@@ -554,6 +533,33 @@ aside.pull {
     color: rgba(51, 51, 51, 0.4); }
   .byline span[itemprop="author"] {
     margin-right: 0.75rem; }
+
+.byline.by-line-big ul {
+  display: none; }
+  @media (min-width: 61.25em) {
+    .byline.by-line-big ul {
+      display: flex;
+      flex-direction: column; }
+      .byline.by-line-big ul .analyst-photo {
+        display: block;
+        width: 2.125rem;
+        height: 2.125rem;
+        border-radius: 50%;
+        background: #bada55;
+        margin-right: 0.25rem; }
+      .byline.by-line-big ul .analyst {
+        padding: 0.5rem 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-grow: 1; }
+      .byline.by-line-big ul .analyst-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+      .byline.by-line-big ul .analyst-deets {
+        display: flex;
+        flex-direction: column; } }
 
 .byline-popover {
   z-index: 1;
