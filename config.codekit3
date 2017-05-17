@@ -71,7 +71,7 @@
 		},
 	"\/css\/img\/1.jpg": {
 		"ft": 16384,
-		"iS": 6974764,
+		"iS": 6974052,
 		"oA": 0,
 		"oAP": "\/css\/img\/1.jpg",
 		"oF": 0,
@@ -81,7 +81,7 @@
 		},
 	"\/css\/img\/1131x-2.jpg": {
 		"ft": 16384,
-		"iS": 270848,
+		"iS": 254780,
 		"oA": 0,
 		"oAP": "\/css\/img\/1131x-2.jpg",
 		"oF": 0,
@@ -197,7 +197,7 @@
 		},
 	"\/img\/analyst-1.gif": {
 		"ft": 4194304,
-		"iS": 4391,
+		"iS": 4383,
 		"oA": 0,
 		"oAP": "\/img\/analyst-1.gif",
 		"oF": 0,
@@ -205,7 +205,7 @@
 		},
 	"\/img\/analyst-2.gif": {
 		"ft": 4194304,
-		"iS": 6087,
+		"iS": 6079,
 		"oA": 0,
 		"oAP": "\/img\/analyst-2.gif",
 		"oF": 0,
@@ -316,7 +316,7 @@
 		},
 	"\/Samples-of-Research\/1.png": {
 		"ft": 32768,
-		"iS": 372124,
+		"iS": 215230,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/1.png",
 		"oF": 0,
@@ -327,7 +327,7 @@
 		},
 	"\/Samples-of-Research\/2.png": {
 		"ft": 32768,
-		"iS": 346695,
+		"iS": 206160,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/2.png",
 		"oF": 0,
@@ -338,7 +338,7 @@
 		},
 	"\/Samples-of-Research\/3.png": {
 		"ft": 32768,
-		"iS": 366612,
+		"iS": 211336,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/3.png",
 		"oF": 0,
@@ -349,7 +349,7 @@
 		},
 	"\/Samples-of-Research\/4.png": {
 		"ft": 32768,
-		"iS": 396103,
+		"iS": 199148,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/4.png",
 		"oF": 0,
@@ -360,7 +360,7 @@
 		},
 	"\/Samples-of-Research\/5.png": {
 		"ft": 32768,
-		"iS": 387681,
+		"iS": 194168,
 		"oA": 0,
 		"oAP": "\/Samples-of-Research\/5.png",
 		"oF": 0,
