@@ -1,10 +1,9 @@
 .content__article-body .content__meta-container {
-  	position: relative;
-  	margin-bottom: 0.75rem;
-  	display: flex;
-  	align-items: center;
-  	&.icon-list {
-		// display: flex;
+	position: relative;
+	margin-bottom: 0.75rem;
+	display: flex;
+	align-items: center;
+	&.icon-list {
 		align-items: center;
 		@media (min-width: $break-three){
 
@@ -49,6 +48,7 @@
 		margin-left: -10rem;
 		display: flex;
 		flex-direction: column;
+		width: 9rem;
 		
 		.posfixed {
 			position: fixed;
@@ -59,9 +59,6 @@
 
 		}
 		li {
-			// width:2.25rem;
-			// height: 2.25rem;
-			// margin-bottom: 0.25rem;
 		}
 		a {
 			display: flex;

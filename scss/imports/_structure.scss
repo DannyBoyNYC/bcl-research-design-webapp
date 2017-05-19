@@ -67,9 +67,8 @@ article {
 	position: relative;
 	bottom:0;
 	padding-bottom: 1rem;
-	
 	padding-right: 1.5rem;
-	padding-left: 1.5rem;
+	padding-left: 1rem;
 	@include box-model;
 	@media (min-width: $break-three){
 		padding-top: 1rem;
