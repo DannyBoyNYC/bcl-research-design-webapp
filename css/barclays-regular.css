@@ -244,10 +244,9 @@ blockquote {
     .content__article-body .content__meta-container {
       position: absolute;
       top: 0;
-      margin-left: -10rem;
+      margin-left: -12rem;
       display: flex;
-      flex-direction: column;
-      width: 9rem; }
+      flex-direction: column; }
       .content__article-body .content__meta-container .posfixed {
         position: fixed;
         top: 4rem;
@@ -410,8 +409,8 @@ article {
   width: 100%; }
   @media (min-width: 61.25em) {
     .content__article-body {
-      margin-left: 10rem;
-      width: calc( 100% - 10rem);
+      margin-left: 12rem;
+      width: calc( 100% - 12rem);
       position: relative; } }
 
 @media (min-width: 61.25em) {
@@ -542,7 +541,8 @@ aside.pull {
   @media (min-width: 61.25em) {
     .byline.byline-lg ul {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 1rem; }
       .byline.byline-lg ul .analyst-photo {
         display: block;
         width: 2.125rem;
