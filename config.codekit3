@@ -15,14 +15,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/.vscode\/settings.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/.vscode\/settings-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/1.pdf": {
 		"ft": 8192,
 		"oA": 2,
@@ -71,7 +63,7 @@
 		},
 	"\/css\/img\/1.jpg": {
 		"ft": 16384,
-		"iS": 6974052,
+		"iS": 6974764,
 		"oA": 0,
 		"oAP": "\/css\/img\/1.jpg",
 		"oF": 0,
@@ -81,7 +73,7 @@
 		},
 	"\/css\/img\/1131x-2.jpg": {
 		"ft": 16384,
-		"iS": 254780,
+		"iS": 270848,
 		"oA": 0,
 		"oAP": "\/css\/img\/1131x-2.jpg",
 		"oF": 0,
@@ -197,7 +189,7 @@
 		},
 	"\/img\/analyst-1.gif": {
 		"ft": 4194304,
-		"iS": 4383,
+		"iS": 4391,
 		"oA": 0,
 		"oAP": "\/img\/analyst-1.gif",
 		"oF": 0,
@@ -205,7 +197,7 @@
 		},
 	"\/img\/analyst-2.gif": {
 		"ft": 4194304,
-		"iS": 6079,
+		"iS": 6087,
 		"oA": 0,
 		"oAP": "\/img\/analyst-2.gif",
 		"oF": 0,
@@ -260,12 +252,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
 		},
 	"\/index.jsp": {
 		"ft": 8192,
@@ -1032,16 +1018,6 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/svg\/icn-alt.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/svg\/icn-toc-2.1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/svg\/icn-toc-2.1.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
