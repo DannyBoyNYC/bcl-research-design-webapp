@@ -1,5 +1,29 @@
 'use strict';
 
+// content switcher for show
+
+var switchlink = document.querySelector('.switch');
+var switchh1 = document.querySelector('.switch-h1');
+var switchh2 = document.querySelector('.switch-h2');
+var switchlede = document.querySelector('.switch-lede');
+
+switchh2.style.display = 'none';
+
+switchlink.addEventListener('click', switcheroo);
+
+function switcheroo() {
+	switchh1.innerHTML = 'Overview';
+	switchh2.style.display = 'block';
+	switchh2.innerHTML = 'Blockchain: Overhyped Fad or Underestimated Disruptor?';
+	switchlede.innerHTML = 'CDS index options provide the right to buy or sell index protection at a predetermined strike and time in the future. They are broadly similar to options on equity indices, with the terminology and quotation similar to that of interestrate swaptions. CDS index options provide the right to buy or sell index protection at a predetermined strike and time in the future.';
+	switchlede.classList.toggle('lede');
+	switchh1.classList.toggle('alt');
+	switchh2.classList.toggle('alt');
+	// console.log(this)
+}
+
+// end switch
+
 var toc = document.querySelector('.toc');
 var toctoc = document.querySelector('.toc__toc');
 var menuShow = document.querySelector('.menu-bug');

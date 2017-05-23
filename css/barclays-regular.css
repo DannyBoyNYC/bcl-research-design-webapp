@@ -234,7 +234,7 @@ blockquote {
       width: 2.25rem;
       height: 2.25rem;
       display: flex;
-      margin-right: 0.5rem; }
+      margin-right: 0.95rem; }
       .content__article-body .content__meta-container ul.icon-list a img {
         width: 100%;
         height: 100%; }
@@ -551,7 +551,7 @@ aside.pull {
         background: #bada55;
         margin-right: 0.25rem; }
       .byline.byline-lg ul .analyst {
-        padding: 0.5rem 0;
+        padding: 1rem 0;
         display: flex;
         flex-direction: row;
         align-items: center;
