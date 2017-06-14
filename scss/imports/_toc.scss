@@ -40,58 +40,68 @@
 		margin-right: 0.25rem;
 		font-size: 0.875rem;
 	}
+
 	.toc__elements {
-		border-left: 2px solid #fff; 
 		padding-left: 0.5rem;
 		display: flex;
 		line-height: 1.2;
 	}
-	.toc__business-unit {
+// these are displayed on small and scroll
+.toc__series {
+	font-size: 1rem;
+	margin-right: 1rem;
+}
+.toc__headline {
+	font-size: 1rem;
+	margin-right: 1rem;
+}
+.toc__theme {
+	display: none;
+}
+.toc__content-type {
+	display: none;
+}
+
+.toc__date {
+	margin-left: auto;
+	color: #fff;
+	@media (min-width: $break-three){
 		display: none;
 	}
-	.toc__pubtitle {
-		font-weight: 700;
-	}
-	.toc__date {
-		margin-left:1rem;
-		// margin-left: auto;
-		.day {
-			display: none;
-		}
-	}
-	.toc__toc {
-		max-height: 0;
-		overflow: hidden;
-		background: $gray75;
-		width: 100%; 
-		position: absolute;
-		left: 0;
+}
+.toc__toc {
+	max-height: 0;
+	overflow: hidden;
+	background: $gray75;
+	width: 100%; 
+	position: absolute;
+	left: 0;
+	transition: all 0.5s cubic-bezier(0.64, -0.01, 0.15, 0.99);
+	&.toc__open {
+		max-height: 1000px;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 		transition: all 0.5s cubic-bezier(0.64, -0.01, 0.15, 0.99);
-		&.toc__open {
-			max-height: 1000px;
-			padding-top: 1rem;
-			padding-bottom: 1rem;
-			transition: all 0.5s cubic-bezier(0.64, -0.01, 0.15, 0.99);
-		}
-		@media (min-width: $break-three){
-			left: 0;
-		}
-		ul ul {
-			padding-bottom: 0;
-		}
-		li {
-			list-style: none;
-			margin-bottom: 0;
-		}
-		.sect {
-			margin-bottom: 0rem;
-		}
-		.sect a {
-			font-weight: 700;
-			color: #fff;
-			margin-top: 0.75rem;
-		}
 	}
+	@media (min-width: $break-three){
+		left: 0;
+	}
+	ul ul {
+		padding-bottom: 0;
+	}
+	li {
+		list-style: none;
+		margin-bottom: 0;
+	}
+	.sect {
+		margin-bottom: 0rem;
+	}
+	.sect a {
+		font-weight: 700;
+		color: #fff;
+		margin-top: 0.75rem;
+	}
+}
 	// .toc wide screen
 	@media (min-width: $break-three){
 		background-color: $blk-020;
@@ -104,50 +114,53 @@
 		.toc-container {
 			display: flex; 
 			flex-direction: row;
-			// overflow: scroll;
+		}
+		.toc__elements {
+			border-left: 2px solid #fff; 
 		}
 		.menu-bug {
 			width: 20%;
 			padding: 0.5rem;
 			margin: 0;
 		}
+		.toc__series {
+			display: none;
+		}
+		.toc__headline {
+			display: none;
+		}
 		.toc__date {
 			margin-left:0;
-			.day {
-				display: inline;
-			}
 		}
 		img {
 			width: 4rem; 
 			margin: 0;
 			padding: 0;
-			// margin: 0.5rem;
 		}
 		div {
 			display: flex;
 			flex-direction: column;
 			width: 98%;
 		}
-		.toc__business-unit {
-			display: inline-block;
-			// margin-bottom: 0.25rem;
-			// ellided text
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			max-width: 191px;
-		}
-		.toc__pubtitle {
+		.toc__content-type {
+			display: block;
 			font-size: 1.75rem;
 			line-height: 1.1;
 			font-weight: 400;
 			margin-bottom: 0.25rem;
 		}
+		.toc__theme {
+			display: block;
+			font-size: 1.5rem;
+			line-height: 1.1;
+			font-weight: 400;
+		}
 	}
 }
-// when the menu is fixed to the top
+// when the menu is fixed to the top via scroll
 .toc.fix-top {
 	@media (min-width: $break-three){
+		background-color: rgba(0, 0, 0, 0.75);
 		position: fixed;
 		width: 100%;
 		margin-top: 0;
@@ -160,6 +173,33 @@
 			min-width: $workingbreak;
 			margin: 0 auto;
 		}
+
+		.toc__elements {
+			border-left: none; 
+		}
+
+		.toc__series {
+			display: block;
+			font-size: 1rem;
+			margin-right: 1rem;
+		}
+		.toc__headline {
+			display: block;
+			font-size: 1rem;
+			margin-right: 1rem;
+		}
+
+		.toc__theme {
+			display: none; 
+		}
+		.toc__content-type {
+			display: none;
+		}
+		.toc__date {
+			display: block;
+			margin-left: auto;
+		}
+
 		div {
 			flex-direction: row;
 			align-items: center;
@@ -169,18 +209,10 @@
 			width: auto;
 		}
 		img {
-			width: 2rem; 
+			width: 2.25rem; 
 			margin: 0.5rem;
 		}
-		.toc__elements {
-		}
-		.toc__date {
-			margin-left: auto;
-		}
-		.toc__business-unit {
-			display: none;
-		}
-		.toc__pubtitle {
+		.toc__content-type {
 			font-size: 0.875rem;
 			font-weight: 700;
 		}

@@ -1,0 +1,57 @@
+.t-arrow {
+	display: none;
+}
+
+.byline-popover, .popover, .l-arrow:after, .t-arrow:after {
+	background: #fff;
+	border: 1px solid #c7c7c7;
+}
+.popover {
+	width: calc(100% - 3rem);
+	display: none;
+	position: absolute;
+	opacity: 0;
+	border-radius: 0.25em;
+	box-shadow: 1px 1px 2px 1px rgba(102,102,102,0.35);
+	@media (min-width: $break-three){
+		width: 20rem;
+		opacity: 0;
+		top: -2rem;
+	}
+
+	&.display-block {
+		display: block;
+	}
+	&.active {
+		opacity: 1;
+		margin-top: 5px;
+		transition: all 0.5s ease;
+	}
+	&.out {
+		opacity: 0;
+		margin-top: -20px;
+	}
+}
+
+@media (min-width: $break-three){
+	.popover {
+		.l-arrow {
+			width: 16px;
+			height: 16px;
+			overflow: hidden;
+			position: absolute;
+			top: calc(20% - 8px);
+			left: -16px;
+		}
+		.l-arrow:after {
+			content: "";
+			position: absolute;
+			left: 10px;
+			top: 0;
+			width: 15px;
+			height: 15px;;
+			transform: rotate(45deg) ;
+		}
+	}
+}
+
