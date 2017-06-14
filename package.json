@@ -1,24 +1,30 @@
 {
-  "name": "quark-layout3",
+  "name": "quark-webapp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": ""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "deploy": "ns ./build --cmd 'list ./content -s'"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "devDependencies": {
+    "concurrently": "3.0.0",
     "browser-sync": "^2.16.0",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.9.1"
+    "react-scripts": "0.6.0"
+  },
+  "dependencies": {
+    "history": "4.2.0",
+    "re-base": "2.2.0",
+    "react": "15.3.2",
+    "react-addons-css-transition-group": "15.3.2",
+    "react-dom": "15.3.2",
+    "react-router": "4.0.0-alpha.3"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/react-scripts/config/eslint.js"
   }
 }
