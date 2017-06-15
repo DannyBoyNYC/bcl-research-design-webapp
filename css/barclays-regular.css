@@ -237,7 +237,9 @@ blockquote {
     align-items: center; }
   .content__meta-container .byline-sm {
     order: 1;
-    width: 100%; }
+    width: 100%;
+    font-size: 1rem;
+    padding-bottom: 0.5rem; }
   .content__meta-container .disclosures {
     font-size: 0.875rem;
     line-height: 1.2;
@@ -514,7 +516,7 @@ aside.pull {
   .byline span[data-icon] {
     color: rgba(51, 51, 51, 0.4); }
   .byline span[itemprop="author"] {
-    margin-right: 0.75rem; }
+    margin-right: 0.5rem; }
 
 .byline-sm {
   display: block; }
