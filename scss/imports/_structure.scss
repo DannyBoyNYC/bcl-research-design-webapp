@@ -144,8 +144,11 @@ article {
 		}
 	}
 	.main {
-		display:flex; 
-		flex-direction: column;
+		
+		@media (min-width: $break-three){
+			display:flex; 
+			flex-direction: column;
+		}
 		.series {
 			color: $text;
 			font-size: 1.25rem;

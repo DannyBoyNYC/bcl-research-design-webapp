@@ -1,17 +1,34 @@
 'use strict';
 
+//mql = media query list
+var breakOne = '360'; // 360px  22.5em
+var breakTwo = '760'; // 760px  46.25em
+var breakThree = '980'; // 980px  61.25em
+var breakFour = '1140'; // 1140px  71.25em
+var breakFive = '1300'; // 1300px  81.25
+
+var mqlBreakOne = window.matchMedia('(min-width: ' + breakOne + 'px)');
+var mqlBreakTwo = window.matchMedia('(min-width: ' + breakTwo + 'px)');
+var mqlBreakThree = window.matchMedia('(min-width: ' + breakThree + 'px)');
+var mqlBreakFour = window.matchMedia('(min-width: ' + breakFour + 'px)');
+var mqlBreakFive = window.matchMedia('(min-width: ' + breakFive + 'px)');
+
 // content switcher for show
 
 var switchlink = document.querySelector('.switch');
 var switchh1 = document.querySelector('.switch-h1');
 var switchh2 = document.querySelector('.switch-h2');
 var switchlede = document.querySelector('.switch-lede');
+var mainTitling = document.querySelector('.main');
 
 switchh2.style.display = 'none';
 
 switchlink.addEventListener('click', switcheroo);
 
 function switcheroo() {
+	// if (!mqlBreakThree.matches) {
+	// 	mainTitling.style.display = 'none'
+	// }
 	switchh1.innerHTML = 'Focus';
 	switchh2.style.display = 'block';
 	switchh2.innerHTML = 'CDS Index Options Basics';
@@ -19,10 +36,10 @@ function switcheroo() {
 	switchlede.classList.toggle('lede');
 	switchh1.classList.toggle('alt');
 	switchh2.classList.toggle('alt');
-	// console.log(this)
 }
 
 // end switch
+
 
 var toc = document.querySelector('.toc');
 var toctoc = document.querySelector('.toc__toc');
@@ -30,19 +47,6 @@ var menuShow = document.querySelector('.menu-bug');
 var contentHeader = document.querySelector('.content__header');
 var iconList = document.querySelector('.icon-list');
 var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
-
-//mql = media query list
-var breakOne = '22.5em'; // 360px
-var breakTwo = '46.25em'; // 760px
-var breakThree = '61.25em'; // 980px
-var breakFour = '71.25em'; // 1140px
-var breakFive = '81.25em'; // 1300px
-
-var mqlBreakOne = window.matchMedia('(min-width: ' + breakOne + 'px)');
-var mqlBreakTwo = window.matchMedia('(min-width: ' + breakTwo + 'px)');
-var mqlBreakThree = window.matchMedia('(min-width: ' + breakThree + 'px)');
-var mqlBreakFour = window.matchMedia('(min-width: ' + breakFour + 'px)');
-var mqlBreakFive = window.matchMedia('(min-width: ' + breakFive + 'px)');
 
 // open close toc
 menuShow.addEventListener('click', function () {

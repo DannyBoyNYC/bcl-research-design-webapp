@@ -1,15 +1,32 @@
+//mql = media query list
+const breakOne = '360'; // 360px  22.5em
+const breakTwo = '760'; // 760px  46.25em
+const breakThree = '980'; // 980px  61.25em
+const breakFour = '1140'; // 1140px  71.25em
+const breakFive = '1300'; // 1300px  81.25
+
+const mqlBreakOne = window.matchMedia(`(min-width: ${breakOne}px)`);
+const mqlBreakTwo = window.matchMedia(`(min-width: ${breakTwo}px)`);
+const mqlBreakThree = window.matchMedia(`(min-width: ${breakThree}px)`);
+const mqlBreakFour = window.matchMedia(`(min-width: ${breakFour}px)`);
+const mqlBreakFive = window.matchMedia(`(min-width: ${breakFive}px)`);
+
 // content switcher for show
 
 const switchlink = document.querySelector('.switch')
 const switchh1 = document.querySelector('.switch-h1')
 const switchh2 = document.querySelector('.switch-h2')
 const switchlede = document.querySelector('.switch-lede')
+const mainTitling = document.querySelector('.main')
 
 switchh2.style.display = 'none'
 
 switchlink.addEventListener('click', switcheroo)
 
 function switcheroo(){
+	// if (!mqlBreakThree.matches) {
+	// 	mainTitling.style.display = 'none'
+	// }
 	switchh1.innerHTML = 'Focus'
 	switchh2.style.display = 'block'
 	switchh2.innerHTML = 'CDS Index Options Basics'
@@ -17,10 +34,10 @@ function switcheroo(){
 	switchlede.classList.toggle('lede') 
 	switchh1.classList.toggle('alt') 
 	switchh2.classList.toggle('alt') 
-	// console.log(this)
 }
 
 // end switch
+
 
 const toc = document.querySelector('.toc');
 const toctoc = document.querySelector('.toc__toc');
@@ -28,20 +45,6 @@ const menuShow = document.querySelector('.menu-bug');
 const contentHeader = document.querySelector('.content__header');
 const iconList = document.querySelector('.icon-list');
 var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
-
-
-//mql = media query list
-const breakOne = '22.5em'; // 360px
-const breakTwo = '46.25em'; // 760px
-const breakThree = '61.25em'; // 980px
-const breakFour = '71.25em'; // 1140px
-const breakFive = '81.25em'; // 1300px
-
-const mqlBreakOne = window.matchMedia(`(min-width: ${breakOne}px)`);
-const mqlBreakTwo = window.matchMedia(`(min-width: ${breakTwo}px)`);
-const mqlBreakThree = window.matchMedia(`(min-width: ${breakThree}px)`);
-const mqlBreakFour = window.matchMedia(`(min-width: ${breakFour}px)`);
-const mqlBreakFive = window.matchMedia(`(min-width: ${breakFive}px)`);
 
 // open close toc
 menuShow.addEventListener('click', function () {

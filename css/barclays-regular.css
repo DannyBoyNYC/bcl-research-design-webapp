@@ -207,56 +207,68 @@ blockquote {
     .side-by-side-container .sidebyside .caption {
       margin-bottom: 1rem; }
 
-.content__article-body .content__meta-container {
+.content__meta-container {
   position: relative;
   margin-bottom: 0.75rem;
-  display: flex; }
-  .content__article-body .content__meta-container.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  @media (min-width: 61.25em) {
+    .content__meta-container {
+      position: absolute;
+      top: 0;
+      margin-left: -12rem;
+      width: 12rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: no;
+      align-items: flex-start; }
+      .content__meta-container .posfixed {
+        position: fixed;
+        top: 4rem;
+        background: rgba(255, 255, 255, 0.9); }
+      .content__meta-container a {
+        display: flex;
+        margin-bottom: 0rem; }
+        .content__meta-container a img {
+          width: 100%;
+          height: 100%; } }
+  .content__meta-container.icon-list {
     align-items: center; }
-  .content__article-body .content__meta-container .disclosures {
+  .content__meta-container .byline-sm {
+    order: 1;
+    width: 100%; }
+  .content__meta-container .disclosures {
     font-size: 0.875rem;
     line-height: 1.2;
-    margin: 0; }
+    margin: 0;
+    order: 3; }
     @media (min-width: 61.25em) {
-      .content__article-body .content__meta-container .disclosures {
+      .content__meta-container .disclosures {
         display: none; } }
-  .content__article-body .content__meta-container ul {
+  .content__meta-container ul {
     list-style: none;
     padding: 0; }
-  .content__article-body .content__meta-container ul.icon-list {
+  .content__meta-container .icon-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: row; }
-    .content__article-body .content__meta-container ul.icon-list a {
+    flex-direction: row;
+    order: 2; }
+    @media (min-width: 61.25em) {
+      .content__meta-container .icon-list {
+        order: 0; } }
+    .content__meta-container .icon-list a {
       width: 2.25rem;
       height: 2.25rem;
       display: flex;
       margin-right: 0.5rem; }
-      .content__article-body .content__meta-container ul.icon-list a img {
+      .content__meta-container .icon-list a img {
         width: 100%;
         height: 100%; }
-  .content__article-body .content__meta-container li {
+  .content__meta-container li {
     margin-bottom: 0; }
-  @media (min-width: 61.25em) {
-    .content__article-body .content__meta-container {
-      position: absolute;
-      top: 0;
-      margin-left: -12rem;
-      display: flex;
-      flex-direction: column;
-      width: 12rem; }
-      .content__article-body .content__meta-container .posfixed {
-        position: fixed;
-        top: 4rem;
-        background: rgba(255, 255, 255, 0.9); }
-      .content__article-body .content__meta-container a {
-        display: flex;
-        margin-bottom: 0rem; }
-        .content__article-body .content__meta-container a img {
-          width: 100%;
-          height: 100%; } }
 
 .attachment {
   line-height: 1.2;
@@ -413,28 +425,29 @@ article {
       display: block;
       margin-top: 0.25rem;
       font-size: 0.875rem; }
-  .header__sub .main {
-    display: flex;
-    flex-direction: column; }
-    .header__sub .main .series {
-      color: #444;
-      font-size: 1.25rem;
-      font-weight: 600; }
-    .header__sub .main .headline {
-      color: #222;
-      font-size: 2.5rem;
-      font-weight: 300;
-      padding-bottom: 0.5rem;
-      letter-spacing: -1px;
-      line-height: 1.1; }
-      @media (min-width: 46.25em) {
-        .header__sub .main .headline {
-          font-size: 2.75rem; } }
-    .header__sub .main .lede {
-      font-size: 1.45rem;
-      font-weight: 300;
-      line-height: 1.25;
-      margin: 0; }
+  @media (min-width: 61.25em) {
+    .header__sub .main {
+      display: flex;
+      flex-direction: column; } }
+  .header__sub .main .series {
+    color: #444;
+    font-size: 1.25rem;
+    font-weight: 600; }
+  .header__sub .main .headline {
+    color: #222;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+    letter-spacing: -1px;
+    line-height: 1.1; }
+    @media (min-width: 46.25em) {
+      .header__sub .main .headline {
+        font-size: 2.75rem; } }
+  .header__sub .main .lede {
+    font-size: 1.45rem;
+    font-weight: 300;
+    line-height: 1.25;
+    margin: 0; }
 
 .table-container {
   max-width: 22.5em;
