@@ -207,6 +207,12 @@ blockquote {
     .side-by-side-container .sidebyside .caption {
       margin-bottom: 1rem; }
 
+.in-chapter .content__meta-container {
+  display: none; }
+  @media (min-width: 61.25em) {
+    .in-chapter .content__meta-container {
+      display: flex; } }
+
 .content__meta-container {
   position: relative;
   margin-bottom: 0.75rem;
@@ -221,7 +227,6 @@ blockquote {
       width: 12rem;
       display: flex;
       flex-direction: column;
-      flex-wrap: no;
       align-items: flex-start; }
       .content__meta-container .posfixed {
         position: fixed;
@@ -229,15 +234,9 @@ blockquote {
         background: rgba(255, 255, 255, 0.9); }
       .content__meta-container a {
         display: flex;
-        margin-bottom: 0rem; }
-        .content__meta-container a img {
-          width: 100%;
-          height: 100%; } }
+        margin-bottom: 0rem; } }
   .content__meta-container.icon-list {
     align-items: center; }
-  .content__meta-container .byline-sm {
-    order: 1;
-    width: 100%; }
   .content__meta-container .disclosures {
     font-size: 0.875rem;
     line-height: 1.2;
@@ -404,6 +403,9 @@ article {
     .content__secondary-column {
       display: block; } }
 
+.in-chapter .main {
+  display: none; }
+
 .header__sub {
   display: flex;
   flex-direction: column; }
@@ -514,13 +516,50 @@ aside.pull {
   .byline span[data-icon] {
     color: rgba(51, 51, 51, 0.4); }
   .byline span[itemprop="author"] {
-    margin-right: 0.75rem; }
+    margin-right: 0.5rem; }
 
 .byline-sm {
-  display: block; }
+  order: 1;
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  padding-bottom: 0.75rem; }
   @media (min-width: 61.25em) {
     .byline-sm {
       display: none; } }
+
+.byline-in-chapter {
+  display: none; }
+
+.in-chapter .byline-in-chapter {
+  display: block; }
+
+.in-chapter .byline-lg {
+  display: none; }
+
+.analyst-photo {
+  display: block;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 50%;
+  background: #bada55;
+  margin-right: 0.25rem; }
+
+.analyst {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1; }
+
+.analyst-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.analyst-deets {
+  display: flex;
+  flex-direction: column; }
 
 .byline.byline-lg ul {
   display: none; }
@@ -901,11 +940,39 @@ svg .circle:hover {
   font-size: 1.5rem;
   font-weight: 400; }
 
+.in-chapter .switch-h1.alt {
+  font-size: 1.25rem;
+  font-weight: 600; }
+  @media (min-width: 61.25em) {
+    .in-chapter .switch-h1.alt {
+      font-size: 1.5rem;
+      font-weight: 400; } }
+
 .switch-h2.alt {
   margin-top: 0.25rem;
   font-size: 1.5rem; }
 
-.lede {
-  font-weight: 600; }
+.in-chapter .switch-h2.alt {
+  color: #222;
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+  letter-spacing: -1px;
+  line-height: 1.1; }
+  @media (min-width: 61.25em) {
+    .in-chapter .switch-h2.alt {
+      margin-top: 0.25rem;
+      font-size: 1.5rem;
+      color: #007eb6;
+      font-weight: 400; } }
+
+.in-chapter .lede {
+  font-size: 1.45rem;
+  font-weight: 300;
+  line-height: 1.25; }
+  @media (min-width: 61.25em) {
+    .in-chapter .lede {
+      font-weight: 600;
+      font-size: 1rem; } }
 
 /*# sourceMappingURL=barclays-regular.css.map */

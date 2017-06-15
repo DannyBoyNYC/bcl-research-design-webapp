@@ -4,7 +4,7 @@
 @import "imports/pullquote";
 @import "imports/footnotes";
 @import "imports/sidebyside";
-@import "imports/icon-list";
+@import "imports/meta";
 @import "imports/article-body";
 @import "imports/structure";
 @import "imports/tables";
@@ -17,17 +17,48 @@
 @import "imports/svg";
 @import "imports/toc";
 @import "imports/popover";
-// @import "imports/print";
+
 
 .switch-h1.alt {
-  color: #444;
-  font-size: 1.5rem;
-  font-weight: 400;
+	color: #444;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.in-chapter .switch-h1.alt {
+	font-size: 1.25rem;
+	font-weight: 600;
+	@media (min-width: $break-three){
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
 }
 .switch-h2.alt {
-  margin-top: 0.25rem;
-  font-size: 1.5rem;
+	margin-top: 0.25rem;
+	font-size: 1.5rem;
 }
-.lede {
-  font-weight: 600;
+.in-chapter .switch-h2.alt {
+	color: #222;
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding-bottom: 0.5rem;
+	letter-spacing: -1px;
+	line-height: 1.1;
+	@media (min-width: $break-three){
+		margin-top: 0.25rem;
+		font-size: 1.5rem;
+		color: $link;
+		font-weight: 400;
+	}
 }
+
+.in-chapter .lede {
+		font-size: 1.45rem;
+    font-weight: 300;
+    line-height: 1.25;
+    // margin: 0;
+    @media (min-width: $break-three){
+			font-weight: 600;
+			font-size: 1rem;
+    }
+} 

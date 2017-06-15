@@ -116,8 +116,10 @@ article {
 		display: block;
 	}
 }
-
-
+// in-chapter
+.in-chapter .main {
+	display: none;
+}
 
 .header__sub {
 	display:flex;
@@ -144,7 +146,6 @@ article {
 		}
 	}
 	.main {
-		
 		@media (min-width: $break-three){
 			display:flex; 
 			flex-direction: column;

@@ -12,21 +12,25 @@ const mqlBreakFour = window.matchMedia(`(min-width: ${breakFour}px)`);
 const mqlBreakFive = window.matchMedia(`(min-width: ${breakFive}px)`);
 
 // content switcher for show
-
 const switchlink = document.querySelector('.switch')
 const switchh1 = document.querySelector('.switch-h1')
 const switchh2 = document.querySelector('.switch-h2')
 const switchlede = document.querySelector('.switch-lede')
-const mainTitling = document.querySelector('.main')
+
+// const mainTitling = document.querySelector('.main')
+// const mainMeta = document.querySelector('.content__meta-container')
+const htmlRoot = document.querySelector('html')
+
 
 switchh2.style.display = 'none'
-
 switchlink.addEventListener('click', switcheroo)
 
 function switcheroo(){
-	// if (!mqlBreakThree.matches) {
-	// 	mainTitling.style.display = 'none'
-	// }
+
+		htmlRoot.classList.add('in-chapter')
+		// mainTitling.style.display = 'none'
+		// mainMeta.style.display = 'none'
+	
 	switchh1.innerHTML = 'Focus'
 	switchh2.style.display = 'block'
 	switchh2.innerHTML = 'CDS Index Options Basics'

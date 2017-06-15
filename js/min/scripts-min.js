@@ -14,21 +14,24 @@ var mqlBreakFour = window.matchMedia('(min-width: ' + breakFour + 'px)');
 var mqlBreakFive = window.matchMedia('(min-width: ' + breakFive + 'px)');
 
 // content switcher for show
-
 var switchlink = document.querySelector('.switch');
 var switchh1 = document.querySelector('.switch-h1');
 var switchh2 = document.querySelector('.switch-h2');
 var switchlede = document.querySelector('.switch-lede');
-var mainTitling = document.querySelector('.main');
+
+// const mainTitling = document.querySelector('.main')
+// const mainMeta = document.querySelector('.content__meta-container')
+var htmlRoot = document.querySelector('html');
 
 switchh2.style.display = 'none';
-
 switchlink.addEventListener('click', switcheroo);
 
 function switcheroo() {
-	// if (!mqlBreakThree.matches) {
-	// 	mainTitling.style.display = 'none'
-	// }
+
+	htmlRoot.classList.add('in-chapter');
+	// mainTitling.style.display = 'none'
+	// mainMeta.style.display = 'none'
+
 	switchh1.innerHTML = 'Focus';
 	switchh2.style.display = 'block';
 	switchh2.innerHTML = 'CDS Index Options Basics';

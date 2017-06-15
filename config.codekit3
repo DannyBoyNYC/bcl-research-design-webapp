@@ -298,6 +298,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/kits\/includes\/_byline-lg-chapter.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_byline-lg-chapter.html",
+		"oF": 0
+		},
 	"\/kits\/includes\/_byline-lg.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -445,7 +451,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/imports\/_icon-list.scss": {
+	"\/scss\/imports\/_meta.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -453,7 +459,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/scss\/imports\/_icon-list.css",
+		"oAP": "\/scss\/imports\/_meta.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -668,6 +674,36 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/svg\/blue-bg\/icn-4.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/svg\/blue-circle\/icn-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/blue-circle\/icn-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/svg\/blue-circle\/icn-3.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/blue-circle\/icn-3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/svg\/blue-circle\/icn-4.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/blue-circle\/icn-4.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

@@ -9,16 +9,58 @@
         color: $gray-040;
     }
     span[itemprop="author"] {
-        margin-right: 0.75rem;
+        margin-right: 0.5rem;
     }
 }
 
 .byline-sm {
+    order: 1;
+    width: 100%;
     display: block;
+    font-size: 1rem;
+    padding-bottom: 0.75rem;
     @media (min-width: $break-three){ 
         display: none;
     }
 }
+.byline-in-chapter  {
+    display: none;
+}
+.in-chapter .byline-in-chapter {
+    display: block;
+}
+
+.in-chapter .byline-lg {
+    display: none;
+    
+}
+
+        .analyst-photo {
+            display: block;
+            width: 2.125rem;
+            height: 2.125rem;
+            border-radius: 50%;
+            background: #bada55;
+            margin-right: 0.25rem;
+        }
+
+                .analyst {
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+                .analyst-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+                .analyst-deets {
+            display: flex;
+            flex-direction: column;
+        }
 
 .byline.byline-lg ul {
     display: none;
@@ -49,17 +91,14 @@
             align-items: center;
         }
         .analyst-affiliation {
-        // display: block;
-      }
-      .analyst-deets {
-        display: flex;
-        flex-direction: column;
-      }
 
-
+        }
+        .analyst-deets {
+            display: flex;
+            flex-direction: column;
+        }
     }
-
-  }
+}
 
 .byline-popover {
     z-index: 1;
