@@ -23,44 +23,16 @@
         display: none;
     }
 }
-.byline-in-chapter  {
-    display: none;
-}
+// .byline-in-chapter  {
+    // display: none;
+// }
 .in-chapter .byline-in-chapter {
     display: block;
 }
 
 .in-chapter .byline-lg {
-    display: none;
-    
+    // display: none;
 }
-
-        .analyst-photo {
-            display: block;
-            width: 2.125rem;
-            height: 2.125rem;
-            border-radius: 50%;
-            background: #bada55;
-            margin-right: 0.25rem;
-        }
-
-                .analyst {
-            padding: 1rem 0;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-grow: 1;
-        }
-
-                .analyst-link {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-                .analyst-deets {
-            display: flex;
-            flex-direction: column;
-        }
 
 .byline.byline-lg ul {
     display: none;
@@ -75,7 +47,7 @@
             height: 2.125rem;
             border-radius: 50%;
             background: #bada55;
-            margin-right: 0.25rem;
+            margin-right: 0.5rem;
         }
 
         .analyst {

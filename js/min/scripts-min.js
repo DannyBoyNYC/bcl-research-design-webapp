@@ -19,8 +19,6 @@ var switchh1 = document.querySelector('.switch-h1');
 var switchh2 = document.querySelector('.switch-h2');
 var switchlede = document.querySelector('.switch-lede');
 
-// const mainTitling = document.querySelector('.main')
-// const mainMeta = document.querySelector('.content__meta-container')
 var htmlRoot = document.querySelector('html');
 
 switchh2.style.display = 'none';
@@ -29,8 +27,6 @@ switchlink.addEventListener('click', switcheroo);
 function switcheroo() {
 
 	htmlRoot.classList.add('in-chapter');
-	// mainTitling.style.display = 'none'
-	// mainMeta.style.display = 'none'
 
 	switchh1.innerHTML = 'Focus';
 	switchh2.style.display = 'block';
