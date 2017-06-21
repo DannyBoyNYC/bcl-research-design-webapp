@@ -207,11 +207,20 @@ blockquote {
     .side-by-side-container .sidebyside .caption {
       margin-bottom: 1rem; }
 
-.in-chapter .content__meta-container {
+.in-chapter .content__meta-container.main {
   display: none; }
   @media (min-width: 61.25em) {
-    .in-chapter .content__meta-container {
+    .in-chapter .content__meta-container.main {
       display: flex; } }
+
+.content__meta-container.sub {
+  display: none; }
+
+.in-chapter .content__meta-container.sub {
+  display: flex; }
+  @media (min-width: 61.25em) {
+    .in-chapter .content__meta-container.sub {
+      display: none; } }
 
 .content__meta-container {
   position: relative;
