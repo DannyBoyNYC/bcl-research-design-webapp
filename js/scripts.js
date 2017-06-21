@@ -49,6 +49,7 @@ var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
 // open close toc
 menuShow.addEventListener('click', function () {
+	// console.log('hi')
 	const tocCoords = toc.getBoundingClientRect();
 	const topOfToc = (tocCoords.height)
 	toctoc.style.top = topOfToc + 'px';

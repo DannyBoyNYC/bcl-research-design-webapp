@@ -49,6 +49,7 @@ var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
 // open close toc
 menuShow.addEventListener('click', function () {
+	// console.log('hi')
 	var tocCoords = toc.getBoundingClientRect();
 	var topOfToc = tocCoords.height;
 	toctoc.style.top = topOfToc + 'px';
@@ -162,3 +163,5 @@ function popUpAction(e) {
 	});
 	e.preventDefault();
 }
+
+//# sourceMappingURL=scripts-min.js.map

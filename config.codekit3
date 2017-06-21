@@ -334,6 +334,12 @@
 		"oAP": "\/kits\/includes\/_icon-list.html",
 		"oF": 0
 		},
+	"\/kits\/includes\/_toc__toc-v2.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_toc__toc-v2.html",
+		"oF": 0
+		},
 	"\/kits\/includes\/_toc__toc.kit": {
 		"ft": 2048,
 		"oA": 1,

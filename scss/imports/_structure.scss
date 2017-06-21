@@ -154,6 +154,10 @@ article {
 			color: $text;
 			font-size: 1.25rem;
 			font-weight: 600;
+			padding-top: 1rem;
+			@media (min-width: $break-three){
+				padding-top: 0;
+			}
 		}
 		.headline {
 			color: #222;

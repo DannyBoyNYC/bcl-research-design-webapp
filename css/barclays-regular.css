@@ -443,7 +443,11 @@ article {
   .header__sub .main .series {
     color: #444;
     font-size: 1.25rem;
-    font-weight: 600; }
+    font-weight: 600;
+    padding-top: 1rem; }
+    @media (min-width: 61.25em) {
+      .header__sub .main .series {
+        padding-top: 0; } }
   .header__sub .main .headline {
     color: #222;
     font-size: 2.5rem;
@@ -761,7 +765,8 @@ svg .circle:hover {
       padding-bottom: 0; }
     .toc .toc__toc li {
       list-style: none;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      line-height: 1.2; }
     .toc .toc__toc .sect {
       margin-bottom: 0rem; }
     .toc .toc__toc .sect a {
