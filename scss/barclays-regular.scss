@@ -1,12 +1,12 @@
 @import "imports/variables";
 @import "imports/mixins";
 @import "imports/elements";
+@import "imports/structure";
 @import "imports/pullquote";
 @import "imports/footnotes";
 @import "imports/sidebyside";
 @import "imports/meta";
 @import "imports/article-body";
-@import "imports/structure";
 @import "imports/tables";
 @import "imports/figures";
 @import "imports/aside";
@@ -18,6 +18,9 @@
 @import "imports/toc";
 @import "imports/popover";
 
+
+
+/* included to display switching functionality only */
 
 .switch-h1.alt {
 	color: #444;
@@ -52,13 +55,3 @@
 	}
 }
 
-.in-chapter .lede {
-		font-size: 1.45rem;
-    font-weight: 300;
-    line-height: 1.25;
-    // margin: 0;
-    @media (min-width: $break-three){
-			font-weight: 600;
-			font-size: 1rem;
-    }
-} 

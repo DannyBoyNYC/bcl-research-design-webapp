@@ -26,7 +26,7 @@ switchlink.addEventListener('click', switcheroo)
 
 function switcheroo(){
 
-		htmlRoot.classList.add('in-chapter')
+	htmlRoot.classList.add('in-chapter')
 	
 	switchh1.innerHTML = 'Focus'
 	switchh2.style.display = 'block'
@@ -186,8 +186,6 @@ function popUpAction(e){
 	</div>
 	`;
 
-
-
 	if (templateSelector === '#multiples'){
 		popOver.innerHTML = popOverFragMultiples;
 	} else {
@@ -203,7 +201,20 @@ function popUpAction(e){
 
 
 
+// simulate clicking on a large table
+const tablePopover = document.querySelector('.figure-header');
+const tableToPop = document.querySelector('.figure-header + table');
+const tablePopIcon = document.querySelector('.table-xl--btn');
+tablePopover.addEventListener('click', showTable);
 
+function showTable(){
+	tableToPop.classList.toggle('table-pop')
+	if (tableToPop.classList.contains('table-pop')) {
+		tablePopIcon.innerHTML = '<img src="svg/arrows-close.svg" />'
+	} else {
+		tablePopIcon.innerHTML = '<img src="svg/arrows.svg" />'
+	}
+}
 
 
 

@@ -8,32 +8,102 @@
 		@media (min-width: $break-two){
 			max-width: $break-three;
 		}
-		 > .figure-header {
+		> .figure-header {
 			margin-top: 0.25rem;
 		}
 	}
 
 	table {
 		width: 100%;
-	// table-layout: fixed;
-	// white-space: nowrap;
-	margin: 0;
-	font-size: 0.875rem;
-	border-top: 2px solid $specialblue;
-	border-collapse: collapse;
-	border-bottom: 1px solid $gray10;
-	th, td {
-		line-height: 1.1;
-		padding: 0.25rem;
-		padding-left: 0;
-	}
-	th {
-		// white-space: nowrap;
-		text-align: left;
-		color: $specialblue;
+		margin: 0;
+		font-size: 0.875rem;
+		border-top: 2px solid $specialblue;
+		border-collapse: collapse;
 		border-bottom: 1px solid $gray10;
-	}
-	tr:nth-of-type(even) { 
+		th, td {
+			line-height: 1.1;
+			padding: 0.25rem;
+			padding-left: 0;
+		}
+		th {
+			text-align: left;
+			color: $specialblue;
+			border-bottom: 1px solid $gray10;
+		}
+		tr:nth-of-type(even) { 
 		// background: #eee; 
 	}
 }
+
+.table-lg {
+	@media (min-width: $break-three){
+		margin-left: -11rem;
+	}
+}
+
+.table-xl {
+	.figure-header {
+		display: flex;
+		align-items: center;
+		border-radius: $radius;
+		background: $link;
+		padding: 0.5rem;
+		color: #fff;
+		cursor: pointer;
+		span {
+			color: #fff;
+			display: inline-block;
+			padding-right: 0.5rem;
+		}
+	}
+	.table-xl--btn {
+		display: inline-block;
+		width: 0.875rem;
+	}
+	table, .caption {
+		display: none;
+	}
+	@media (min-width: $break-three){
+		margin-left: -11rem;
+		.figure-header {
+			padding: 0;
+			background: transparent;
+			color: $text;
+			cursor: pointer;
+			span {
+				color: $blk-050;
+			}
+			.table-xl--btn {
+				display: none;
+			}
+		}
+
+		table, .caption{
+			display: block;
+		}
+	}
+}
+
+
+.table-pop {
+	display: block !important;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// z-index: 100000;
+	// background: #fff;
+	// transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

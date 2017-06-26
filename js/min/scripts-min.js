@@ -164,4 +164,17 @@ function popUpAction(e) {
 	e.preventDefault();
 }
 
-//# sourceMappingURL=scripts-min.js.map
+// simulate clicking on a large table
+var tablePopover = document.querySelector('.figure-header');
+var tableToPop = document.querySelector('.figure-header + table');
+var tablePopIcon = document.querySelector('.table-xl--btn');
+tablePopover.addEventListener('click', showTable);
+
+function showTable() {
+	tableToPop.classList.toggle('table-pop');
+	if (tableToPop.classList.contains('table-pop')) {
+		tablePopIcon.innerHTML = '<img src="svg/arrows-close.svg" />';
+	} else {
+		tablePopIcon.innerHTML = '<img src="svg/arrows.svg" />';
+	}
+}

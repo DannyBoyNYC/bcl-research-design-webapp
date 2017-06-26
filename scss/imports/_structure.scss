@@ -178,7 +178,18 @@ article {
 			min-height: 4rem;
 		}
 	}
-
 }
+
+.in-chapter .lede {
+		font-size: 1.45rem;
+    font-weight: 300;
+    line-height: 1.25;
+    @media (min-width: $break-three){
+			font-weight: 600;
+			font-size: 1rem;
+    }
+} 
+
+
 
 

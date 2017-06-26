@@ -334,6 +334,24 @@
 		"oAP": "\/kits\/includes\/_icon-list.html",
 		"oF": 0
 		},
+	"\/kits\/includes\/_table-lg.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_table-lg.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/_table-sm.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_table-sm.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/_table-xl.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_table-xl.html",
+		"oF": 0
+		},
 	"\/kits\/includes\/_toc__toc-v2.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -367,7 +385,7 @@
 		"oS": 1
 		},
 	"\/scss\/barclays-regular.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -639,6 +657,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/svg\/arrows.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/arrows.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/svg\/base64\/icn-1-gs.ai": {
 		"ft": 8192,
 		"oA": 2,
@@ -850,6 +878,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/svg\/icn-toc.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/svg\/icn-window.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/icn-window.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
