@@ -7,7 +7,7 @@
 		"uuidString": "536494ED-AAFD-4A5B-87FE-99B89A01A232"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -334,6 +334,18 @@
 		"oAP": "\/kits\/includes\/_icon-list.html",
 		"oF": 0
 		},
+	"\/kits\/includes\/_MAIN-1.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_MAIN-1.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/_MAIN-2.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_MAIN-2.html",
+		"oF": 0
+		},
 	"\/kits\/includes\/_table-lg.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -656,6 +668,36 @@
 		"oF": 3,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/svg\/arrow-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/arrow-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/svg\/arrow-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/arrow-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/svg\/arrows-close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/svg\/arrows-close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/svg\/arrows.svg": {
 		"ft": 2097152,
@@ -2856,6 +2898,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

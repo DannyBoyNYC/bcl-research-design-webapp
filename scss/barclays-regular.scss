@@ -32,8 +32,9 @@
 	font-size: 1.25rem;
 	font-weight: 600;
 	@media (min-width: $break-three){
-		font-size: 1.5rem;
-		font-weight: 400;
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: $text;
 	}
 }
 .switch-h2.alt {

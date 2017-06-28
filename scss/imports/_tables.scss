@@ -17,9 +17,12 @@
 		width: 100%;
 		margin: 0;
 		font-size: 0.875rem;
-		border-top: 2px solid $specialblue;
+		// border-top: 2px solid $specialblue;
 		border-collapse: collapse;
 		border-bottom: 1px solid $gray10;
+		@media (min-width: $break-three){
+			border-top: 2px solid $specialblue;
+		}
 		th, td {
 			line-height: 1.1;
 			padding: 0.25rem;
@@ -77,7 +80,6 @@
 				display: none;
 			}
 		}
-
 		table, .caption{
 			display: block;
 		}
@@ -87,12 +89,6 @@
 
 .table-pop {
 	display: block !important;
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// z-index: 100000;
-	// background: #fff;
-	// transform: rotate(-90deg);
 }
 
 

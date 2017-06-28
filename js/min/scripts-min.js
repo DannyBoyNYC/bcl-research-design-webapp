@@ -61,9 +61,9 @@ menuShow.addEventListener('click', function () {
 
 window.addEventListener('scroll', fixTop);
 var tocCoords = toc.getBoundingClientRect();
-var coords = { bottom: tocCoords.bottom + window.scrollY };
-// console.log('The bottom of TOC is ' + coords.bottom + 'px from the top')
-function fixTop() {
+var coords = { bottom: tocCoords.bottom + window.scrollY
+	// console.log('The bottom of TOC is ' + coords.bottom + 'px from the top')
+};function fixTop() {
 	if (window.scrollY > coords.bottom) {
 		toc.classList.add('fix-top');
 		setTimeout(function () {
@@ -109,8 +109,8 @@ closePopover.addEventListener('click', iconAction);
 
 function iconAction() {
 	// this.toggleClass('circle-color');
-	console.log(this); // anchor
-	iconPopover.classList.toggle('display-block');
+	console.log(this // anchor
+	);iconPopover.classList.toggle('display-block');
 	setTimeout(animateFade, 100);
 }
 function animateFade() {
@@ -178,3 +178,5 @@ function showTable() {
 		tablePopIcon.innerHTML = '<img src="svg/arrows.svg" />';
 	}
 }
+
+//# sourceMappingURL=scripts-min.js.map

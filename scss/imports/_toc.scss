@@ -26,7 +26,7 @@
 		padding-left:0.5rem;
 	}
 	ul {
-		padding: 0 0 1rem 1rem;
+		padding: 0 1rem 1rem 1rem;
 	}
 	span.region {
 		color: #ddd;
@@ -48,8 +48,14 @@
 	}
 // these are displayed on small and scroll
 .toc__series {
-	font-size: 1rem;
-	margin-right: 1rem;
+	display: none;
+	@media (min-width: $break-three){
+		display: block;
+		font-size: 1rem;
+		margin-right: 1rem;
+		
+	}
+
 }
 .toc__headline {
 	font-size: 1rem;
@@ -61,10 +67,11 @@
 .toc__content-type {
 	display: none;
 }
-
+// remove from the html
 .toc__date {
 	margin-left: auto;
 	color: #fff;
+	display: none;
 	@media (min-width: $break-three){
 		display: none;
 	}

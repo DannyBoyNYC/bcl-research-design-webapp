@@ -537,9 +537,11 @@ table {
   width: 100%;
   margin: 0;
   font-size: 0.875rem;
-  border-top: 2px solid #007eb6;
   border-collapse: collapse;
   border-bottom: 1px solid #ebeced; }
+  @media (min-width: 61.25em) {
+    table {
+      border-top: 2px solid #007eb6; } }
   table th, table td {
     line-height: 1.1;
     padding: 0.25rem;
@@ -773,9 +775,28 @@ aside.pull {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 0.875rem;
-  line-height: 1.1; }
-  .chapter-links a:first-child {
-    padding-right: 1rem; }
+  line-height: 1.1;
+  padding-top: 1rem; }
+  .chapter-links a {
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #007eb6;
+    padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+    border-radius: 0.25rem;
+    color: #fff; }
+  .chapter-links img {
+    width: 0.75rem;
+    padding-right: 0.5rem; }
+  .chapter-links a:last-child {
+    padding: 0.25rem 0.25rem 0.25rem 0.5rem; }
+    .chapter-links a:last-child img {
+      padding-left: 0.5rem;
+      padding-right: 0; }
 
 .quick-take {
   padding-left: 1rem;
@@ -866,7 +887,7 @@ svg .circle:hover {
     vertical-align: middle;
     padding-left: 0.5rem; }
   .toc ul {
-    padding: 0 0 1rem 1rem; }
+    padding: 0 1rem 1rem 1rem; }
   .toc span.region {
     color: #ddd;
     font-size: 0.75rem;
@@ -884,8 +905,12 @@ svg .circle:hover {
     display: flex;
     line-height: 1.2; }
   .toc .toc__series {
-    font-size: 1rem;
-    margin-right: 1rem; }
+    display: none; }
+    @media (min-width: 61.25em) {
+      .toc .toc__series {
+        display: block;
+        font-size: 1rem;
+        margin-right: 1rem; } }
   .toc .toc__headline {
     font-size: 1rem;
     margin-right: 1rem; }
@@ -895,7 +920,8 @@ svg .circle:hover {
     display: none; }
   .toc .toc__date {
     margin-left: auto;
-    color: #fff; }
+    color: #fff;
+    display: none; }
     @media (min-width: 61.25em) {
       .toc .toc__date {
         display: none; } }
@@ -1105,8 +1131,9 @@ svg .circle:hover {
   font-weight: 600; }
   @media (min-width: 61.25em) {
     .in-chapter .switch-h1.alt {
-      font-size: 1.5rem;
-      font-weight: 400; } }
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #444; } }
 
 .switch-h2.alt {
   margin-top: 0.25rem;

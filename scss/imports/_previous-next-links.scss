@@ -4,10 +4,29 @@
     justify-content: space-between;
     font-size: 0.875rem;
     line-height: 1.1;
-    // a:last-child:after {
-    //     content: "hi";
-    // }
-    a:first-child {
-        padding-right: 1rem;
+    padding-top: 1rem;
+    a {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        background: $link;
+        padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+        border-radius: $radius;
+        color: #fff;
     }
+    img {
+        width: 0.75rem;
+        padding-right: 0.5rem;
+    }
+    a:last-child {
+        padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+        img {
+            padding-left: 0.5rem;
+            padding-right: 0;
+        }
+    }
+    a:first-child {
+        // padding-right: 1rem;
+    }
+
 }
