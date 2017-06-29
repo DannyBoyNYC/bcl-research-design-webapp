@@ -190,12 +190,16 @@ article {
 	min-height: 6rem;
 }
 
-.content__article-body .headline {
+.chapter-list .headline {
 	color: $link;
-	font-size: 2rem;
+	font-size: 1.875rem;
 	font-weight: 300;
 	letter-spacing: -1px;
 	line-height: 1.1;
+}
+
+.chapter-list p {
+	margin-top: 0;
 }
 
 
