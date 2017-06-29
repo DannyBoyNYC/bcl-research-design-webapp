@@ -346,6 +346,12 @@
 		"oAP": "\/kits\/includes\/_MAIN-2.html",
 		"oF": 0
 		},
+	"\/kits\/includes\/_popover.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_popover.html",
+		"oF": 0
+		},
 	"\/kits\/includes\/_table-lg.kit": {
 		"ft": 2048,
 		"oA": 1,

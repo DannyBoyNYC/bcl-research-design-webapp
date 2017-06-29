@@ -23,23 +23,26 @@
         display: none;
     }
 }
-// .byline-in-chapter  {
-    // display: none;
-// }
+
 .in-chapter .byline-in-chapter {
     display: block;
 }
 
-.in-chapter .byline-lg {
-    // display: none;
-}
-
 .byline.byline-lg ul {
     display: none;
+
     @media (min-width: $break-three){
         display: flex;
         flex-direction: column;
         margin-top: 1rem;
+
+        .analyst {
+            padding: 0.875rem 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-grow: 1;
+        }
         
         .analyst-photo {
             display: block;
@@ -50,13 +53,6 @@
             margin-right: 0.5rem;
         }
 
-        .analyst {
-            padding: 1rem 0;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            flex-grow: 1;
-        }
         .analyst-link {
             display: flex;
             flex-direction: row;

@@ -116,6 +116,8 @@ article {
 		display: block;
 	}
 }
+
+
 // in-chapter
 .in-chapter .main {
 	display: none;
@@ -127,6 +129,7 @@ article {
 	@media (min-width: $break-three) {
 		flex-direction: row;
 	}
+
 	.asset-class {
 		display: none;
 		@media (min-width: $break-three){
@@ -145,51 +148,55 @@ article {
 			font-size: 0.875rem;
 		}
 	}
+
 	.main {
 		@media (min-width: $break-three){
 			display:flex; 
 			flex-direction: column;
 		}
-		.series {
-			color: $text;
-			font-size: 1.25rem;
-			font-weight: 600;
-			padding-top: 1rem;
-			@media (min-width: $break-three){
-				padding-top: 0;
-			}
-		}
-		.headline {
-			color: #222;
-			font-size: 2.5rem;
-			font-weight: 300;
-			padding-bottom: 0.5rem;
-			letter-spacing: -1px;
-			line-height: 1.1;
-			@media (min-width: $break-two){
-				font-size: 2.75rem;
-			}
-		}
-		.lede {
-			font-size: 1.45rem;
-			font-weight: 300;
-			line-height: 1.25;
-			margin: 0;
-			min-height: 4rem;
-		}
 	}
 }
 
-.in-chapter .lede {
-		font-size: 1.45rem;
-    font-weight: 300;
-    line-height: 1.25;
-    @media (min-width: $break-three){
-			font-weight: 600;
-			font-size: 1rem;
-    }
-} 
 
+
+// header styles
+.series {
+	color: $text;
+	font-size: 1.25rem;
+	font-weight: 600;
+	padding-top: 1rem;
+	@media (min-width: $break-three){
+		padding-top: 0;
+	}
+}
+
+.main .headline {
+	color: #222;
+	font-size: 2.5rem;
+	font-weight: 300;
+	padding-bottom: 0.5rem;
+	letter-spacing: -1px;
+	line-height: 1.1;
+	@media (min-width: $break-two){
+		font-size: 2.75rem;
+	}
+}
+
+.main .lede {
+	font-size: 1.45rem;
+	font-weight: 300;
+	line-height: 1.25;
+	margin: 0;
+	min-height: 6rem;
+}
+
+.content__article-body .headline {
+	color: $link;
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: -1px;
+	line-height: 1.1;
+}
 
 
 

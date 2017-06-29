@@ -96,7 +96,10 @@ function show() {
 function animate() {
 	fntext.classList.toggle('fn-expanded');
 }
-fnlink.addEventListener('click', show);
+// support MAIN-2 page
+if (fnlink) {
+	fnlink.addEventListener('click', show);
+}
 
 // icon-bar in left column
 iconListIcons.forEach(function (icon) {
@@ -168,7 +171,11 @@ function popUpAction(e) {
 var tablePopover = document.querySelector('.figure-header');
 var tableToPop = document.querySelector('.figure-header + table');
 var tablePopIcon = document.querySelector('.table-xl--btn');
-tablePopover.addEventListener('click', showTable);
+
+// support MAIN-2
+if (tablePopover) {
+	tablePopover.addEventListener('click', showTable);
+}
 
 function showTable() {
 	tableToPop.classList.toggle('table-pop');

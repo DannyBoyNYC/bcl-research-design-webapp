@@ -96,8 +96,10 @@ function show(){
 function animate(){
 	fntext.classList.toggle('fn-expanded');
 }
+// support MAIN-2 page
+if(fnlink){
 fnlink.addEventListener('click', show);
-
+}
 
 // icon-bar in left column
 iconListIcons.forEach(icon => icon.addEventListener('click', iconAction));
@@ -205,7 +207,11 @@ function popUpAction(e){
 const tablePopover = document.querySelector('.figure-header');
 const tableToPop = document.querySelector('.figure-header + table');
 const tablePopIcon = document.querySelector('.table-xl--btn');
+
+// support MAIN-2
+if(tablePopover) {
 tablePopover.addEventListener('click', showTable);
+}
 
 function showTable(){
 	tableToPop.classList.toggle('table-pop')
