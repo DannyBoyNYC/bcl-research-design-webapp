@@ -199,6 +199,7 @@ article {
   .content__header {
     padding-top: 5rem;
     background: #007eb6;
+    background-image: url("img/icebergs.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -911,7 +912,6 @@ svg .circle:hover {
     margin-right: 0.25rem;
     font-size: 0.875rem; }
   .toc .toc__elements {
-    padding-left: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -925,11 +925,12 @@ svg .circle:hover {
         margin-right: 1rem; } }
   .toc .toc__headline {
     font-size: 1rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    display: none; }
   .toc .toc__theme {
     display: none; }
   .toc .toc__content-type {
-    display: none; }
+    font-size: 1rem; }
   .toc .toc__date {
     margin-left: auto;
     color: #fff;
@@ -967,7 +968,7 @@ svg .circle:hover {
       margin-top: 0.75rem; }
   @media (min-width: 61.25em) {
     .toc {
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.5);
       position: absolute;
       width: 17.5rem;
       height: 75%;
@@ -983,7 +984,8 @@ svg .circle:hover {
             -ms-flex-direction: row;
                 flex-direction: row; }
       .toc .toc__elements {
-        border-left: 2px solid #fff; }
+        border-left: 2px solid #fff;
+        padding-left: 0.5rem; }
       .toc .menu-bug {
         width: 20%;
         padding: 0.5rem;

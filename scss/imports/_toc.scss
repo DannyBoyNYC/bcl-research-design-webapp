@@ -42,7 +42,7 @@
 	}
 
 	.toc__elements {
-		padding-left: 0.5rem;
+		// padding-left: 0.5rem;
 		display: flex;
 		line-height: 1.2;
 	}
@@ -53,19 +53,18 @@
 		display: block;
 		font-size: 1rem;
 		margin-right: 1rem;
-		
 	}
-
 }
 .toc__headline {
 	font-size: 1rem;
 	margin-right: 1rem;
+	display: none;
 }
 .toc__theme {
 	display: none;
 }
 .toc__content-type {
-	display: none;
+	font-size: 1rem;
 }
 // remove from the html
 .toc__date {
@@ -112,7 +111,7 @@
 }
 	// .toc wide screen
 	@media (min-width: $break-three){
-		background-color: $blk-020;
+		background-color: $blk-050;
 		position: absolute;
 		width: 17.5rem;
 		height: 75%;
@@ -124,7 +123,8 @@
 			flex-direction: row;
 		}
 		.toc__elements {
-			border-left: 2px solid #fff; 
+			border-left: 2px solid #fff;
+			padding-left: 0.5rem;
 		}
 		.menu-bug {
 			width: 20%;
