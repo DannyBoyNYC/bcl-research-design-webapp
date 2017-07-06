@@ -5,7 +5,7 @@
 		@media (min-width: $break-one){
 			max-width: $break-two;
 		}
-		@media (min-width: $break-two){
+		@media (min-width: $break-two){ 
 			max-width: $break-three;
 		}
 		> .figure-header {
@@ -17,12 +17,9 @@
 		width: 100%;
 		margin: 0;
 		font-size: 0.875rem;
-		// border-top: 2px solid $specialblue;
+		border-top: 2px solid $specialblue;
 		border-collapse: collapse;
 		border-bottom: 1px solid $gray10;
-		@media (min-width: $break-three){
-			border-top: 2px solid $specialblue;
-		}
 		th, td {
 			line-height: 1.1;
 			padding: 0.25rem;
@@ -34,7 +31,7 @@
 			border-bottom: 1px solid $gray10;
 		}
 		tr:nth-of-type(even) { 
-		// background: #eee; 
+		background: #eee; 
 	}
 }
 
@@ -42,6 +39,10 @@
 	@media (min-width: $break-three){
 		margin-left: -11rem;
 	}
+}
+
+.table-xl--btn {
+	display: none;
 }
 
 .table-xl {
@@ -58,6 +59,9 @@
 			display: inline-block;
 			padding-right: 0.5rem;
 		}
+		.fig-number {
+			white-space: nowrap;
+		}
 	}
 	.table-xl--btn {
 		display: inline-block;
@@ -65,6 +69,12 @@
 	}
 	table, .caption {
 		display: none;
+	}
+	table {
+border-top: none;
+@media (min-width: $break-three){
+border-top: 2px solid $specialblue;
+	}
 	}
 	@media (min-width: $break-three){
 		margin-left: -11rem;

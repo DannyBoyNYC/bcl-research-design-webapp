@@ -178,7 +178,7 @@
 		bottom: auto;
 		right: auto;
 		.toc-container {
-			min-width: $workingbreak;
+			max-width: $workingbreak;
 			margin: 0 auto;
 		}
 
@@ -213,7 +213,7 @@
 			align-items: center;
 		}
 		.menu-bug {
-			padding-left:1rem;
+			// padding-left:1rem;
 			width: auto;
 		}
 		img {

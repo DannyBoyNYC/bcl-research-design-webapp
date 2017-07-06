@@ -22,6 +22,8 @@ var switchlede = document.querySelector('.switch-lede');
 var htmlRoot = document.querySelector('html');
 
 switchh2.style.display = 'none';
+switchh1.style.display = 'none';
+switchlede.style.display = 'none';
 switchlink.addEventListener('click', switcheroo);
 
 function switcheroo() {
@@ -30,6 +32,8 @@ function switcheroo() {
 
 	switchh1.innerHTML = 'Focus';
 	switchh2.style.display = 'block';
+	switchh1.style.display = 'block';
+	switchlede.style.display = 'block';
 	switchh2.innerHTML = 'CDS Index Options Basics';
 	switchlede.innerHTML = 'CDS index options provide the right to buy or sell index protection at a predetermined strike and time in the future. They are broadly similar to options on equity indices, with the terminology and quotation similar to that of interestrate swaptions. CDS index options provide the right to buy or sell index protection at a predetermined strike and time in the future.';
 	switchlede.classList.toggle('lede');
