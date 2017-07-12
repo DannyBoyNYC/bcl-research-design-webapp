@@ -28,7 +28,9 @@ switchlink.addEventListener('click', switcheroo)
 
 function switcheroo(){
 
-	htmlRoot.classList.add('in-chapter')
+	htmlRoot.classList.add('in-chapter') // add root class
+
+	switchlink.parentNode.classList.toggle('active')
 	
 	switchh1.innerHTML = 'Focus'
 	switchh2.style.display = 'block'

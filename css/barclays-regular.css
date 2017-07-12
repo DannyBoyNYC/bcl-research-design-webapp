@@ -167,20 +167,18 @@ h6 + p {
 article {
   background: #f5f5f8; }
 
-.content__header .content__main-column {
-  padding-top: 1.5rem; }
-
 .content__main-column {
   background: #fff;
   margin: auto;
   position: relative;
   bottom: 0;
-  padding-bottom: 1rem;
   padding-right: 1.5rem;
   padding-left: 1rem;
   box-sizing: border-box; }
   @media (min-width: 61.25em) {
     .content__main-column {
+      padding-bottom: 1rem;
+      padding-top: 1.5rem;
       padding-top: 1rem;
       padding-right: 3rem;
       margin-left: 0;
@@ -1163,5 +1161,21 @@ svg .circle:hover {
       font-weight: 400; } }
 
 .switch-lede {
-  font-weight: 600; }
+  font-weight: 300;
+  font-size: 1.45rem;
+  line-height: 1.25; }
+  @media (min-width: 61.25em) {
+    .switch-lede {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 1.5; } }
+
+.sect img {
+  display: none; }
+
+.sect.active img {
+  display: inline-block;
+  width: 0.875rem;
+  margin: 0;
+  padding: 0; }
 /*# sourceMappingURL=barclays-regular.css.map */

@@ -57,7 +57,7 @@ article {
 }
 
 .content__header .content__main-column {
-	padding-top: 1.5rem;
+	
 }
 
 .content__main-column {
@@ -65,11 +65,13 @@ article {
 	margin: auto;
 	position: relative;
 	bottom:0;
-	padding-bottom: 1rem;
+	
 	padding-right: 1.5rem;
 	padding-left: 1rem;
 	@include box-model;
 	@media (min-width: $break-three){
+		padding-bottom: 1rem;
+		padding-top: 1.5rem;
 		padding-top: 1rem;
 		padding-right: 3rem;
 		margin-left: 0;
