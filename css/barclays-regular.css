@@ -172,15 +172,13 @@ article {
   margin: auto;
   position: relative;
   bottom: 0;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
   padding-left: 1rem;
+  padding-bottom: 0;
   box-sizing: border-box; }
   @media (min-width: 61.25em) {
     .content__main-column {
-      padding-bottom: 1rem;
-      padding-top: 1.5rem;
       padding-top: 1rem;
-      padding-right: 3rem;
       margin-left: 0;
       margin-right: 17.5rem;
       min-height: 8rem; } }
@@ -196,8 +194,8 @@ article {
 @media (min-width: 61.25em) {
   .content__header {
     padding-top: 5rem;
-    background: #007eb6;
-    background-image: url("img/icebergs.jpg");
+    background: #aaa;
+    background-image: url("img/1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -266,7 +264,7 @@ article {
 .series {
   color: #444;
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 400;
   padding-top: 1rem; }
   @media (min-width: 61.25em) {
     .series {
@@ -288,7 +286,11 @@ article {
   font-weight: 300;
   line-height: 1.25;
   margin: 0;
-  min-height: 6rem; }
+  min-height: 6rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 46.25em) {
+    .main .lede {
+      padding-bottom: 0; } }
 
 .chapter-list .headline {
   color: #007eb6;
@@ -452,7 +454,6 @@ blockquote {
   .content__meta-container .disclosures {
     font-size: 0.875rem;
     line-height: 1.2;
-    margin: 0;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
@@ -720,29 +721,9 @@ aside.pull {
             -ms-flex-direction: column;
                 flex-direction: column; } }
 
-.byline-popover {
-  z-index: 1;
-  position: absolute;
+.popover {
   background: #fff;
-  width: 86vw;
-  display: none;
-  border-radius: 0.25em;
-  box-shadow: 1px 1px 2px 1px rgba(102, 102, 102, 0.35); }
-  .byline-popover .popover-credentials {
-    display: block-inline;
-    padding-left: 1rem; }
-  @media (min-width: 46.25em) {
-    .byline-popover {
-      width: 50vw; } }
-  @media (min-width: 61.25em) {
-    .byline-popover {
-      width: 40vw; } }
-  @media (min-width: 71.25em) {
-    .byline-popover {
-      width: 30vw; } }
-
-.show {
-  display: block; }
+  border: 1px solid #c7c7c7; }
 
 .close-popover {
   padding: 0 0.5rem;
@@ -768,7 +749,8 @@ aside.pull {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    padding-left: 0; }
     .popover__content ul li {
       -webkit-box-flex: 1;
           -ms-flex: 1 1 50%;
@@ -779,6 +761,30 @@ aside.pull {
     .popover__content ul a {
       color: #444;
       font-size: 0.85rem; }
+
+.popover {
+  z-index: 1;
+  position: absolute;
+  background: #fff;
+  width: 86vw;
+  display: none;
+  border-radius: 0.25em;
+  box-shadow: 1px 1px 2px 1px rgba(102, 102, 102, 0.35); }
+  .popover .popover-credentials {
+    display: block-inline;
+    padding-left: 1rem; }
+  @media (min-width: 46.25em) {
+    .popover {
+      width: 50vw; } }
+  @media (min-width: 61.25em) {
+    .popover {
+      width: 40vw; } }
+  @media (min-width: 71.25em) {
+    .popover {
+      width: 30vw; } }
+
+.popover.show {
+  display: block; }
 
 .chapter-links {
   display: -webkit-box;
@@ -966,7 +972,7 @@ svg .circle:hover {
       margin-top: 0.75rem; }
   @media (min-width: 61.25em) {
     .toc {
-      background-color: rgba(0, 0, 0, 0.5);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
       position: absolute;
       width: 17.5rem;
       height: 75%;
@@ -1079,53 +1085,6 @@ svg .circle:hover {
   .toc.fix-top-open {
     height: 3rem;
     transition: all 0.25s; } }
-
-.t-arrow {
-  display: none; }
-
-.byline-popover, .popover, .l-arrow:after, .t-arrow:after {
-  background: #fff;
-  border: 1px solid #c7c7c7; }
-
-.popover {
-  width: calc(100% - 3rem);
-  display: none;
-  position: absolute;
-  opacity: 0;
-  border-radius: 0.25em;
-  box-shadow: 1px 1px 2px 1px rgba(102, 102, 102, 0.35); }
-  @media (min-width: 61.25em) {
-    .popover {
-      width: 20rem;
-      opacity: 0;
-      top: -2rem; } }
-  .popover.display-block {
-    display: block; }
-  .popover.active {
-    opacity: 1;
-    margin-top: 5px;
-    transition: all 0.5s ease; }
-  .popover.out {
-    opacity: 0;
-    margin-top: -20px; }
-
-@media (min-width: 61.25em) {
-  .popover .l-arrow {
-    width: 16px;
-    height: 16px;
-    overflow: hidden;
-    position: absolute;
-    top: calc(20% - 8px);
-    left: -16px; }
-  .popover .l-arrow:after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); } }
 
 /* included to display switching functionality only */
 .switch-h1.alt {

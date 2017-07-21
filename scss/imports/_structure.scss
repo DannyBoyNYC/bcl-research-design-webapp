@@ -61,19 +61,17 @@ article {
 }
 
 .content__main-column {
+
 	background: #fff;
 	margin: auto;
 	position: relative;
-	bottom:0;
-	
-	padding-right: 1.5rem;
+	bottom: 0;
+	padding-right: 1rem;
 	padding-left: 1rem;
+	padding-bottom: 0;
 	@include box-model;
 	@media (min-width: $break-three){
-		padding-bottom: 1rem;
-		padding-top: 1.5rem;
 		padding-top: 1rem;
-		padding-right: 3rem;
 		margin-left: 0;
 		margin-right: 17.5rem; 
 		min-height: 8rem;
@@ -91,9 +89,9 @@ article {
 .content__header {
 	@media (min-width: $break-three){
 		padding-top: 5rem;
-		background: #007eb6;
+		background: #aaa;
 		// background: url('https://unsplash.it/1000/1500?random') 50% 0 no-repeat;
-		background-image: url('img/icebergs.jpg');
+		background-image: url('img/1.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
@@ -165,7 +163,7 @@ article {
 .series {
 	color: $text;
 	font-size: 1.25rem;
-	font-weight: 600;
+	font-weight: 400;
 	padding-top: 1rem;
 	@media (min-width: $break-three){
 		padding-top: 0;
@@ -190,6 +188,10 @@ article {
 	line-height: 1.25;
 	margin: 0;
 	min-height: 6rem;
+	padding-bottom: 1rem;
+		@media (min-width: $break-two){
+		padding-bottom: 0;
+	}
 }
 
 .chapter-list .headline {

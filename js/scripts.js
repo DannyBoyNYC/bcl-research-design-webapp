@@ -17,9 +17,7 @@ const switchh1 = document.querySelector('.switch-h1')
 const switchh2 = document.querySelector('.switch-h2')
 const switchlede = document.querySelector('.switch-lede')
 
-
 const htmlRoot = document.querySelector('html')
-
 
 switchh2.style.display = 'none'
 switchh1.style.display = 'none'
@@ -27,9 +25,7 @@ switchlede.style.display = 'none'
 switchlink.addEventListener('click', switcheroo)
 
 function switcheroo(){
-
 	htmlRoot.classList.add('in-chapter') // add root class
-
 	switchlink.parentNode.classList.toggle('active')
 	
 	switchh1.innerHTML = 'Focus'
@@ -43,7 +39,7 @@ function switcheroo(){
 	switchh2.classList.toggle('alt') 
 }
 
-// end switch
+// end switcher for show
 
 
 const toc = document.querySelector('.toc');
@@ -55,7 +51,6 @@ var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
 // open close toc
 menuShow.addEventListener('click', function () {
-	// console.log('hi')
 	const tocCoords = toc.getBoundingClientRect();
 	const topOfToc = (tocCoords.height)
 	toctoc.style.top = topOfToc + 'px';
@@ -86,7 +81,7 @@ const coords = { bottom: tocCoords.bottom + window.scrollY }
 //, parallax effect on image
 window.addEventListener('scroll', staticize);
 function staticize(){
-	contentHeader.style.backgroundPosition = '50% ' + (pageYOffset * -1.5) + 'px';
+	contentHeader.style.backgroundPosition = '50% ' + (pageYOffset * -2.0) + 'px';
 }
 //END window.scroll functions
 
@@ -104,32 +99,17 @@ function animate(){
 }
 // support MAIN-2 page
 if(fnlink){
-fnlink.addEventListener('click', show);
+	fnlink.addEventListener('click', show);
 }
 
-// icon-bar in left column
-iconListIcons.forEach(icon => icon.addEventListener('click', iconAction));
 
-const iconPopover = document.querySelector('.popover');
-const closePopover = document.querySelector('.close-popover');
-closePopover.addEventListener('click', iconAction);
-
-function iconAction(){
-	// this.toggleClass('circle-color');
-	console.log(this) // anchor
-	iconPopover.classList.toggle('display-block');
-	setTimeout(animateFade, 100);
-}
-function animateFade(){
-	iconPopover.classList.toggle('active');
-}
-
-// byline popovers
-const authorLinks = document.querySelectorAll('.byline a');
-authorLinks.forEach( author => author.addEventListener('click', popUpAction));
+// MARK OF THE UNICORN
+// -- // -- // -- byline popovers
+const popLinks = document.querySelectorAll('.byline a');
+popLinks.forEach( popLink => popLink.addEventListener('click', popUpAction));
 
 const popOver = document.createElement('div');
-popOver.classList.add('byline-popover');
+popOver.classList.add('popover');
 document.body.append(popOver)
 
 function popUpAction(e){
@@ -144,13 +124,32 @@ function popUpAction(e){
 
 	//mql = media query list
 	let mql = window.matchMedia('(min-width: 760px)');
-	// console.log(breakTwo)
 
 	if (mql.matches) {
 		popOver.style.left = `${coords.left}px`;
 	} else {
 		popOver.style.left = `1rem`;
 	}
+
+	if (templateSelector === '#multiples'){
+		popOver.innerHTML = popOverFragMultiples;
+	} else if (templateSelector === '#single'){
+		popOver.innerHTML = popOverFrag;
+	} else if (templateSelector === '#icn-1'){
+		popOver.innerHTML = popOverFragIcn01;
+	} else if (templateSelector === '#icn-2'){
+		popOver.innerHTML = popOverFragIcn02;
+	} else if (templateSelector === '#icn-3'){
+		popOver.innerHTML = popOverFragIcn03;
+	}
+
+	popOver.classList.toggle('show');
+	const closePopover = popOver.querySelector('.close-popover');
+	closePopover.addEventListener('click', function(){
+		popOver.classList.remove('show');
+	})
+	e.preventDefault();
+}
 
 	const popOverFrag = `
 	<a class="close-popover" href="#00">✖︎</a>
@@ -194,18 +193,60 @@ function popUpAction(e){
 	</div>
 	`;
 
-	if (templateSelector === '#multiples'){
-		popOver.innerHTML = popOverFragMultiples;
-	} else {
-		popOver.innerHTML = popOverFrag;
-	}
-	popOver.classList.toggle('show');
-	const closePopover = popOver.querySelector('.close-popover');
-	closePopover.addEventListener('click', function(){
-		popOver.classList.remove('show');
-	})
-	e.preventDefault();
-}
+
+	const popOverFragIcn01 = `
+	<a class="close-popover" href="#0">✖︎</a>
+	<div class="popover__content">
+
+	<div>Subscribe</div>
+	<ul style="display: block">
+	<li><input type="checkbox"> <a href="#0">Global Economics Weekly</a></li>
+	<li><input type="checkbox"> <a href="#0">#brexit</a></li>
+	<li><input type="checkbox"> <a href="#0">InFocus</a></li>
+	</ul>
+
+	<div>Document Tools</div>
+	<ul>
+	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Add to Quicklist</a></li>
+	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Add to Briefcase</a></li>
+	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Email Me</a></li>
+	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Share</a></li>
+	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Subscribe Client</a></li>
+	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Copy Link</a></li>
+	</ul>
+
+	</div>
+
+	</div>
+	`;
+
+	const popOverFragIcn02 = `
+	<a class="close-popover" href="#0">✖︎</a>
+	<div class="popover__content">
+
+	<div>Print Optimized</div>
+	<ul style="display: block">
+	<li><a><span class="md" aria-hidden="true" data-icon="&#xF362;"></span> Print this chapter (3 pages)</a></li>
+	<li><a><span class="md" aria-hidden="true" data-icon="&#xF362;"></span> Print the entire publication - US Credit Alpha (43 pages)</a></li>
+	</ul>
+	</div>
+	</div>
+	`;
+
+		const popOverFragIcn03 = `
+	<a class="close-popover" href="#0">✖︎</a>
+	<div class="popover__content">
+
+	<div>Attachments in this article</div>
+	<ul style="display: block">
+	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Sample PDF</a></li>
+	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE006;"></span> Sample Power Point</a></li>
+	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE003;"></span> Sample Word doc</a></li>
+	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE002;"></span> Sample Excel spreadsheet</a></li>
+	</ul>
+	</div>
+	</div>
+	`;
 
 
 
@@ -216,7 +257,7 @@ const tablePopIcon = document.querySelector('.table-xl--btn');
 
 // support MAIN-2
 if(tablePopover) {
-tablePopover.addEventListener('click', showTable);
+	tablePopover.addEventListener('click', showTable);
 }
 
 function showTable(){

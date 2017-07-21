@@ -334,22 +334,10 @@
 		"oAP": "\/kits\/includes\/_icon-list.html",
 		"oF": 0
 		},
-	"\/kits\/includes\/_MAIN-1.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/kits\/includes\/_MAIN-1.html",
-		"oF": 0
-		},
 	"\/kits\/includes\/_MAIN-2.kit": {
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/kits\/includes\/_MAIN-2.html",
-		"oF": 0
-		},
-	"\/kits\/includes\/_popover.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/kits\/includes\/_popover.html",
 		"oF": 0
 		},
 	"\/kits\/includes\/_table-lg.kit": {
@@ -382,6 +370,18 @@
 		"oAP": "\/kits\/includes\/_toc__toc.html",
 		"oF": 0
 		},
+	"\/kits\/includes\/US-Credit-Alpha\/_main.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/US-Credit-Alpha\/_main.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/US-Credit-Alpha\/_series.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/US-Credit-Alpha\/_series.html",
+		"oF": 0
+		},
 	"\/kits\/index.kit": {
 		"ft": 2048,
 		"oA": 0,
@@ -401,6 +401,30 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/readme.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/readme.html",
+		"oF": 0
+		},
+	"\/readme.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/readme.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/scss\/barclays-regular.scss": {
 		"aP": 1,
@@ -515,19 +539,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_mixins.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/imports\/_popover.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_popover.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
