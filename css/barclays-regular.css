@@ -699,7 +699,7 @@ aside.pull {
         width: 2.125rem;
         height: 2.125rem;
         border-radius: 50%;
-        background: #bada55;
+        background: #555;
         margin-right: 0.5rem; }
       .byline.byline-lg ul .analyst-link {
         display: -webkit-box;
@@ -1115,7 +1115,7 @@ svg .circle:hover {
   @media (min-width: 61.25em) {
     .in-chapter .switch-h2.alt {
       margin-top: 0.25rem;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       color: #007eb6;
       font-weight: 400; } }
 

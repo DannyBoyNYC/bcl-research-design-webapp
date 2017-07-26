@@ -151,102 +151,107 @@ function popUpAction(e){
 	e.preventDefault();
 }
 
-	const popOverFrag = `
-	<a class="close-popover" href="#00">✖︎</a>
-	<div class="popover__content">
-	<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
-	<ul>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>
-	</ul>
-	</div>
-	`;
+const popOverFrag = `
+<a class="close-popover" href="#00">✖︎</a>
+<div class="popover__content">
+<div>Bradley Rogoff, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
+<ul>
+<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">bradley.rogoff@barclays.com</a></li>
+</ul>
+</div>
+`;
 
-	const popOverFragMultiples = `
-	<a class="close-popover" href="#00">✖︎</a>
-	<div class="popover__content multiple">
-	<div>Multiple Analysts<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
-	<ul>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>
-	</ul>
-	</div>
+const popOverFragMultiples = `
+<a class="close-popover" href="#00">✖︎</a>
+<div class="popover__content multiple">
+<div>Multiple Analysts<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
+<ul>
+<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>
+</ul>
+</div>
 
-	<div class="popover__content multiple">
-	<div>Shobhit Gupta<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
-	<ul>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>
-	</ul>
-	</div>
+<div class="popover__content multiple">
+<div>Shobhit Gupta<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
+<ul>
+<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">shobit.gupta@barclays.com</a></li>
+</ul>
+</div>
 
-	<div class="popover__content multiple">
-	<div>Another Analyst, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
-	<ul>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
-	<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">another.analyst@barclays.com</a></li>
-	</ul>
-	</div>
-	`;
+<div class="popover__content multiple">
+<div>Another Analyst, CFA<span class="popover-credentials">BCI, US</span> <span class="popover-credentials">High Grade Credit</span></div>
+<ul>
+<li><span class="md" aria-hidden="true" data-icon="&#xF430;"></span> <a href="#0">+1 (212) 526-4000</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF407;"></span> <a href="#0">Analyst's Page</a></li>
+<li><span class="md" aria-hidden="true" data-icon="&#xF379;"></span> <a href="#0">another.analyst@barclays.com</a></li>
+</ul>
+</div>
+`;
 
 
-	const popOverFragIcn01 = `
-	<a class="close-popover" href="#0">✖︎</a>
-	<div class="popover__content">
+const popOverFragIcn01 = `
+<a class="close-popover" href="#0">✖︎</a>
+<div class="popover__content">
 
-	<div>Subscribe</div>
-	<ul style="display: block">
-	<li><input type="checkbox"> <a href="#0">Global Economics Weekly</a></li>
-	<li><input type="checkbox"> <a href="#0">#brexit</a></li>
-	<li><input type="checkbox"> <a href="#0">InFocus</a></li>
-	</ul>
+<div>Subscribe</div>
+<ul>
+<li><a href="#0">Add to Read Later</a> <input type="checkbox"> </li>
+<li><a href="#0">Clippings &amp; Annotations</a>
+<ul>
+<li><a href="#0">Annotation 1</a></li>
+<li><a href="#0">Annotation 2</a></li>
+</ul>
+</li>
 
-	<div>Document Tools</div>
-	<ul>
-	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Add to Quicklist</a></li>
-	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Add to Briefcase</a></li>
-	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Email Me</a></li>
-	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Share</a></li>
-	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Subscribe Client</a></li>
-	<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Copy Link</a></li>
-	</ul>
+</ul>
 
-	</div>
+<div>Document Tools</div>
+<ul>
+<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Add to Quicklist</a></li>
+<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Add to Briefcase</a></li>
+<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Email Me</a></li>
+<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Share</a></li>
+<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Subscribe Client</a></li>
+<li><span class="md" aria-hidden="true" data-icon=""></span> <a href="#0">Copy Link</a></li>
+</ul>
 
-	</div>
-	`;
+</div>
 
-	const popOverFragIcn02 = `
-	<a class="close-popover" href="#0">✖︎</a>
-	<div class="popover__content">
+</div>
+`;
 
-	<div>Print Optimized</div>
-	<ul style="display: block">
-	<li><a><span class="md" aria-hidden="true" data-icon="&#xF362;"></span> Print this chapter (3 pages)</a></li>
-	<li><a><span class="md" aria-hidden="true" data-icon="&#xF362;"></span> Print the entire publication - US Credit Alpha (43 pages)</a></li>
-	</ul>
-	</div>
-	</div>
-	`;
+const popOverFragIcn02 = `
+<a class="close-popover" href="#0">✖︎</a>
+<div class="popover__content">
 
-		const popOverFragIcn03 = `
-	<a class="close-popover" href="#0">✖︎</a>
-	<div class="popover__content">
+<div>Print Options</div>
+<ul style="display: block">
+<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Print this chapter (3 pages)</a></li>
+<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Print the entire publication - US Credit Alpha (43 pages)</a></li>
+</ul>
+</div>
+</div>
+`;
 
-	<div>Attachments in this article</div>
-	<ul style="display: block">
-	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Sample PDF</a></li>
-	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE006;"></span> Sample Power Point</a></li>
-	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE003;"></span> Sample Word doc</a></li>
-	<li> <a><span class="md" aria-hidden="true" data-icon="&#xE002;"></span> Sample Excel spreadsheet</a></li>
-	</ul>
-	</div>
-	</div>
-	`;
+const popOverFragIcn03 = `
+<a class="close-popover" href="#0">✖︎</a>
+<div class="popover__content">
+
+<div>Attachments in this article</div>
+<ul style="display: block">
+<li> <a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Sample PDF</a></li>
+<li> <a><span class="md" aria-hidden="true" data-icon="&#xE006;"></span> Sample Power Point</a></li>
+<li> <a><span class="md" aria-hidden="true" data-icon="&#xE003;"></span> Sample Word doc</a></li>
+<li> <a><span class="md" aria-hidden="true" data-icon="&#xE002;"></span> Sample Excel spreadsheet</a></li>
+</ul>
+</div>
+</div>
+`;
 
 
 
