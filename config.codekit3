@@ -364,6 +364,12 @@
 		"oAP": "\/kits\/includes\/_toc__toc-v2.html",
 		"oF": 0
 		},
+	"\/kits\/includes\/_toc__toc.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/_toc__toc.html",
+		"oF": 0
+		},
 	"\/kits\/includes\/Euro-Credit-Alpha\/_main.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -386,6 +392,12 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/kits\/includes\/US-Credit-Alpha\/_series.html",
+		"oF": 0
+		},
+	"\/kits\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/kits\/index.html",
 		"oF": 0
 		},
 	"\/kits\/index.kit": {
