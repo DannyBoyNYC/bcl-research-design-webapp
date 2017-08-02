@@ -16,24 +16,30 @@ const switchlink = document.querySelector('.switch')
 const switchh1 = document.querySelector('.switch-h1')
 const switchh2 = document.querySelector('.switch-h2')
 const switchlede = document.querySelector('.switch-lede')
+const switchToc = document.querySelector('.switch-cont')
 
 const htmlRoot = document.querySelector('html')
+
+
+switchToc.style.display = 'none'
+
+if(switchh2){
 
 switchh2.style.display = 'none'
 switchh1.style.display = 'none'
 switchlede.style.display = 'none'
 switchlink.addEventListener('click', switcheroo)
+}
 
 function switcheroo(){
 	htmlRoot.classList.add('in-chapter') // add root class
 	switchlink.parentNode.classList.toggle('active')
 	
 	switchh1.innerHTML = 'Focus'
+	switchToc.style.display = 'block'
 	switchh2.style.display = 'block'
 	switchh1.style.display = 'block'
 	switchlede.style.display = 'block'
-	switchh2.innerHTML = 'CDS Index Options Basics'
-	switchlede.innerHTML = 'CDS index options provide the right to buy or sell index protection at a predetermined strike and time in the future. They are broadly similar to options on equity indices, with the terminology and quotation similar to that of interestrate swaptions. CDS index options provide the right to buy or sell index protection at a predetermined strike and time in the future.'
 	switchlede.classList.toggle('lede') 
 	switchh1.classList.toggle('alt') 
 	switchh2.classList.toggle('alt') 
