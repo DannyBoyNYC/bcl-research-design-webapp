@@ -874,6 +874,9 @@ svg .circle:hover {
 .toc.toc__open {
   display: block; }
 
+.sect.header {
+  padding-bottom: 0.5rem; }
+
 .toc {
   background-color: rgba(0, 0, 0, 0.75);
   opacity: 0.95;
