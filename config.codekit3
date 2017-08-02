@@ -131,36 +131,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/css\/img\/airplane-wing-istock-184917549_treated.jpg": {
-		"ft": 16384,
-		"iS": 55047,
-		"oA": 0,
-		"oAP": "\/css\/img\/airplane-wing-istock-184917549_treated.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/css\/img\/apples_istock_7392101.jpg": {
-		"ft": 16384,
-		"iS": 33231,
-		"oA": 0,
-		"oAP": "\/css\/img\/apples_istock_7392101.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/css\/img\/icebergs.jpg": {
-		"ft": 16384,
-		"iS": 149931,
-		"oA": 0,
-		"oAP": "\/css\/img\/icebergs.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/css\/print.css": {
 		"aP": 1,
 		"bl": 0,
@@ -177,16 +147,6 @@
 		"oAP": "\/css\/print.css.map",
 		"oF": 0
 		},
-	"\/img\/airplane-wing-istock-184917549_treated.jpg": {
-		"ft": 16384,
-		"iS": 1492600,
-		"oA": 0,
-		"oAP": "\/img\/airplane-wing-istock-184917549_treated.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/img\/analyst-1.gif": {
 		"ft": 4194304,
 		"iS": 4391,
@@ -202,56 +162,6 @@
 		"oAP": "\/img\/analyst-2.gif",
 		"oF": 0,
 		"opt": 1
-		},
-	"\/img\/apples_istock_7392101.jpg": {
-		"ft": 16384,
-		"iS": 5248895,
-		"oA": 0,
-		"oAP": "\/img\/apples_istock_7392101.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/BlueGlobePuzzle_6411633_iStock_CMYK.jpg": {
-		"ft": 16384,
-		"iS": 2631395,
-		"oA": 0,
-		"oAP": "\/img\/BlueGlobePuzzle_6411633_iStock_CMYK.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/icebergs.jpg": {
-		"ft": 16384,
-		"iS": 149931,
-		"oA": 0,
-		"oAP": "\/img\/icebergs.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/iStock_79850275_XXXLARGE_treated.jpg": {
-		"ft": 16384,
-		"iS": 12343413,
-		"oA": 0,
-		"oAP": "\/img\/iStock_79850275_XXXLARGE_treated.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/img\/SunsetOffshorePlatform_iStock_7168513.jpg": {
-		"ft": 16384,
-		"iS": 3322385,
-		"oA": 0,
-		"oAP": "\/img\/SunsetOffshorePlatform_iStock_7168513.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
 		},
 	"\/index.html": {
 		"ft": 8192,
