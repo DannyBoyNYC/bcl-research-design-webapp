@@ -194,7 +194,7 @@ article {
 @media (min-width: 61.25em) {
   .content__header {
     padding-top: 5rem;
-    background: #aaa;
+    background: #007eb6;
     background-image: url("img/1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -261,9 +261,13 @@ article {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
+.main .series {
+  font-weight: 400;
+  font-size: 1.25rem; }
+
 .series {
   color: #444;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   padding-top: 1rem; }
   @media (min-width: 61.25em) {
@@ -277,9 +281,6 @@ article {
   padding-bottom: 0.5rem;
   letter-spacing: -1px;
   line-height: 1.1; }
-  @media (min-width: 46.25em) {
-    .main .headline {
-      font-size: 2.75rem; } }
 
 .main .lede {
   font-size: 1.45rem;
@@ -295,13 +296,13 @@ article {
 .chapter-list .headline {
   color: #007eb6;
   font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: -1px;
   line-height: 1.1;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-bottom: 0.25rem; }
 
 .chapter-list p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 1.5rem; }
 
 blockquote {
   width: 100%;
@@ -1113,7 +1114,6 @@ svg .circle:hover {
   font-size: 2.5rem;
   font-weight: 300;
   padding-bottom: 0.5rem;
-  letter-spacing: -1px;
   line-height: 1.1; }
   @media (min-width: 61.25em) {
     .in-chapter .switch-h2.alt {
