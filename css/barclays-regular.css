@@ -178,6 +178,7 @@ article {
   box-sizing: border-box; }
   @media (min-width: 61.25em) {
     .content__main-column {
+      padding-right: 2.5rem;
       padding-top: 1rem;
       margin-left: 0;
       margin-right: 17.5rem;

@@ -61,7 +61,6 @@ article {
 }
 
 .content__main-column {
-
 	background: #fff;
 	margin: auto;
 	position: relative;
@@ -72,6 +71,7 @@ article {
 	@include box-model;
 	@media (min-width: $break-three){
 		// box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.1);
+		padding-right: 2.5rem;
 		padding-top: 1rem;
 		margin-left: 0;
 		margin-right: 17.5rem; 
