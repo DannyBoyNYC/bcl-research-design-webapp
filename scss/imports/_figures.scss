@@ -14,3 +14,49 @@
 		color: $blk-050;
 	}
 }
+
+
+// new for icon
+
+figure {
+	position: relative;
+}
+
+.gallery__fullscreen, .article__fullscreen {
+    position: absolute;
+}
+
+.gallery__fullscreen, .article__fullscreen {
+    top: 0;
+    right: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: rgba(51,51,51,0.6);
+    margin: 0.625rem;
+}	
+
+.rounded-icon {
+    -webkit-border-radius: 62.5rem;
+    border-radius: 62.5rem;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.inline-icon {
+    fill: #ffffff;
+}
+
+.gallery__fullscreen.inline-expand-image svg, .article__fullscreen.inline-expand-image svg {
+    width: 50%;
+    height: 50%;
+}
+
+.centered-icon svg {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+}
