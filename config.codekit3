@@ -274,12 +274,6 @@
 		"oAP": "\/kits\/includes\/_icon-list.html",
 		"oF": 0
 		},
-	"\/kits\/includes\/_MAIN-2.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/kits\/includes\/_MAIN-2.html",
-		"oF": 0
-		},
 	"\/kits\/includes\/_table-lg.kit": {
 		"ft": 2048,
 		"oA": 1,
@@ -298,16 +292,10 @@
 		"oAP": "\/kits\/includes\/_table-xl.html",
 		"oF": 0
 		},
-	"\/kits\/includes\/_toc__toc-v2.kit": {
+	"\/kits\/includes\/Euro-Credit-Alpha\/_main-main.kit": {
 		"ft": 2048,
 		"oA": 1,
-		"oAP": "\/kits\/includes\/_toc__toc-v2.html",
-		"oF": 0
-		},
-	"\/kits\/includes\/_toc__toc.kit": {
-		"ft": 2048,
-		"oA": 1,
-		"oAP": "\/kits\/includes\/_toc__toc.html",
+		"oAP": "\/kits\/includes\/Euro-Credit-Alpha\/_main-main.html",
 		"oF": 0
 		},
 	"\/kits\/includes\/Euro-Credit-Alpha\/_main.kit": {
@@ -316,10 +304,46 @@
 		"oAP": "\/kits\/includes\/Euro-Credit-Alpha\/_main.html",
 		"oF": 0
 		},
+	"\/kits\/includes\/Euro-Credit-Alpha\/_series-main.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/Euro-Credit-Alpha\/_series-main.html",
+		"oF": 0
+		},
 	"\/kits\/includes\/Euro-Credit-Alpha\/_series.kit": {
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/kits\/includes\/Euro-Credit-Alpha\/_series.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/Euro-Credit-Alpha\/_toc-elements.kit": {
+		"ft": 2048,
+		"oA": 0,
+		"oAP": "\/kits\/includes\/Euro-Credit-Alpha\/_toc-elements.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/OLD\/_MAIN-2.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/OLD\/_MAIN-2.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/OLD\/_toc__toc-v2.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/OLD\/_toc__toc-v2.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/OLD\/_toc__toc.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/OLD\/_toc__toc.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/US-Credit-Alpha\/_main-main.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/US-Credit-Alpha\/_main-main.html",
 		"oF": 0
 		},
 	"\/kits\/includes\/US-Credit-Alpha\/_main.kit": {
@@ -332,6 +356,18 @@
 		"ft": 2048,
 		"oA": 1,
 		"oAP": "\/kits\/includes\/US-Credit-Alpha\/_series.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/US-Credit-Alpha\/_toc-elements.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/US-Credit-Alpha\/_toc-elements.html",
+		"oF": 0
+		},
+	"\/kits\/includes\/US-Credit-Alpha\/_toc-toc.kit": {
+		"ft": 2048,
+		"oA": 1,
+		"oAP": "\/kits\/includes\/US-Credit-Alpha\/_toc-toc.html",
 		"oF": 0
 		},
 	"\/kits\/index.kit": {
