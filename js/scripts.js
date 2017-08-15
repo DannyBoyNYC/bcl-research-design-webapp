@@ -235,10 +235,10 @@ const popOverFragIcn02 = `
 <a class="close-popover" href="#0">✖︎</a>
 <div class="popover__content">
 
-<div>Print Options</div>
+<div>Print PDF</div>
 <ul style="display: block">
-<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Print this chapter (3 pages)</a></li>
-<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Print the entire publication - US Credit Alpha (43 pages)</a></li>
+<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> This chapter (3 pages)</a></li>
+<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> US Credit Alpha (43 pages)</a></li>
 </ul>
 </div>
 </div>

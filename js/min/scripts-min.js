@@ -165,7 +165,7 @@ var popOverFragMultiples = '\n<a class="close-popover" href="#00">\u2716\uFE0E</
 
 var popOverFragIcn01 = '\n<a class="close-popover" href="#0">\u2716\uFE0E</a>\n<div class="popover__content">\n\n<div>Subscribe</div>\n<ul>\n<li><a href="#0">Add to Read Later</a> <input type="checkbox"> </li>\n<li><a href="#0">Clippings &amp; Annotations</a>\n<ul>\n<li><a href="#0">Annotation 1</a></li>\n<li><a href="#0">Annotation 2</a></li>\n</ul>\n</li>\n\n</ul>\n\n<div>Document Tools</div>\n<ul>\n<li><span class="md" aria-hidden="true" data-icon="\uF440"></span> <a href="#0">Add to Quicklist</a></li>\n<li><span class="md" aria-hidden="true" data-icon="\uF380"></span> <a href="#0">Add to Briefcase</a></li>\n<li><span class="md" aria-hidden="true" data-icon="\uF116"></span> <a href="#0">Email Me</a></li>\n<li><span class="md" aria-hidden="true" data-icon="\uF436"></span> <a href="#0">Share</a></li>\n<li><span class="md" aria-hidden="true" data-icon="\uF407"></span> <a href="#0">Subscribe Client</a></li>\n<li><span class="md" aria-hidden="true" data-icon="\uF395"></span> <a href="#0">Copy Link</a></li>\n</ul>\n\n</div>\n\n</div>\n';
 
-var popOverFragIcn02 = '\n<a class="close-popover" href="#0">\u2716\uFE0E</a>\n<div class="popover__content">\n\n<div>Print Options</div>\n<ul style="display: block">\n<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Print this chapter (3 pages)</a></li>\n<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Print the entire publication - US Credit Alpha (43 pages)</a></li>\n</ul>\n</div>\n</div>\n';
+var popOverFragIcn02 = '\n<a class="close-popover" href="#0">\u2716\uFE0E</a>\n<div class="popover__content">\n\n<div>Print PDF</div>\n<ul style="display: block">\n<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> This chapter (3 pages)</a></li>\n<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> US Credit Alpha (43 pages)</a></li>\n</ul>\n</div>\n</div>\n';
 
 var popOverFragIcn03 = '\n<a class="close-popover" href="#0">\u2716\uFE0E</a>\n<div class="popover__content">\n\n<div>Attachments in this article</div>\n<ul style="display: block">\n<li> <a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> Sample PDF</a></li>\n<li> <a><span class="md" aria-hidden="true" data-icon="&#xE006;"></span> Sample Power Point</a></li>\n<li> <a><span class="md" aria-hidden="true" data-icon="&#xE003;"></span> Sample Word doc</a></li>\n<li> <a><span class="md" aria-hidden="true" data-icon="&#xE002;"></span> Sample Excel spreadsheet</a></li>\n</ul>\n</div>\n</div>\n';
 
@@ -187,5 +187,3 @@ function showTable() {
 		tablePopIcon.innerHTML = '<img src="svg/arrows.svg" />';
 	}
 }
-
-//# sourceMappingURL=scripts-min.js.map
