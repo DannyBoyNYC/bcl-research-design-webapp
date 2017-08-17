@@ -387,9 +387,16 @@ blockquote {
       color: #444;
       font-weight: 600;
       line-height: 1.2;
-      margin-bottom: 0.25rem; }
+      margin-bottom: 0.25rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
       .side-by-side-container .sidebyside h3 span {
-        color: rgba(0, 0, 0, 0.5); }
+        color: rgba(0, 0, 0, 0.5);
+        white-space: nowrap; }
     .side-by-side-container .sidebyside .caption {
       margin-bottom: 1rem; }
 

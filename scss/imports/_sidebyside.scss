@@ -21,8 +21,11 @@
 			font-weight: 600;
 			line-height: 1.2;
 			margin-bottom: 0.25rem;
+			display: flex;
+			align-items: flex-start;
 			span {
 				color: $blk-050;
+				white-space: nowrap;
 			}
 		}
 		.caption {
