@@ -52,8 +52,8 @@ const toc = document.querySelector('.toc');
 const toctoc = document.querySelector('.toc__toc');
 const menuShow = document.querySelector('.menu-bug');
 const contentHeader = document.querySelector('.content__header');
-const iconList = document.querySelector('.icon-list');
-var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
+// const iconList = document.querySelector('.icon-list');
+// var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
 // open close toc
 menuShow.addEventListener('click', function () {
@@ -76,11 +76,11 @@ const coords = { bottom: tocCoords.bottom + window.scrollY }
 			setTimeout(function(){
 				toc.classList.add('fix-top-open')
 			}, 0)
-			iconList.classList.add('posfixed')
+			// iconList.classList.add('posfixed')
 		} else if(window.scrollY < coords.bottom) {
 			toc.classList.remove('fix-top')
 			toc.classList.remove('fix-top-open')
-			iconList.classList.remove('posfixed')
+			// iconList.classList.remove('posfixed')
 		}
 	}
 

@@ -742,8 +742,13 @@ aside.pull {
         width: 2.125rem;
         height: 2.125rem;
         border-radius: 50%;
-        background: #555;
-        margin-right: 0.5rem; }
+        background: #007eb6;
+        margin-right: 0.5rem;
+        color: #fff;
+        text-align: center;
+        line-height: 2.125rem;
+        font-size: 1rem;
+        font-weight: 600; }
       .byline.byline-lg ul .analyst-link {
         display: -webkit-box;
         display: -ms-flexbox;

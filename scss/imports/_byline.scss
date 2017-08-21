@@ -49,8 +49,16 @@
             width: 2.125rem;
             height: 2.125rem;
             border-radius: 50%;
-            background: #555;
+            background: $link;
+            // border: 1px solid $link;
             margin-right: 0.5rem;
+            color: #fff;
+            // color: $link;
+            text-align: center;
+            line-height: 2.125rem;  
+            // letter-spacing: 1px;
+            font-size: 1rem;
+            font-weight: 600;
         }
 
         .analyst-link {

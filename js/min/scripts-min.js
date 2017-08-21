@@ -53,8 +53,8 @@ var toc = document.querySelector('.toc');
 var toctoc = document.querySelector('.toc__toc');
 var menuShow = document.querySelector('.menu-bug');
 var contentHeader = document.querySelector('.content__header');
-var iconList = document.querySelector('.icon-list');
-var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
+// const iconList = document.querySelector('.icon-list');
+// var iconListIcons = [].slice.call(iconList.querySelectorAll('a'));
 
 // open close toc
 menuShow.addEventListener('click', function () {
@@ -76,12 +76,14 @@ var coords = { bottom: tocCoords.bottom + window.scrollY
 		toc.classList.add('fix-top');
 		setTimeout(function () {
 			toc.classList.add('fix-top-open');
-		}, 0);
-		iconList.classList.add('posfixed');
+		}, 0
+		// iconList.classList.add('posfixed')
+		);
 	} else if (window.scrollY < coords.bottom) {
 		toc.classList.remove('fix-top');
-		toc.classList.remove('fix-top-open');
-		iconList.classList.remove('posfixed');
+		toc.classList.remove('fix-top-open'
+		// iconList.classList.remove('posfixed')
+		);
 	}
 }
 
