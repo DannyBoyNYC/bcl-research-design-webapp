@@ -253,15 +253,6 @@ article {
       display: block;
       margin-top: 0.25rem;
       font-size: 0.875rem; }
-  @media (min-width: 61.25em) {
-    .header__sub .main {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; } }
 
 .main .series {
   font-weight: 400;
