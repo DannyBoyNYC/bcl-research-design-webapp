@@ -231,7 +231,7 @@
 		},
 	"\/js\/scripts.js": {
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/js\/min\/scripts-min.js",

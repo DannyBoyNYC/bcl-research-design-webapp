@@ -554,8 +554,6 @@ table {
     text-align: left;
     color: #007eb6;
     border-bottom: 1px solid #ebeced; }
-  table tr:nth-of-type(even) {
-    background: #eee; }
 
 @media (min-width: 61.25em) {
   .table-lg {
@@ -617,7 +615,8 @@ table {
 .caption {
   font-size: 0.875rem;
   margin: 0;
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 112%; }
 
 .figure-header {
   font-size: 0.875rem;

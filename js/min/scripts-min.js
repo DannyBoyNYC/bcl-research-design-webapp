@@ -33,8 +33,8 @@ if (switchh2) {
 }
 
 function switcheroo() {
-	htmlRoot.classList.add('in-chapter' // add root class
-	);switchlink.parentNode.classList.toggle('active');
+	htmlRoot.classList.add('in-chapter'); // add root class
+	switchlink.parentNode.classList.toggle('active');
 
 	switchh1.innerHTML = 'Focus';
 	switchToc.style.display = 'block';
@@ -76,14 +76,12 @@ var coords = { bottom: tocCoords.bottom + window.scrollY
 		toc.classList.add('fix-top');
 		setTimeout(function () {
 			toc.classList.add('fix-top-open');
-		}, 0
+		}, 0);
 		// iconList.classList.add('posfixed')
-		);
 	} else if (window.scrollY < coords.bottom) {
 		toc.classList.remove('fix-top');
-		toc.classList.remove('fix-top-open'
+		toc.classList.remove('fix-top-open');
 		// iconList.classList.remove('posfixed')
-		);
 	}
 }
 
@@ -189,3 +187,5 @@ function showTable() {
 		tablePopIcon.innerHTML = '<img src="svg/arrows.svg" />';
 	}
 }
+
+//# sourceMappingURL=scripts-min.js.map
