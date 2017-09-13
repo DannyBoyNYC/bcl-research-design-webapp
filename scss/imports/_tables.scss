@@ -45,7 +45,9 @@
 	display: none;
 }
 
+// wide tables
 .table-container.table-xl {
+	//header small screen
 	.figure-header {
 		display: flex;
 		align-items: center;
@@ -57,16 +59,18 @@
 		span {
 			color: #fff;
 			display: inline-block;
-			padding-right: 0.5rem;
 		}
 		.fig-number {
 			white-space: nowrap;
 		}
 	}
+	// arrows
 	.table-xl--btn {
 		display: inline-block;
-		width: 0.875rem;
+		width: 1.25rem;
+		padding: 0.5rem;
 	}
+	// hide caption on small screens
 	table, .caption {
 		display: none;
 	}
@@ -90,6 +94,7 @@ border-top: 2px solid $specialblue;
 				display: none;
 			}
 		}
+		// display captions on wide screen
 		table, .caption{
 			display: block;
 		}
@@ -99,8 +104,23 @@ border-top: 2px solid $specialblue;
 
 .table-pop {
 	display: block !important;
+	opacity: 1;
+	// background-color: rgba(116,77,56,0.05);
+	animation: fade 1s;
+	@media (min-width: $break-three){
+	background-color: #fff;
+	}
 }
 
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 
 

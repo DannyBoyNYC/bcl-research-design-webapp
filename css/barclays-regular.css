@@ -576,14 +576,14 @@ table {
   cursor: pointer; }
   .table-container.table-xl .figure-header span {
     color: #fff;
-    display: inline-block;
-    padding-right: 0.5rem; }
+    display: inline-block; }
   .table-container.table-xl .figure-header .fig-number {
     white-space: nowrap; }
 
 .table-container.table-xl .table-xl--btn {
   display: inline-block;
-  width: 0.875rem; }
+  width: 1.25rem;
+  padding: 0.5rem; }
 
 .table-container.table-xl table, .table-container.table-xl .caption {
   display: none; }
@@ -610,13 +610,31 @@ table {
       display: block; } }
 
 .table-pop {
-  display: block !important; }
+  display: block !important;
+  opacity: 1;
+  -webkit-animation: fade 1s;
+          animation: fade 1s; }
+  @media (min-width: 61.25em) {
+    .table-pop {
+      background-color: #fff; } }
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .caption {
   font-size: 0.875rem;
   margin: 0;
   color: rgba(0, 0, 0, 0.5);
-  line-height: 112%; }
+  line-height: 114%; }
 
 .figure-header {
   font-size: 0.875rem;
@@ -625,7 +643,8 @@ table {
   line-height: 1.2;
   margin-bottom: 0.25rem; }
   .figure-header span {
-    color: rgba(0, 0, 0, 0.5); }
+    color: rgba(0, 0, 0, 0.5);
+    padding-right: 0.75rem; }
 
 figure {
   position: relative; }
