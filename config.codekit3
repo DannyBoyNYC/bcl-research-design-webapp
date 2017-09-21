@@ -409,6 +409,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/mateer\/img\/3c.png": {
+		"ft": 32768,
+		"iS": 27519,
+		"oA": 0,
+		"oAP": "\/mateer\/img\/3c.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/mateer\/img\/4.png": {
 		"ft": 32768,
 		"iS": 17319,
@@ -431,6 +442,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/mateer\/img\/4c.png": {
+		"ft": 32768,
+		"iS": 27516,
+		"oA": 0,
+		"oAP": "\/mateer\/img\/4c.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/mateer\/img\/7.png": {
 		"ft": 32768,
 		"iS": 20856,
@@ -447,6 +469,17 @@
 		"iS": 8764,
 		"oA": 0,
 		"oAP": "\/mateer\/img\/7b.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/mateer\/img\/7c.png": {
+		"ft": 32768,
+		"iS": 28696,
+		"oA": 0,
+		"oAP": "\/mateer\/img\/7c.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
