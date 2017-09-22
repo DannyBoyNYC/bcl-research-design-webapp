@@ -27,7 +27,7 @@
 			padding-left: 0;
 		}
 		th {
-			text-align: left;
+			text-align: center;
 			color: $specialblue;
 			border-bottom: 1px solid $gray10;
 		}
@@ -63,13 +63,15 @@
 		}
 		.fig-number {
 			white-space: nowrap;
+			text-transform: uppercase;
 		}
 	}
 	// arrows
 	.table-xl--btn {
 		display: inline-block;
-		width: 1.25rem;
-		padding: 0.5rem;
+		width: 1rem;
+		padding: 0.5rem 0.5rem 0.5rem 0;
+		 flex-shrink: 0;
 	}
 	// hide caption on small screens
 	table, .caption {
