@@ -1,6 +1,5 @@
 .table-container {
 	max-width: $break-one;
-	overflow: auto;
 	padding-top: 1rem;
 		// 360px;
 		@media (min-width: $break-one){
@@ -11,6 +10,9 @@
 		}
 		> .figure-header {
 			margin-top: 0.25rem;
+		}
+		table {
+			overflow: auto;
 		}
 	}
 

@@ -21,22 +21,6 @@
 		"oAP": "\/1.pdf",
 		"oF": 0
 		},
-	"\/css\/barclays-regular.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/barclays-regular-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/css\/barclays-regular.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/css\/barclays-regular.css.map",
-		"oF": 0
-		},
 	"\/css\/fonts\/BarclaysSymbol-Regular.eot": {
 		"ft": 8192,
 		"oA": 2,
@@ -200,12 +184,6 @@
 		"oAP": "\/img\/analyst-blank.gif",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
 		},
 	"\/index.jsp": {
 		"ft": 8192,
@@ -609,19 +587,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/imports\/_figures.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_figures.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/imports\/_footnotes.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -748,19 +713,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/imports\/_svg.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/scss\/imports\/_tables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/scss\/imports\/_tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

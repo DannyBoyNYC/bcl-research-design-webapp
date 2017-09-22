@@ -533,7 +533,6 @@ blockquote {
 
 .table-container {
   max-width: 22.5em;
-  overflow: auto;
   padding-top: 1rem; }
   @media (min-width: 22.5em) {
     .table-container {
@@ -543,6 +542,8 @@ blockquote {
       max-width: 61.25em; } }
   .table-container > .figure-header {
     margin-top: 0.25rem; }
+  .table-container table {
+    overflow: auto; }
 
 table {
   width: 100%;
