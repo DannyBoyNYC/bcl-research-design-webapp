@@ -1,0 +1,38 @@
+blockquote {
+	width: 100%;
+	font-size: 1.25rem;
+	line-height: 1.2;
+	color: $link;
+	text-align: center;
+	@include box-model;
+	padding: 0.25rem 2rem;
+	margin-bottom: 0.75rem;
+	.attribution {
+		font-size: 0.875rem;
+		color: $text;
+		font-style: italic;
+	}
+}
+/*@media (min-width: 46.25em) {
+	blockquote {
+		width: 13.75rem;
+		float: left;
+		padding-right: 1.25rem;
+		padding-top: 0.1875rem;
+		margin-bottom: 0.375rem;
+	}
+}
+@media (min-width: 71.25em) {
+	blockquote {
+		width: 11.25rem;
+		margin-left: -11.25rem;
+		padding: 0 1.25rem;
+		padding-top: 0.1875rem;
+	}
+}
+@media (min-width: 81.25em) {
+	blockquote {
+		width: 16.25rem;
+		margin-left: -16.25rem;
+	}
+}*/

@@ -1,0 +1,50 @@
+
+.icn-1,
+.icn-2,
+.icn-3,
+.icn-4,
+.icn-5 {
+	width: 36px;
+}
+
+//utility icon
+.icn-1 .st0,
+.icn-3 .st0,
+.icn-4 .st0
+ {
+	fill: #A6A8AB;
+	transition: fill 1s linear;
+}
+
+.icn-1:hover .st0,
+.icn-3:hover .st0,
+.icn-4:hover .st0
+ {
+	fill: #007eb6;
+}
+
+
+// print icon
+.icn-3 .st0{ 
+	fill-rule:evenodd; 
+	clip-rule:evenodd; 
+	fill:#A6A8AB;
+}
+// paper clip
+.icn-4 .st0{
+	fill-rule:evenodd;
+	clip-rule:evenodd;
+	fill: #A6A8AB;
+}
+
+// effect
+svg .circle {
+	stroke: #007eb6;
+	/* calculate using: (2 * PI * R) */
+	stroke-dasharray: 227;
+	stroke-dashoffset: 227;
+	transition: stroke-dashoffset 0.5s linear;
+}
+svg .circle:hover {
+	stroke-dashoffset: 0;
+}
