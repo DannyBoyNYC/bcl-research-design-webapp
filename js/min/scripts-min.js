@@ -182,9 +182,9 @@ if (tablePopover) {
 function showTable() {
 	tableToPop.classList.toggle('table-pop');
 	if (tableToPop.classList.contains('table-pop')) {
-		tablePopIcon.innerHTML = '<img src="svg/arrows-close.svg" />';
+		tablePopIcon.innerHTML = '<img src="../svg/arrows-close.svg" />';
 	} else {
-		tablePopIcon.innerHTML = '<img src="svg/arrows.svg" />';
+		tablePopIcon.innerHTML = '<img src="../svg/arrows.svg" />';
 	}
 }
 
