@@ -1,4 +1,5 @@
-.vscode
 config.codekit3
 node_modules
 *.codekit3
+scss
+kits
