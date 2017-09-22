@@ -173,6 +173,7 @@ var popOverFragIcn03 = '\n<a class="close-popover" href="#0">\u2716\uFE0E</a>\n<
 var tablePopover = document.querySelector('.figure-header');
 var tableToPop = document.querySelector('.figure-header + table');
 var tablePopIcon = document.querySelector('.table-xl--btn');
+var captionToPop = document.querySelector('.caption');
 
 // support MAIN-2
 if (tablePopover) {
@@ -181,9 +182,12 @@ if (tablePopover) {
 
 function showTable() {
 	tableToPop.classList.toggle('table-pop');
+	captionToPop.classList.toggle('table-pop');
 	if (tableToPop.classList.contains('table-pop')) {
+		tablePopIcon.classList.add('hilite');
 		tablePopIcon.innerHTML = '<img src="../svg/arrows-close.svg" />';
 	} else {
+		tablePopIcon.classList.remove('hilite');
 		tablePopIcon.innerHTML = '<img src="../svg/arrows.svg" />';
 	}
 }

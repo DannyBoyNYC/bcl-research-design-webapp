@@ -265,6 +265,7 @@ const popOverFragIcn03 = `
 const tablePopover = document.querySelector('.figure-header');
 const tableToPop = document.querySelector('.figure-header + table');
 const tablePopIcon = document.querySelector('.table-xl--btn');
+const captionToPop = document.querySelector('.caption')
 
 // support MAIN-2
 if(tablePopover) {
@@ -273,9 +274,12 @@ if(tablePopover) {
 
 function showTable(){
 	tableToPop.classList.toggle('table-pop')
+	captionToPop.classList.toggle('table-pop')
 	if (tableToPop.classList.contains('table-pop')) {
+		tablePopIcon.classList.add('hilite')
 		tablePopIcon.innerHTML = '<img src="../svg/arrows-close.svg" />'
 	} else {
+		tablePopIcon.classList.remove('hilite')
 		tablePopIcon.innerHTML = '<img src="../svg/arrows.svg" />'
 	}
 }
