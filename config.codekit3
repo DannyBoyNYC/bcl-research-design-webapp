@@ -213,32 +213,6 @@
 		"oAP": "\/index.jsp",
 		"oF": 0
 		},
-	"\/js\/min\/scripts-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/scripts-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/min\/scripts-min.js.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/js\/min\/scripts-min.js.map",
-		"oF": 0
-		},
-	"\/js\/scripts.js": {
-		"ft": 64,
-		"ma": 1,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/js\/min\/scripts-min.js",
-		"oF": 3,
-		"sC": 0,
-		"tS": 1
-		},
 	"\/jslib\/publications.js": {
 		"ft": 64,
 		"ma": 0,
