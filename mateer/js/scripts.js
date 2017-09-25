@@ -237,7 +237,7 @@ const popOverFragIcn02 = `
 
 <div>Print PDF</div>
 <ul style="display: block">
-<li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> This article (3 pages)</a></li>
+<li><a target="_blank" href="https://liveqa.barcap.com/RSR_S/nyfipubs/_quark-author-tests/webapp-demo-mateer/mateer.pdf"><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> This article (3 pages)</a></li>
 <!-- <li><a><span class="md" aria-hidden="true" data-icon="&#xE001;"></span> US Credit Alpha (43 pages)</a></li> -->
 </ul>
 </div>
@@ -277,10 +277,10 @@ function showTable(){
 	captionToPop.classList.toggle('table-pop')
 	if (tableToPop.classList.contains('table-pop')) {
 		tablePopIcon.classList.add('hilite')
-		tablePopIcon.innerHTML = '<img src="../../svg/arrows-close.svg" />'
+		tablePopIcon.innerHTML = '<img src="../svg/arrows-close.svg" />'
 	} else {
 		tablePopIcon.classList.remove('hilite')
-		tablePopIcon.innerHTML = '<img src="../../svg/arrows.svg" />'
+		tablePopIcon.innerHTML = '<img src="../svg/arrows.svg" />'
 	}
 }
 
