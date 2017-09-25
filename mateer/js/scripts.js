@@ -277,10 +277,10 @@ function showTable(){
 	captionToPop.classList.toggle('table-pop')
 	if (tableToPop.classList.contains('table-pop')) {
 		tablePopIcon.classList.add('hilite')
-		tablePopIcon.innerHTML = '<img src="../svg/arrows-close.svg" />'
+		tablePopIcon.innerHTML = '<img src="https://liveqa.barcap.com/RSR_S/nyfipubs/_quark-author-tests/webapp-demo-mateer/webapp-authors6/svg/arrows-close.svg" />'
 	} else {
 		tablePopIcon.classList.remove('hilite')
-		tablePopIcon.innerHTML = '<img src="../svg/arrows.svg" />'
+		tablePopIcon.innerHTML = '<img src="https://liveqa.barcap.com/RSR_S/nyfipubs/_quark-author-tests/webapp-demo-mateer/webapp-authors6/svg/arrows.svg" />'
 	}
 }
 
