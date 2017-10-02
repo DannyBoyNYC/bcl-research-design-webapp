@@ -116,8 +116,8 @@ popLinks.forEach( popLink => popLink.addEventListener('click', popUpAction));
 
 const popOver = document.createElement('div');
 popOver.classList.add('popover');
-popOVer.appendChild(document.createTextNode('popover div'))
-document.body.append(popOver)
+// popOVer.appendChild(document.createTextNode('popover div'))
+document.body.appendChild(popOver)
 
 function popUpAction(e){
 	const templateSelector = this.getAttribute('href');
