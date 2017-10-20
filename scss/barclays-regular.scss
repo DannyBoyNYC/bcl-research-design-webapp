@@ -21,13 +21,13 @@
 
 /* included to display switching functionality only */
 
-.switch-h1.alt {
+.switch-h1 {
 	color: #444;
 	font-size: 1.5rem;
 	font-weight: 400;
 }
 
-.in-chapter .switch-h1.alt {
+.in-chapter .switch-h1 {
 	font-size: 1.25rem;
 	font-weight: 600;
 	@media (min-width: $break-three){
@@ -36,11 +36,11 @@
 		color: $text;
 	}
 }
-.switch-h2.alt {
+.switch-h2 {
 	margin-top: 0.25rem;
 	font-size: 1.5rem;
 }
-.in-chapter .switch-h2.alt {
+.in-chapter .switch-h2 {
 	color: #222;
 	font-size: 2.5rem;
 	font-weight: 300;

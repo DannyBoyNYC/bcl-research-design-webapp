@@ -206,7 +206,6 @@ article {
   .content__header {
     padding-top: 5rem;
     background: #007eb6;
-    background-image: url("https://live.barcap.com/publiccp/RSR/nyfipubs/template/inseries.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -383,7 +382,9 @@ blockquote {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      border: none; } }
+      border: none; }
+      .side-by-side-container.table-xl {
+        margin-left: -11rem; } }
   .side-by-side-container .sidebyside {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
@@ -394,6 +395,7 @@ blockquote {
       color: #444;
       font-weight: 600;
       line-height: 1.2;
+      min-height: 2rem;
       margin-bottom: 0.25rem;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1069,11 +1071,11 @@ svg .circle:hover {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.2)));
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.2) 100%);
       position: absolute;
-      width: 17.5rem;
+      width: 17rem;
       height: 75%;
       top: 25%;
       left: auto;
-      right: -17.5rem; }
+      right: -17rem; }
       .toc .toc-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1183,25 +1185,25 @@ svg .circle:hover {
     transition: all 0.25s; } }
 
 /* included to display switching functionality only */
-.switch-h1.alt {
+.switch-h1 {
   color: #444;
   font-size: 1.5rem;
   font-weight: 400; }
 
-.in-chapter .switch-h1.alt {
+.in-chapter .switch-h1 {
   font-size: 1.25rem;
   font-weight: 600; }
   @media (min-width: 61.25em) {
-    .in-chapter .switch-h1.alt {
+    .in-chapter .switch-h1 {
       font-size: 1.25rem;
       font-weight: 600;
       color: #444; } }
 
-.switch-h2.alt {
+.switch-h2 {
   margin-top: 0.25rem;
   font-size: 1.5rem; }
 
-.in-chapter .switch-h2.alt {
+.in-chapter .switch-h2 {
   color: #222;
   font-size: 2.5rem;
   font-weight: 300;
@@ -1209,7 +1211,7 @@ svg .circle:hover {
   letter-spacing: -1px;
   line-height: 1.1; }
   @media (min-width: 61.25em) {
-    .in-chapter .switch-h2.alt {
+    .in-chapter .switch-h2 {
       margin-top: 0.25rem;
       font-size: 1.75rem;
       color: #007eb6;

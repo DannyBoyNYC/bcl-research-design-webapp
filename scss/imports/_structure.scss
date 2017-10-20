@@ -91,7 +91,7 @@ article {
 		padding-top: 5rem;
 		background: $link;
 		// background: url('https://unsplash.it/1000/1500?random') 50% 0 no-repeat;
-		background-image: url('https://live.barcap.com/publiccp/RSR/nyfipubs/template/inseries.jpg');
+		// background-image: url('https://live.barcap.com/publiccp/RSR/nyfipubs/template/inseries.jpg');
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
@@ -119,9 +119,9 @@ article {
 
 
 // in-chapter
-.in-chapter .main {
+// .in-chapter .main {
 	// display: none;
-}
+// }
 
 .header__sub {
 	display:flex;

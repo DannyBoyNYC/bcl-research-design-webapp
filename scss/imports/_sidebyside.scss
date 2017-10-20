@@ -8,6 +8,9 @@
 		padding-left: 0;
 		display: flex;
 		border: none;
+		&.table-xl {
+			margin-left: -11rem;
+		}
 	}
 
 	.sidebyside {
@@ -20,6 +23,7 @@
 			color: $text;
 			font-weight: 600;
 			line-height: 1.2;
+			min-height: 2rem;
 			margin-bottom: 0.25rem;
 			display: flex;
 			align-items: flex-start;
