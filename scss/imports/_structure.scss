@@ -1,5 +1,5 @@
 /* begin gs-container */
-.content {
+.content { 
 	border-top: 0.0625rem solid #ffffff;
 	padding-top: 0;
 	padding-bottom: 2.25rem;
@@ -91,11 +91,12 @@ article {
 		padding-top: 5rem;
 		background: $link;
 		// background: url('https://unsplash.it/1000/1500?random') 50% 0 no-repeat;
-		// background-image: url('https://live.barcap.com/publiccp/RSR/nyfipubs/template/inseries.jpg');
+		background-image: url('https://live.barcap.com/publiccp/RSR/nyfipubs/template/Links/72664753.jpg'); // airplanes
+		// background-image: url('https://live.barcap.com/publiccp/RSR/nyfipubs/template/Links/92281270.jpg'); // trees
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
-		background-position:  50% 0%;
+		background-position:  50% 50%;
 	}
 }
 

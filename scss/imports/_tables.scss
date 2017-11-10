@@ -1,6 +1,7 @@
 .table-container {
 	max-width: $break-one;
 	padding-top: 1rem;
+	overflow: auto;
 		// 360px;
 		@media (min-width: $break-one){
 			max-width: $break-two;

@@ -84,10 +84,15 @@ const coords = { bottom: tocCoords.bottom + window.scrollY }
 		}
 	}
 
-//, parallax effect on image
+// NEW parallax effect on image
+const Xpos = '50%';
+const Ypos = '-200px';
+const backgroundPos = `${Xpos} ${Ypos}`
+contentHeader.style.backgroundPosition = backgroundPos;
 window.addEventListener('scroll', staticize);
 function staticize(){
-	contentHeader.style.backgroundPosition = '50% ' + (pageYOffset * -2.0) + 'px';
+	console.log(pageYOffset)
+	contentHeader.style.backgroundPosition = `${Xpos} ${ (pageYOffset + 100) * -2.0}px`;
 }
 //END window.scroll functions
 

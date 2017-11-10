@@ -85,10 +85,15 @@ var coords = { bottom: tocCoords.bottom + window.scrollY
 	}
 }
 
-//, parallax effect on image
+// NEW parallax effect on image
+var Xpos = '50%';
+var Ypos = '-200px';
+var backgroundPos = Xpos + ' ' + Ypos;
+contentHeader.style.backgroundPosition = backgroundPos;
 window.addEventListener('scroll', staticize);
 function staticize() {
-	contentHeader.style.backgroundPosition = '50% ' + pageYOffset * -2.0 + 'px';
+	console.log(pageYOffset);
+	contentHeader.style.backgroundPosition = Xpos + ' ' + (pageYOffset + 100) * -2.0 + 'px';
 }
 //END window.scroll functions
 

@@ -206,10 +206,11 @@ article {
   .content__header {
     padding-top: 5rem;
     background: #007eb6;
+    background-image: url("https://live.barcap.com/publiccp/RSR/nyfipubs/template/Links/72664753.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position: 50% 0%; } }
+    background-position: 50% 50%; } }
 
 .content__secondary-column {
   display: none;
@@ -543,7 +544,8 @@ blockquote {
 
 .table-container {
   max-width: 22.5em;
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  overflow: auto; }
   @media (min-width: 22.5em) {
     .table-container {
       max-width: 46.25em; } }
